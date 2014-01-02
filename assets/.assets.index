@@ -1,5 +1,5 @@
 1
-29
+33
 Cell.qml
 game.qml
 images/back.png
@@ -9,6 +9,7 @@ images/easy.png
 images/flip.png
 images/hard.png
 images/info.png
+images/load.png
 images/medium.png
 images/new.png
 images/pieces/black-bishop.png
@@ -23,9 +24,12 @@ images/pieces/white-knight.png
 images/pieces/white-pawn.png
 images/pieces/white-queen.png
 images/pieces/white-rock.png
+images/puzzle.png
 images/pvc.png
 images/pvp.png
 images/save.png
 images/save_black.png
+images/user_group.png
+level-selector.qml
 main.qml
 Piece.qml

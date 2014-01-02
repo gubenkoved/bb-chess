@@ -116,39 +116,47 @@
     </message>
 </context>
 <context>
-    <name>main</name>
+    <name>level-selector</name>
     <message>
-        <location filename="../assets/main.qml" line="31"/>
+        <location filename="../assets/level-selector.qml" line="32"/>
         <source>Easy</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="40"/>
+        <location filename="../assets/level-selector.qml" line="41"/>
         <source>Medium</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="49"/>
+        <location filename="../assets/level-selector.qml" line="51"/>
         <source>Hard</source>
         <translation type="unfinished"></translation>
     </message>
+</context>
+<context>
+    <name>main</name>
     <message>
-        <location filename="../assets/main.qml" line="78"/>
+        <location filename="../assets/main.qml" line="32"/>
         <source>Player vs. Blackberry</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="88"/>
+        <location filename="../assets/main.qml" line="43"/>
         <source>Player vs. player</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="95"/>
+        <location filename="../assets/main.qml" line="49"/>
+        <source>Puzzles</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/main.qml" line="55"/>
         <source>Continue</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="102"/>
+        <location filename="../assets/main.qml" line="61"/>
         <source>Quit</source>
         <translation type="unfinished"></translation>
     </message>

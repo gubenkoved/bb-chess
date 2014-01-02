@@ -127,39 +127,59 @@
     </message>
 </context>
 <context>
+    <name>level-selector</name>
+    <message>
+        <location filename="../assets/level-selector.qml" line="32"/>
+        <source>Easy</source>
+        <translation type="unfinished">Лёгкий</translation>
+    </message>
+    <message>
+        <location filename="../assets/level-selector.qml" line="41"/>
+        <source>Medium</source>
+        <translation type="unfinished">Средний</translation>
+    </message>
+    <message>
+        <location filename="../assets/level-selector.qml" line="51"/>
+        <source>Hard</source>
+        <translation type="unfinished">Тяжёлый</translation>
+    </message>
+</context>
+<context>
     <name>main</name>
     <message>
-        <location filename="../assets/main.qml" line="31"/>
         <source>Easy</source>
-        <translation>Лёгкий</translation>
+        <translation type="obsolete">Лёгкий</translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="40"/>
         <source>Medium</source>
-        <translation>Средний</translation>
+        <translation type="obsolete">Средний</translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="49"/>
         <source>Hard</source>
-        <translation>Тяжёлый</translation>
+        <translation type="obsolete">Тяжёлый</translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="78"/>
+        <location filename="../assets/main.qml" line="32"/>
         <source>Player vs. Blackberry</source>
         <translation>Игрок против Блекберри</translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="88"/>
+        <location filename="../assets/main.qml" line="43"/>
         <source>Player vs. player</source>
         <translation>Игрок против игрока</translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="95"/>
+        <location filename="../assets/main.qml" line="49"/>
+        <source>Puzzles</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/main.qml" line="55"/>
         <source>Continue</source>
         <translation>Продолжить</translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="102"/>
+        <location filename="../assets/main.qml" line="61"/>
         <source>Quit</source>
         <translation>Выход</translation>
     </message>
