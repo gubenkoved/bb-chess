@@ -3,57 +3,46 @@
 
 #include <QList>
 
+#include "typedefs.h"
 #include "board.h"
 #include "move.h"
-#include "lightfigureposition.h"
+#include "figureposition.h"
 #include "figure.h"
-
-typedef QList<FigurePosition> PositionList;
-typedef QList<Move> MoveList;
 
 class Rules
 {
-    Board* m_board;
+    Board* m_board;    
 
-    template<class T> void AppendIfNotNull(QList<T>* list, T value) const;
-    template<class T> void AppendIfNotExists(QList<T>* list, T value) const;
-    template<class T> void AppendIfNotExists(QList<T>* list, QList<T> values) const;
-    void AppendIfValid(PositionList* list, FigurePosition position) const;
-    void AppendIfValid(PositionList* list, PositionList positions) const;
-    void AppendIfValidAndNotExists(PositionList* list, FigurePosition position) const;
-    void AppendIfValidAndNotExists(PositionList* list, PositionList positions) const;
+    POSITION ForwardFor(POSITION position, FigureSide side, int dx, int dy) const;
 
-    FigurePosition ForwardFor(FigurePosition position, Figure::FigureSide side, int dx, int dy) const;
+    int PawnPromotionYFor(FigureSide side) const;
+    int EnPassantPawnYFor(FigureSide side) const;
 
-    int PawnPromotionYFor(Figure::FigureSide side) const;
-    int EnPassantPawnYFor(Figure::FigureSide side) const;
-
-    bool IsUnderCheckImpl(Figure::FigureSide side) const;
-    Figure* GetObstacleInDirection(FigurePosition position, Figure::FigureSide side, int xMult, int yMult) const;
-    bool IsUnderCheckFastImpl(Figure::FigureSide side) const;
+    bool IsUnderCheckImpl(FigureSide side) const;
+    bool IsUnderCheckFastImpl(FigureSide side) const;    
 
     // DeleteMovesToCheck
     // -------------------
     // Function erases all moves which causes check to turning player
-    MoveList* DeleteMovesToCheck(MoveList* moves);
+    void DeleteMovesToCheck(MoveCollection& moves);
     // NOTE: ...PossibleDestinations function family returns NOT FULLY VALID destination yet!
     // because it SHOULD BE filtered by DeleteMovesToCheck and DeleteSelfCaptureDesination functions
     // to avoid moves, that causes check to turning side and self-capture turns
     // ONLY FOR PRIVATE USAGE!
-    void DeleteSelfCaptureDesination(PositionList* destinations, Figure::FigureSide selfSide) const;
-    PositionList _GetPossibleDestinations(Figure* figure) const;    
-    PositionList _GetPawnPossibleDestinations(Figure* figure) const;
-    PositionList _GetKnightPossibleDestinations(Figure* figure) const;
-    PositionList _GetBishopPossibleDestinations(Figure* figure) const;
-    PositionList _GetRockPossibleDestinations(Figure* figure) const;
-    PositionList _GetQueenPossibleDestinations(Figure* figure) const;
-    PositionList _GetKingPossibleDestinations(Figure* figure) const;
+    void DeleteSelfCaptureDesination(PositionCollection& destinations, FigureSide selfSide) const;
+    BITBOARD _GetPossibleDestinations(Figure* figure) const;
+    BITBOARD _GetPawnPossibleDestinations(Figure* figure) const;
+    BITBOARD _GetKnightPossibleDestinations(Figure* figure) const;
+    BITBOARD _GetBishopPossibleDestinations(Figure* figure) const;
+    BITBOARD _GetRockPossibleDestinations(Figure* figure) const;
+    BITBOARD _GetQueenPossibleDestinations(Figure* figure) const;
+    BITBOARD _GetKingPossibleDestinations2(Figure* figure) const;
 
-    Move CreateMove(FigurePosition from, FigurePosition to);
+    Move CreateMove(POSITION from, POSITION to);
 
     // GetOnLinePositions function
     // ---------------------------
-    // This is some code optimization written because many of figures can be described in general manner.
+    // This function was written because many of figures can be described in general manner.
     // e.g.
     //  - bishop can guard in 4 diagonal lines (forward-right, forward-left, backward-right, backward-left) to
     //     the end of board, and guard line interrupted by obstacle (figure)
@@ -70,31 +59,45 @@ class Rules
     //
     // EXAMPLE: function runned with xMult = 0, yMult = 1 and lenLimit = 2 (...,0,1,2) returns
     // pawn first move possibilities;
-    PositionList GetOnLinePositions(FigurePosition position, Figure::FigureSide side, int xMult, int yMult, int lenLimit) const;
-    PositionList GetGuardedPositions(Figure* figure) const;
-    PositionList GetPawnGuardedPositions(Figure* figure) const;
-    PositionList GetKinghtGuardedPositions(Figure* figure) const;
-    PositionList GetBishopGuardedPositions(Figure* figure) const;
-    PositionList GetRockGuardedPositions(Figure* figure) const;
-    PositionList GetQueenGuardedPositions(Figure* figure) const;
-    PositionList GetKingGuardedPositions(Figure* figure) const;    
+    BITBOARD GetOnLinePositions2(POSITION position, FigureSide side, int xMult, int yMult, int lenLimit) const;
+    Figure* GetObstacleInDirection(POSITION position, FigureSide side, int xMult, int yMult) const;
+
+    // Returns positions that guarded for specified figure.
+    // Position is guarded when figure can kill another figure on that position.
+    // Bitboard implementation.
+    BITBOARD GetGuardedPositions2        (Figure* figure) const;
+    BITBOARD GetPawnGuardedPositions2    (Figure* figure) const;
+    BITBOARD GetKinghtGuardedPositions2  (Figure* figure) const;
+    BITBOARD GetBishopGuardedPositions2  (Figure* figure) const;
+    BITBOARD GetRockGuardedPositions2    (Figure* figure) const;
+    BITBOARD GetQueenGuardedPositions2   (Figure* figure) const;
+    BITBOARD GetKingGuardedPositions2    (Figure* figure) const;
+
+    BITBOARD GetGuardedPositions2(FigureSide side) const;
 public:
     Rules(Board* board);
 
-    Figure::FigureSide OpponentSide(Figure::FigureSide side) const;
-    int FirstHorizonatalYFor(Figure::FigureSide side) const;
+    FigureSide OpponentSide(FigureSide side) const;
+    int FirstHorizonatalYFor(FigureSide side) const;
 
-    PositionList GetGuardedPositions(Figure::FigureSide side) const;
-    MoveList GetPossibleMoves(Figure::FigureSide side);
-    MoveList GetPossibleMoves(Figure* figure);
+    MoveCollection GetPossibleMoves(FigureSide side);
+
+    // !! USE IN GUI ONLY !!
+    // Very slow: evaluates possible moves for all figures and then extrude it for specified figure
+    MoveCollection GetPossibleMoves(Figure* figure);
+
+    // !! USE IN GUI ONLY !!
+    // Very slow: evaluates possible destination for all figures and then extrude it for specified figure
     PositionList GetPossibleDestinations(Figure* figure);
 
-    bool IsUnderCheck(Figure::FigureSide side) const;
+    bool IsUnderCheck(FigureSide side) const;
     bool IsPassiveEndGame() const;
 
     void MakeMove(Move move);
-    void MakeMove(FigurePosition from, FigurePosition to);
+    void MakeMove(POSITION from, POSITION to);
     void UnMakeMove(Move move);
+
+    friend class Tests;
 };
 
 #endif // RULES_H

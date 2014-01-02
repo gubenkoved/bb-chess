@@ -9,6 +9,10 @@ NavigationPane {
             ComponentDefinition {                      
                 id: levelSelectorDef                       
                 source: "level-selector.qml"             
+            },
+            ComponentDefinition {                      
+                id: puzzleSelectorDef                       
+                source: "puzzle-selector.qml"             
             }            
         ]
         Container {
@@ -48,7 +52,12 @@ NavigationPane {
                 Button {
                     text: qsTr("Puzzles")
                     horizontalAlignment: HorizontalAlignment.Fill
-                    //onClicked: ...
+                    onClicked: {
+                        var puzzleSelector = puzzleSelectorDef.createObject();
+                        puzzleSelector.app = app;
+                        puzzleSelector.navigationPane = navigationPane;                        
+                        navigationPane.push(puzzleSelector);
+                    }
                     imageSource: "asset:///images/puzzle.png"
                 }
                 Button {

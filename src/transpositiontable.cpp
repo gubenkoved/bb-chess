@@ -49,6 +49,11 @@ void TranspositionTable::Store(PositionHash hash, int estimation, int depth)
     Store(TranspositionTableEntry(hash, estimation, depth));
 }
 
+int TranspositionTable::Count()
+{
+    return m_table.count();
+}
+
 void TranspositionTable::Clear()
 {
     m_table.clear();

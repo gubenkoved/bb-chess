@@ -14,18 +14,18 @@ class AsyncAI : public QThread
     Q_OBJECT
 
     Board* m_sourceBoard;
-    Figure::FigureSide m_side;
+    FigureSide m_side;
     int m_depth;
 
     void run(); // this function will be called in another thread
 public:
     explicit AsyncAI(Board* board, QObject *parent = 0);
-    
-    void StartBestMoveSearch(Figure::FigureSide side, int depth);
+
+    void StartBestMoveSearch(FigureSide side, int depth);
 signals:
-    void BestMoveFinded(QString move);
+    void BestMoveFinded(QString bestMove);
 public slots:
-    
+
 };
 
 #endif // ASYNCAI_H

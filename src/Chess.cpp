@@ -12,6 +12,7 @@
 #include <bb/system/SystemUiButton>
 
 #include "boardserializer.h"
+#include "fen.h"
 
 using namespace bb::cascades;
 using namespace bb::system;
@@ -60,7 +61,7 @@ void Chess::Initialize()
 
 	m_gamePage = gameQml->createRootObject<Page>();
 
-	m_userSide = Figure::White;
+	m_userSide = FigureSide::White;
 	m_selectedFigure = NULL;
 	m_boardFlipped = false;
 
@@ -120,7 +121,7 @@ void Chess::Continue()
 		m_board = new Board(BoardSerializer::Load(save.BoardString));
 		m_isPVC = save.IsPVC;
 		m_depth = save.Depth;
-		m_userSide = (Figure::FigureSide)save.UserSide;
+		m_userSide = (FigureSide)save.UserSide;
 
 		foreach(Control* c, m_figureToUIPieceMapping.values())
 		{
@@ -159,7 +160,7 @@ void Chess::Save()
 
 		GameSave save;
 
-		save.BoardString = BoardSerializer::Save(m_board);
+		save.BoardString = BoardSerializer::Save(*m_board);
 		save.Depth = m_depth;
 		save.IsPVC = m_isPVC;
 		save.UserSide = (int)m_userSide;
@@ -177,8 +178,8 @@ void Chess::HandleFindedBestMove(QString bestMoveString)
 
 	QStringList tmp = bestMoveString.split(' ');
 
-	FigurePosition from = CreateFigurePosition(tmp[0].toStdString());
-	FigurePosition to = CreateFigurePosition(tmp[1].toStdString());
+	POSITION from = PositionHelper::FromString(tmp[0].toStdString());
+	POSITION to = PositionHelper::FromString(tmp[1].toStdString());
 
 	m_rules->MakeMove(from, to);
 
@@ -202,7 +203,7 @@ void Chess::UpdateTurnNotification()
 {
 	if (!m_isPVC)
 	{
-		if (m_board->GetTurningSide() == Figure::White)
+		if (m_board->GetTurningSide() == FigureSide::White)
 			m_turnInfoLabel->setText(tr("White's turn"));
 		else
 			m_turnInfoLabel->setText(tr("Black's turn"));
@@ -241,7 +242,7 @@ void Chess::HandleTap(int x, int y)
 {
 	qDebug() << "Chess::HandleTap";
 
-	FigurePosition p = CreateFigurePosition(x, y);
+	POSITION p = PositionHelper::Create(x, y);
 
 	if (m_selectedFigure == NULL)
 	{
@@ -256,9 +257,9 @@ void Chess::HandleTap(int x, int y)
 			// show possible destination for it
 			PositionList dests = m_rules->GetPossibleDestinations(m_selectedFigure);
 
-			foreach(FigurePosition pos, dests)
+			foreach(POSITION pos, dests)
 			{
-				Control* cell = FindCell(GetX(pos), GetY(pos));
+				Control* cell = FindCell(PositionHelper::X(pos), PositionHelper::Y(pos));
 
 				qDebug() << "cell:" << cell;
 
@@ -301,14 +302,14 @@ void Chess::HandleTap(int x, int y)
 
 			if (m_selectedFigure != NULL)
 			{
-				FindCell(GetX(p), GetY(p))->setProperty("isHighlightAsSelected", true);
+				FindCell(PositionHelper::X(p), PositionHelper::Y(p))->setProperty("isHighlightAsSelected", true);
 
 				// show possible destination for it
 				PositionList dests = m_rules->GetPossibleDestinations(m_selectedFigure);
 
-				foreach(FigurePosition pos, dests)
+				foreach(POSITION pos, dests)
 				{
-					Control* cell = FindCell(GetX(pos), GetY(pos));
+					Control* cell = FindCell(PositionHelper::X(pos), PositionHelper::Y(pos));
 
 					qDebug() << "cell:" << cell;
 
@@ -342,7 +343,7 @@ bool Chess::CheckForEndGame()
 				}
 			} else
 			{
-				if (m_board->GetTurningSide() == Figure::White)
+				if (m_board->GetTurningSide() == FigureSide::White)
 				{
 					qDebug() << "Black win";
 					ShowEndGameNotification(tr("Black's win!"));
@@ -379,10 +380,10 @@ bool Chess::CheckForEndGame()
 	return false;
 }
 
-void Chess::HighlightMove(FigurePosition from, FigurePosition to)
+void Chess::HighlightMove(POSITION from, POSITION to)
 {
-	FindCell(GetX(from), GetY(from))->setProperty("isHighlightAsPreviousMove", true);
-	FindCell(GetX(to), GetY(to))->setProperty("isHighlightAsPreviousMove", true);
+	FindCell(PositionHelper::X(from), PositionHelper::Y(from))->setProperty("isHighlightAsPreviousMove", true);
+	FindCell(PositionHelper::X(to), PositionHelper::Y(to))->setProperty("isHighlightAsPreviousMove", true);
 }
 
 void Chess::ShowEndGameNotification(QString text)
@@ -448,8 +449,8 @@ void Chess::Draw()
 
 			uiPiece->setScaleY(1);
 
-			if ((!m_boardFlipped && figure->Side == Figure::White)
-					|| (m_boardFlipped && figure->Side == Figure::Black)) // white in down
+			if ((!m_boardFlipped && figure->Side == FigureSide::White)
+					|| (m_boardFlipped && figure->Side == FigureSide::Black)) // white in down
 			{
 				m_bottomKilledDockContainer->add(uiPiece);
 			} else
@@ -468,18 +469,18 @@ void Chess::Draw()
 
 			piece->setScaleY(m_boardFlipped ? -1 : 1);
 
-			piece->setProperty("pieceFENChar", figure->GetFENChar());
-			piece->setProperty("x", GetX(figure->Position));
-			piece->setProperty("y", GetY(figure->Position));
+			piece->setProperty("pieceFENChar", FEN::GetFigureChar(*figure));
+			piece->setProperty("x", PositionHelper::X(figure->Position));
+			piece->setProperty("y", PositionHelper::Y(figure->Position));
 
 			m_figureToUIPieceMapping[figure] = piece;
 		} else
 		{
 			Control* piece = m_figureToUIPieceMapping[figure];
 
-			piece->setProperty("x", GetX(figure->Position));
-			piece->setProperty("y", GetY(figure->Position));
-			piece->setProperty("pieceFENChar", figure->GetFENChar());
+			piece->setProperty("x", PositionHelper::X(figure->Position));
+			piece->setProperty("y", PositionHelper::Y(figure->Position));
+			piece->setProperty("pieceFENChar", FEN::GetFigureChar(*figure));
 
 			if (!m_boardContainer->children().contains(piece))
 			{

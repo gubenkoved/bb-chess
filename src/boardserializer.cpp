@@ -2,25 +2,26 @@
 
 #include "boardserializer.h"
 
-QString BoardSerializer::Save(Board* board)
+QString BoardSerializer::Save(const Board& board)
 {
     // save all moves history
     QString result;
 
-    QStack<Move> history = board->GetMoveHistory();
+    QStack<Move> history = board.GetMoveHistory();
 
     QStack<Move>::const_iterator it = history.constBegin();
-
     while (it != history.constEnd())
     {
         Move move = *it;
 
-        result.append(ToString(move.From));
-        result.append(" ");
-        result.append(ToString(move.To));
+        result.append(PositionHelper::ToString(move.From));
+        result.append("-");
+        result.append(PositionHelper::ToString(move.To));
 
         if (it != history.constEnd() - 1)
-             result.append(",");
+        {
+             result.append(", ");
+        }
 
         ++it;
     }
@@ -35,14 +36,14 @@ Board BoardSerializer::Load(QString boardString)
 
     board.SetupStartPosition();
 
-    QStringList moveStrings = boardString.split(',');
+    QStringList moveStrings = boardString.split(", ");
 
     foreach(QString moveStirng, moveStrings)
     {
-        QStringList m = moveStirng.split(' ');
+        QStringList m = moveStirng.split('-');
 
-        FigurePosition from = CreateFigurePosition(m[0].toStdString());
-        FigurePosition to = CreateFigurePosition(m[1].toStdString());
+        POSITION from = PositionHelper::FromString(m[0].toStdString());
+        POSITION to = PositionHelper::FromString(m[1].toStdString());
 
         rules.MakeMove(from, to);
     }

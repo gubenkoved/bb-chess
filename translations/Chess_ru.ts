@@ -4,64 +4,64 @@
 <context>
     <name>Chess</name>
     <message>
-        <location filename="../src/Chess.cpp" line="150"/>
-        <location filename="../src/Chess.cpp" line="507"/>
-        <location filename="../src/Chess.cpp" line="542"/>
+        <location filename="../src/Chess.cpp" line="151"/>
+        <location filename="../src/Chess.cpp" line="508"/>
+        <location filename="../src/Chess.cpp" line="543"/>
         <source>Please, wait while AI is thinking</source>
         <translation>Пожалуйста, подождите пока Блекберри думает над ходом</translation>
     </message>
     <message>
-        <location filename="../src/Chess.cpp" line="156"/>
+        <location filename="../src/Chess.cpp" line="157"/>
         <source>Existing save will be overriden</source>
         <translation>Существующая игра будет перезаписана</translation>
     </message>
     <message>
-        <location filename="../src/Chess.cpp" line="206"/>
+        <location filename="../src/Chess.cpp" line="207"/>
         <source>White&apos;s turn</source>
         <translation>Ход белых</translation>
     </message>
     <message>
-        <location filename="../src/Chess.cpp" line="208"/>
+        <location filename="../src/Chess.cpp" line="209"/>
         <source>Black&apos;s turn</source>
         <translation>Ход чёрных</translation>
     </message>
     <message>
-        <location filename="../src/Chess.cpp" line="212"/>
+        <location filename="../src/Chess.cpp" line="213"/>
         <source>Blackberry&apos;s turn</source>
         <translation>Ход Блекберри</translation>
     </message>
     <message>
-        <location filename="../src/Chess.cpp" line="214"/>
+        <location filename="../src/Chess.cpp" line="215"/>
         <source>Your turn</source>
         <translation>Ваш ход</translation>
     </message>
     <message>
-        <location filename="../src/Chess.cpp" line="335"/>
+        <location filename="../src/Chess.cpp" line="336"/>
         <source>You lose</source>
         <translation>Вы проиграли</translation>
     </message>
     <message>
-        <location filename="../src/Chess.cpp" line="340"/>
+        <location filename="../src/Chess.cpp" line="341"/>
         <source>You win!</source>
         <translation>Вы выйграли!</translation>
     </message>
     <message>
-        <location filename="../src/Chess.cpp" line="348"/>
+        <location filename="../src/Chess.cpp" line="349"/>
         <source>Black&apos;s win!</source>
         <translation>Чёрные победили!</translation>
     </message>
     <message>
-        <location filename="../src/Chess.cpp" line="353"/>
+        <location filename="../src/Chess.cpp" line="354"/>
         <source>White&apos;s win!</source>
         <translation>Белые победили!</translation>
     </message>
     <message>
-        <location filename="../src/Chess.cpp" line="361"/>
+        <location filename="../src/Chess.cpp" line="362"/>
         <source>Draw game</source>
         <translation>Ничья</translation>
     </message>
     <message>
-        <location filename="../src/Chess.cpp" line="374"/>
+        <location filename="../src/Chess.cpp" line="375"/>
         <source>Passive draw game</source>
         <translation>Ничья
 (троекратное повторение позиции
@@ -72,7 +72,7 @@
         <translation type="obsolete">Пожалуйста, подождите пока Блекберри думает над ходом</translation>
     </message>
     <message>
-        <location filename="../src/Chess.cpp" line="559"/>
+        <location filename="../src/Chess.cpp" line="560"/>
         <source>Confirmation</source>
         <translation>Подтверждение</translation>
     </message>
@@ -159,27 +159,27 @@
         <translation type="obsolete">Тяжёлый</translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="32"/>
+        <location filename="../assets/main.qml" line="36"/>
         <source>Player vs. Blackberry</source>
         <translation>Игрок против Блекберри</translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="43"/>
+        <location filename="../assets/main.qml" line="47"/>
         <source>Player vs. player</source>
         <translation>Игрок против игрока</translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="49"/>
+        <location filename="../assets/main.qml" line="53"/>
         <source>Puzzles</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="55"/>
+        <location filename="../assets/main.qml" line="64"/>
         <source>Continue</source>
         <translation>Продолжить</translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="61"/>
+        <location filename="../assets/main.qml" line="70"/>
         <source>Quit</source>
         <translation>Выход</translation>
     </message>

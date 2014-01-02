@@ -1,10 +1,12 @@
 #include <string>
 #include "board.h"
 #include "exception.h"
+#include "figureposition.h"
+#include "bitboardhelper.h"
 
 Board::Board()
 {
-    m_turningSide = Figure::White;
+    m_turningSide = FigureSide::White;
 
     m_aliveFiguresVector = QVector<Figure*>(64);
 }
@@ -31,9 +33,13 @@ Board::Board(const Board &another)
         oldToNewFiguresMapping[f] = copy;
 
         if (!another.IsDead(f))
+        {
             AddAliveFigure(copy);
+        }
         else
+        {
             AddDeadFigure(copy);
+        }
     }
 
     foreach(Move move, another.m_history)
@@ -48,7 +54,7 @@ Board::Board(const Board &another)
 }
 
 Board::~Board()
-{           
+{
     foreach(Figure* f, m_allFigures)
     {
         delete f;
@@ -58,7 +64,9 @@ Board::~Board()
 bool Board::IsDead(Figure *figure) const
 {
     if (!m_allFigures.contains(figure))
+    {
         throw Exception("It not this board figure");
+    }
 
     return !m_aliveFigures[figure->Side].contains(figure);
 }
@@ -70,15 +78,19 @@ void Board::AddDeadFigure(Figure *figure)
 }
 
 int Board::GetAfterLastCaptureOrPawnMoveHalfMoveCount() const
-{    
+{
     int halfMoveCounter = 0;
 
     for (int i = m_history.count() - 1; i >= 0; --i)
     {
-        if (m_history[i].Type == Move::Capture || m_history[i].MovingFigure->Type == Figure::Pawn)
+        if (m_history[i].Type == MoveType::Capture || m_history[i].MovingFigure->Type == FigureType::Pawn)
+        {
             return halfMoveCounter;
+        }
         else
+        {
             ++halfMoveCounter;
+        }
     }
 
     return halfMoveCounter;
@@ -95,107 +107,129 @@ PositionHash Board::GetCurrentPositionHash() const
 }
 
 void Board::AddAliveFigure(Figure *figure)
-{    
+{
+    FigureSide side = figure->Side;
+
     m_allFigures.append(figure);
-
-    Figure::FigureSide side = figure->Side;
-
     m_aliveFigures[side].append(figure);
 
-    if (figure->Type == Figure::King)
+    m_aliveBitboard[side] = BitboardHelper::AddPosition(m_aliveBitboard[side], figure->Position);
+
+    if (figure->Type == FigureType::King)
+    {
         m_kings[side] = figure;
+    }
 
-    int key = GetSerialNumber(figure->Position) - 1;
-
+    int key = PositionHelper::Serial(figure->Position);
     m_aliveFiguresVector[key] = figure;
 
-    m_positionHash = PositionHashCalculator::Calculate(this);
+    m_positionHash = PositionHash::Calculate(this);
 }
 
-void Board::MoveFigure(Figure *figure, FigurePosition newPosition)
+void Board::MoveFigure(Figure *figure, POSITION newPosition)
 {
-    int oldKey = GetSerialNumber(figure->Position) - 1;
-    int newKey = GetSerialNumber(newPosition) - 1;
+    FigureSide side = figure->Side;
+
+    int oldKey = PositionHelper::Serial(figure->Position);
+    int newKey = PositionHelper::Serial(newPosition);
+
+    m_aliveBitboard[side] = BitboardHelper::RemovePosition(m_aliveBitboard[side], figure->Position);
+    m_aliveBitboard[side] = BitboardHelper::AddPosition(m_aliveBitboard[side], newPosition);
 
     if (m_aliveFiguresVector[newKey] != NULL)
+    {
         throw Exception("Can not move figure because cell is not empty");
+    }
 
     m_aliveFiguresVector[oldKey] = NULL;
     m_aliveFiguresVector[newKey] = figure;
 
-    PositionHashCalculator::Update(m_positionHash, this, figure->Position);
-    PositionHashCalculator::Update(m_positionHash, this, newPosition);
+    m_positionHash.Update(this, figure->Position);
+    m_positionHash.Update(this, newPosition);
 
-    figure->SetPosition(newPosition);
+    figure->Position = newPosition;
 }
 
 void Board::KillFigure(Figure *figure)
 {
-    m_aliveFigures[figure->Side].removeOne(figure);    
+    m_aliveBitboard[figure->Side] = BitboardHelper::RemovePosition(m_aliveBitboard[figure->Side], figure->Position);
 
-    int key = GetSerialNumber(figure->Position) - 1;
+    m_aliveFigures[figure->Side].removeOne(figure);
+
+    int key = PositionHelper::Serial(figure->Position);
 
     m_aliveFiguresVector[key] = NULL;
 
-    PositionHashCalculator::Update(m_positionHash, this, figure->Position);
+    m_positionHash.Update(this, figure->Position);
 }
 
 void Board::ResurrectFigure(Figure *figure)
 {
-    int key = GetSerialNumber(figure->Position) - 1;
+    m_aliveBitboard[figure->Side] = BitboardHelper::AddPosition(m_aliveBitboard[figure->Side], figure->Position);
+
+    int key = PositionHelper::Serial(figure->Position);
 
     if (m_aliveFiguresVector[key] != NULL)
+    {
         throw Exception("Can not reserrect because cell is empty");
+    }
 
-    m_aliveFigures[figure->Side].append(figure);    
+    m_aliveFigures[figure->Side].append(figure);
     m_aliveFiguresVector[key] = figure;
 
-    PositionHashCalculator::Update(m_positionHash, this, figure->Position);
+    m_positionHash.Update(this, figure->Position);
 }
 
-void Board::PromotePawn(Figure *pawn, Figure::FigureType type)
+void Board::PromotePawn(Figure *pawn, FigureType type)
 {
-    if (type == Figure::Pawn)
+    if (type == FigureType::Pawn)
+    {
         throw Exception("Not allowed promotion to pawn");
+    }
 
-    pawn->SetFigureType(type);
+    pawn->Type = type;
 
-    PositionHashCalculator::Update(m_positionHash, this, pawn->Position);
+    m_positionHash.Update(this, pawn->Position);
 }
 
 void Board::UnpromotePawn(Figure *pawn)
 {
-    pawn->SetFigureType(Figure::Pawn);
+    pawn->Type = FigureType::Pawn;
 
-    PositionHashCalculator::Update(m_positionHash, this, pawn->Position);
+    m_positionHash.Update(this, pawn->Position);
 }
 
-Figure* Board::FigureAt(FigurePosition position) const
+Figure* Board::FigureAt(POSITION position) const
 {
-    int key = GetSerialNumber(position) - 1;
+    int key = PositionHelper::Serial(position);
 
     return m_aliveFiguresVector[key];
 }
 
-FigureList Board::FiguresAt(Figure::FigureSide side) const
+FigureList Board::FiguresAt(FigureSide side) const
 {
     return m_aliveFigures[side];
 }
 
 FigureList Board::GetAllAliveFigures() const
 {
-    FigureList alive = m_aliveFigures[Figure::White];
-    alive.append(m_aliveFigures[Figure::Black]);
+    FigureList alive = m_aliveFigures[FigureSide::White];
+    alive.append(m_aliveFigures[FigureSide::Black]);
 
     return alive;
 }
 
-bool Board::HasFigureAt(FigurePosition position) const
+BITBOARD Board::GetBitboardFor(FigureSide side) const
+{
+    return m_aliveBitboard[side];
+}
+
+bool Board::HasFigureAt(POSITION position) const
 {
     return FigureAt(position) != NULL;
 }
 
-bool Board::HasFigureAt(FigurePosition position, Figure::FigureSide side) const
+bool Board::HasFigureAt(POSITION position, FigureSide side) const
 {
     Figure* f = FigureAt(position);
 
@@ -214,51 +248,48 @@ void Board::PopHistory()
 
 void Board::TurnTransition()
 {
-    m_turningSide = m_turningSide == Figure::White ? Figure::Black : Figure::White;
+    m_turningSide =
+            m_turningSide == FigureSide::White ?
+                FigureSide::Black
+              : FigureSide::White;
 }
 
 void Board::IncreaseCurrentPositionCount()
 {
-    m_positionHashHistory.push_back(m_positionHash);
-//    if (m_positionCounter.contains(m_positionHash))
-//        m_positionCounter[m_positionHash] += 1;
-//    else
-//        m_positionCounter[m_positionHash] = 1;
+    m_positionHashHistory.append(m_positionHash);
 }
 
 void Board::DecreaseCurrentPositionCount()
 {
     if (m_positionHashHistory.isEmpty())
+    {
         throw Exception("Invalid operation. Position history is empty");
+    }
 
     m_positionHashHistory.pop_back();
-//    int count = --m_positionCounter[m_positionHash];
-
-//    if (count < 0)
-//        throw Exception("Invalid operation. Position count can not be negative");
-
-//    if (count == 0)
-//        m_positionCounter.remove(m_positionHash);
 }
 
 int Board::GetCurrentPositionCount()
 {
     int count = 0;
 
-    foreach (QString s, m_positionHashHistory)
+    foreach (const PositionHash& h, m_positionHashHistory)
     {
-        if (s == m_positionHash)
+        if (h == m_positionHash)
+        {
             ++count;
+        }
     }
 
     return count;
-    //return m_positionCounter[m_positionHash];
 }
 
 Move Board::GetLastMove() const
 {
     if (IsHistoryEmpty())
+    {
         throw Exception("History is empty");
+    }
 
     return m_history.last();
 }
@@ -273,12 +304,12 @@ bool Board::IsHistoryEmpty() const
     return m_history.count() == 0;
 }
 
-Figure *Board::KingAt(Figure::FigureSide side) const
+Figure *Board::KingAt(FigureSide side) const
 {
     return m_kings[side];
 }
 
-Figure::FigureSide Board::GetTurningSide() const
+FigureSide Board::GetTurningSide() const
 {
     return m_turningSide;
 }
@@ -294,47 +325,47 @@ Board Board::StartPosition()
 
 void Board::SetupStartPosition()
 {
-    m_turningSide = Figure::White;
+    m_turningSide = FigureSide::White;
 
-    AddAliveFigure(new Figure(Figure::White, Figure::Queen, "d1"));
-    AddAliveFigure(new Figure(Figure::White, Figure::Rock, "a1"));
-    AddAliveFigure(new Figure(Figure::White, Figure::Rock, "h1"));
-    AddAliveFigure(new Figure(Figure::White, Figure::Knight, "b1"));
-    AddAliveFigure(new Figure(Figure::White, Figure::Knight, "g1"));
-    AddAliveFigure(new Figure(Figure::White, Figure::Bishop, "c1"));
-    AddAliveFigure(new Figure(Figure::White, Figure::Bishop, "f1"));
-    AddAliveFigure(new Figure(Figure::White, Figure::King, "e1"));
+    AddAliveFigure(new Figure(FigureSide::White, FigureType::Queen, "d1"));
+    AddAliveFigure(new Figure(FigureSide::White, FigureType::Rock, "a1"));
+    AddAliveFigure(new Figure(FigureSide::White, FigureType::Rock, "h1"));
+    AddAliveFigure(new Figure(FigureSide::White, FigureType::Knight, "b1"));
+    AddAliveFigure(new Figure(FigureSide::White, FigureType::Knight, "g1"));
+    AddAliveFigure(new Figure(FigureSide::White, FigureType::Bishop, "c1"));
+    AddAliveFigure(new Figure(FigureSide::White, FigureType::Bishop, "f1"));
+    AddAliveFigure(new Figure(FigureSide::White, FigureType::King, "e1"));
 
-    AddAliveFigure(new Figure(Figure::White, Figure::Pawn, "a2"));
-    AddAliveFigure(new Figure(Figure::White, Figure::Pawn, "b2"));
-    AddAliveFigure(new Figure(Figure::White, Figure::Pawn, "c2"));
-    AddAliveFigure(new Figure(Figure::White, Figure::Pawn, "d2"));
-    AddAliveFigure(new Figure(Figure::White, Figure::Pawn, "e2"));
-    AddAliveFigure(new Figure(Figure::White, Figure::Pawn, "f2"));
-    AddAliveFigure(new Figure(Figure::White, Figure::Pawn, "g2"));
-    AddAliveFigure(new Figure(Figure::White, Figure::Pawn, "h2"));
+    AddAliveFigure(new Figure(FigureSide::White, FigureType::Pawn, "a2"));
+    AddAliveFigure(new Figure(FigureSide::White, FigureType::Pawn, "b2"));
+    AddAliveFigure(new Figure(FigureSide::White, FigureType::Pawn, "c2"));
+    AddAliveFigure(new Figure(FigureSide::White, FigureType::Pawn, "d2"));
+    AddAliveFigure(new Figure(FigureSide::White, FigureType::Pawn, "e2"));
+    AddAliveFigure(new Figure(FigureSide::White, FigureType::Pawn, "f2"));
+    AddAliveFigure(new Figure(FigureSide::White, FigureType::Pawn, "g2"));
+    AddAliveFigure(new Figure(FigureSide::White, FigureType::Pawn, "h2"));
 
-    AddAliveFigure(new Figure(Figure::Black, Figure::Queen, "d8"));
-    AddAliveFigure(new Figure(Figure::Black, Figure::Rock, "a8"));
-    AddAliveFigure(new Figure(Figure::Black, Figure::Rock, "h8"));
-    AddAliveFigure(new Figure(Figure::Black, Figure::Knight, "b8"));
-    AddAliveFigure(new Figure(Figure::Black, Figure::Knight, "g8"));
-    AddAliveFigure(new Figure(Figure::Black, Figure::Bishop, "f8"));
-    AddAliveFigure(new Figure(Figure::Black, Figure::Bishop, "c8"));
-    AddAliveFigure(new Figure(Figure::Black, Figure::King, "e8"));
+    AddAliveFigure(new Figure(FigureSide::Black, FigureType::Queen, "d8"));
+    AddAliveFigure(new Figure(FigureSide::Black, FigureType::Rock, "a8"));
+    AddAliveFigure(new Figure(FigureSide::Black, FigureType::Rock, "h8"));
+    AddAliveFigure(new Figure(FigureSide::Black, FigureType::Knight, "b8"));
+    AddAliveFigure(new Figure(FigureSide::Black, FigureType::Knight, "g8"));
+    AddAliveFigure(new Figure(FigureSide::Black, FigureType::Bishop, "f8"));
+    AddAliveFigure(new Figure(FigureSide::Black, FigureType::Bishop, "c8"));
+    AddAliveFigure(new Figure(FigureSide::Black, FigureType::King, "e8"));
 
-    AddAliveFigure(new Figure(Figure::Black, Figure::Pawn, "a7"));
-    AddAliveFigure(new Figure(Figure::Black, Figure::Pawn, "b7"));
-    AddAliveFigure(new Figure(Figure::Black, Figure::Pawn, "c7"));
-    AddAliveFigure(new Figure(Figure::Black, Figure::Pawn, "d7"));
-    AddAliveFigure(new Figure(Figure::Black, Figure::Pawn, "e7"));
-    AddAliveFigure(new Figure(Figure::Black, Figure::Pawn, "f7"));
-    AddAliveFigure(new Figure(Figure::Black, Figure::Pawn, "g7"));
-    AddAliveFigure(new Figure(Figure::Black, Figure::Pawn, "h7"));
+    AddAliveFigure(new Figure(FigureSide::Black, FigureType::Pawn, "a7"));
+    AddAliveFigure(new Figure(FigureSide::Black, FigureType::Pawn, "b7"));
+    AddAliveFigure(new Figure(FigureSide::Black, FigureType::Pawn, "c7"));
+    AddAliveFigure(new Figure(FigureSide::Black, FigureType::Pawn, "d7"));
+    AddAliveFigure(new Figure(FigureSide::Black, FigureType::Pawn, "e7"));
+    AddAliveFigure(new Figure(FigureSide::Black, FigureType::Pawn, "f7"));
+    AddAliveFigure(new Figure(FigureSide::Black, FigureType::Pawn, "g7"));
+    AddAliveFigure(new Figure(FigureSide::Black, FigureType::Pawn, "h7"));
 }
 
 void Board::SetupKings()
 {
-    AddAliveFigure(new Figure(Figure::White, Figure::King, "e1"));
-    AddAliveFigure(new Figure(Figure::Black, Figure::King, "e8"));
+    AddAliveFigure(new Figure(FigureSide::White, FigureType::King, "e1"));
+    AddAliveFigure(new Figure(FigureSide::Black, FigureType::King, "e8"));
 }

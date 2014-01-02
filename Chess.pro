@@ -8,6 +8,9 @@ SOURCES += ../src/*.cpp
 HEADERS += ../src/*.hpp ../src/*.h
 LIBS += -lbbsystem
 
+# I've added to allow Scoped::Enums http://supportforums.blackberry.com/t5/Native-Development/C-11-mode-and-qcc/td-p/1717539
+QMAKE_CXXFLAGS = -Wc,-std=c++0x
+
 lupdate_inclusion {
     SOURCES += ../assets/*.qml
 }

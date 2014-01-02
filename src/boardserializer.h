@@ -8,7 +8,7 @@ class BoardSerializer
 {
 public:
 
-    static QString Save(Board* board);
+    static QString Save(const Board& board);
     static Board Load(QString boardString);
 };
 

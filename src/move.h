@@ -1,42 +1,37 @@
 #ifndef MOVE_H
 #define MOVE_H
 
+#include "typedefs.h"
 #include "figure.h"
-#include "lightfigureposition.h"
+#include "figureposition.h"
 
-class Move
+enum MoveType
 {
-public:
-    enum MoveType
-    {
-        Normal, // just move from one to another position
-        Capture, // capture enemy figure
-        LongPawn, // first pawn long step
-        LongCastling, // long castling
-        ShortCastling, // short castling
-        EnPassant, // one pawn takes another, when it steps through trapped cell
-        PawnPromotion, // when pawn reaches enemy home horizon
-        Invalid // when default constructor used
-    };
+    Normal, // just move from one to another position
+    Capture, // capture enemy figure
+    LongPawn, // first pawn long step
+    LongCastling, // long castling
+    ShortCastling, // short castling
+    EnPassant, // one pawn takes another, when it steps through trapped cell
+    PawnPromotion, // when pawn reaches enemy home horizon
+    Invalid // when default constructor used
+};
 
-private:
-    Figure* m_figure;
-    MoveType m_type;
-    FigurePosition m_from;
-    FigurePosition m_to;
-    Figure* m_captured; // actual only when is capture move, otherwise NULL    
+struct Move
+{
+#ifdef QT_DEBUG
+    //QString m_stringRep;
+#endif
 
-public:
+    POSITION From;
+    POSITION To;
+    MoveType Type;
+    Figure* MovingFigure;
+    Figure* CapturedFigure; // actual only when is capture move, otherwise NULL
+
     Move();
-    Move(MoveType type, FigurePosition from, FigurePosition to, Figure* figure, Figure* captured);
+    Move(MoveType type, POSITION from, POSITION to, Figure* figure, Figure* captured);
     Move(const Move& another);
-    ~Move();
-
-    const FigurePosition& From;
-    const FigurePosition& To;
-    Figure* const& MovingFigure;
-    Figure* const& CapturedFigure;
-    const MoveType& Type;
 
     QString GetTypeName() const;
     bool IsCastling() const;
@@ -49,8 +44,8 @@ inline QDebug operator<<(QDebug debug, const Move& m)
     debug << "Move("
         << m.MovingFigure->GetName().toStdString().c_str()
         << m.GetTypeName() << "turn from"
-        << ToString(m.From) << "to"
-        << ToString(m.To) << ")";
+        << PositionHelper::ToString(m.From) << "to"
+        << PositionHelper::ToString(m.To) << ")";
 
     return debug;
 }

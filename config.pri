@@ -20,31 +20,38 @@ device {
         SOURCES +=  $$quote($$BASEDIR/src/Chess.cpp) \
                  $$quote($$BASEDIR/src/ai.cpp) \
                  $$quote($$BASEDIR/src/asyncai.cpp) \
+                 $$quote($$BASEDIR/src/bitboardhelper.cpp) \
                  $$quote($$BASEDIR/src/board.cpp) \
                  $$quote($$BASEDIR/src/boardserializer.cpp) \
                  $$quote($$BASEDIR/src/exception.cpp) \
                  $$quote($$BASEDIR/src/fen.cpp) \
                  $$quote($$BASEDIR/src/figure.cpp) \
-                 $$quote($$BASEDIR/src/lightfigureposition.cpp) \
+                 $$quote($$BASEDIR/src/figureposition.cpp) \
+                 $$quote($$BASEDIR/src/helpers.cpp) \
                  $$quote($$BASEDIR/src/main.cpp) \
                  $$quote($$BASEDIR/src/move.cpp) \
-                 $$quote($$BASEDIR/src/positionhashcalculator.cpp) \
+                 $$quote($$BASEDIR/src/positionhash.cpp) \
+                 $$quote($$BASEDIR/src/puzzle.cpp) \
                  $$quote($$BASEDIR/src/rules.cpp) \
                  $$quote($$BASEDIR/src/transpositiontable.cpp)
 
         HEADERS +=  $$quote($$BASEDIR/src/Chess.hpp) \
                  $$quote($$BASEDIR/src/ai.h) \
                  $$quote($$BASEDIR/src/asyncai.h) \
+                 $$quote($$BASEDIR/src/bitboardhelper.h) \
                  $$quote($$BASEDIR/src/board.h) \
                  $$quote($$BASEDIR/src/boardserializer.h) \
                  $$quote($$BASEDIR/src/exception.h) \
                  $$quote($$BASEDIR/src/fen.h) \
                  $$quote($$BASEDIR/src/figure.h) \
-                 $$quote($$BASEDIR/src/lightfigureposition.h) \
+                 $$quote($$BASEDIR/src/figureposition.h) \
+                 $$quote($$BASEDIR/src/helpers.h) \
                  $$quote($$BASEDIR/src/move.h) \
-                 $$quote($$BASEDIR/src/positionhashcalculator.h) \
+                 $$quote($$BASEDIR/src/positionhash.h) \
+                 $$quote($$BASEDIR/src/puzzle.h) \
                  $$quote($$BASEDIR/src/rules.h) \
-                 $$quote($$BASEDIR/src/transpositiontable.h)
+                 $$quote($$BASEDIR/src/transpositiontable.h) \
+                 $$quote($$BASEDIR/src/typedefs.h)
     }
 
     CONFIG(release, debug|release) {
@@ -65,31 +72,38 @@ device {
         SOURCES +=  $$quote($$BASEDIR/src/Chess.cpp) \
                  $$quote($$BASEDIR/src/ai.cpp) \
                  $$quote($$BASEDIR/src/asyncai.cpp) \
+                 $$quote($$BASEDIR/src/bitboardhelper.cpp) \
                  $$quote($$BASEDIR/src/board.cpp) \
                  $$quote($$BASEDIR/src/boardserializer.cpp) \
                  $$quote($$BASEDIR/src/exception.cpp) \
                  $$quote($$BASEDIR/src/fen.cpp) \
                  $$quote($$BASEDIR/src/figure.cpp) \
-                 $$quote($$BASEDIR/src/lightfigureposition.cpp) \
+                 $$quote($$BASEDIR/src/figureposition.cpp) \
+                 $$quote($$BASEDIR/src/helpers.cpp) \
                  $$quote($$BASEDIR/src/main.cpp) \
                  $$quote($$BASEDIR/src/move.cpp) \
-                 $$quote($$BASEDIR/src/positionhashcalculator.cpp) \
+                 $$quote($$BASEDIR/src/positionhash.cpp) \
+                 $$quote($$BASEDIR/src/puzzle.cpp) \
                  $$quote($$BASEDIR/src/rules.cpp) \
                  $$quote($$BASEDIR/src/transpositiontable.cpp)
 
         HEADERS +=  $$quote($$BASEDIR/src/Chess.hpp) \
                  $$quote($$BASEDIR/src/ai.h) \
                  $$quote($$BASEDIR/src/asyncai.h) \
+                 $$quote($$BASEDIR/src/bitboardhelper.h) \
                  $$quote($$BASEDIR/src/board.h) \
                  $$quote($$BASEDIR/src/boardserializer.h) \
                  $$quote($$BASEDIR/src/exception.h) \
                  $$quote($$BASEDIR/src/fen.h) \
                  $$quote($$BASEDIR/src/figure.h) \
-                 $$quote($$BASEDIR/src/lightfigureposition.h) \
+                 $$quote($$BASEDIR/src/figureposition.h) \
+                 $$quote($$BASEDIR/src/helpers.h) \
                  $$quote($$BASEDIR/src/move.h) \
-                 $$quote($$BASEDIR/src/positionhashcalculator.h) \
+                 $$quote($$BASEDIR/src/positionhash.h) \
+                 $$quote($$BASEDIR/src/puzzle.h) \
                  $$quote($$BASEDIR/src/rules.h) \
-                 $$quote($$BASEDIR/src/transpositiontable.h)
+                 $$quote($$BASEDIR/src/transpositiontable.h) \
+                 $$quote($$BASEDIR/src/typedefs.h)
     }
 }
 
@@ -112,31 +126,38 @@ simulator {
         SOURCES +=  $$quote($$BASEDIR/src/Chess.cpp) \
                  $$quote($$BASEDIR/src/ai.cpp) \
                  $$quote($$BASEDIR/src/asyncai.cpp) \
+                 $$quote($$BASEDIR/src/bitboardhelper.cpp) \
                  $$quote($$BASEDIR/src/board.cpp) \
                  $$quote($$BASEDIR/src/boardserializer.cpp) \
                  $$quote($$BASEDIR/src/exception.cpp) \
                  $$quote($$BASEDIR/src/fen.cpp) \
                  $$quote($$BASEDIR/src/figure.cpp) \
-                 $$quote($$BASEDIR/src/lightfigureposition.cpp) \
+                 $$quote($$BASEDIR/src/figureposition.cpp) \
+                 $$quote($$BASEDIR/src/helpers.cpp) \
                  $$quote($$BASEDIR/src/main.cpp) \
                  $$quote($$BASEDIR/src/move.cpp) \
-                 $$quote($$BASEDIR/src/positionhashcalculator.cpp) \
+                 $$quote($$BASEDIR/src/positionhash.cpp) \
+                 $$quote($$BASEDIR/src/puzzle.cpp) \
                  $$quote($$BASEDIR/src/rules.cpp) \
                  $$quote($$BASEDIR/src/transpositiontable.cpp)
 
         HEADERS +=  $$quote($$BASEDIR/src/Chess.hpp) \
                  $$quote($$BASEDIR/src/ai.h) \
                  $$quote($$BASEDIR/src/asyncai.h) \
+                 $$quote($$BASEDIR/src/bitboardhelper.h) \
                  $$quote($$BASEDIR/src/board.h) \
                  $$quote($$BASEDIR/src/boardserializer.h) \
                  $$quote($$BASEDIR/src/exception.h) \
                  $$quote($$BASEDIR/src/fen.h) \
                  $$quote($$BASEDIR/src/figure.h) \
-                 $$quote($$BASEDIR/src/lightfigureposition.h) \
+                 $$quote($$BASEDIR/src/figureposition.h) \
+                 $$quote($$BASEDIR/src/helpers.h) \
                  $$quote($$BASEDIR/src/move.h) \
-                 $$quote($$BASEDIR/src/positionhashcalculator.h) \
+                 $$quote($$BASEDIR/src/positionhash.h) \
+                 $$quote($$BASEDIR/src/puzzle.h) \
                  $$quote($$BASEDIR/src/rules.h) \
-                 $$quote($$BASEDIR/src/transpositiontable.h)
+                 $$quote($$BASEDIR/src/transpositiontable.h) \
+                 $$quote($$BASEDIR/src/typedefs.h)
     }
 }
 

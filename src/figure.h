@@ -3,54 +3,41 @@
 
 #include <QString>
 #include <QChar>
-#include "lightfigureposition.h"
+#include <string.h>
 
-class Figure
+#include "figureposition.h"
+
+#define FIGURE_TYPE_COUNT 6
+#define SIDE_COUNT 2
+
+enum FigureType
 {
-public:
-    enum FigureType
-    {
-        Pawn,
-        Knight,
-        Bishop,
-        Rock,
-        King,
-        Queen
-    };
-    enum FigureSide
-    {
-        White,
-        Black
-    };
+    Pawn    = 0,
+    Knight  = 1,
+    Bishop  = 2,
+    Rock    = 3,
+    King    = 4,
+    Queen   = 5
+};
 
-private:
-    FigureType m_type;
-    FigureSide m_side;
-    FigurePosition m_position;
-    int m_movesCounter;
-public:
+enum FigureSide
+{
+    White = 0,
+    Black = 1
+};
 
-    Figure(FigureSide side, FigureType type, FigurePosition position);
-    Figure(FigureSide side, FigureType type, const char position[]);
+struct Figure
+{
+    FigureType Type;
+    FigureSide Side;
+    POSITION Position;
+    int MovesCount;
+
+    Figure(FigureSide side, FigureType type, POSITION position);
+    Figure(FigureSide side, FigureType type, std::string position);
     Figure(const Figure& another);
 
-    //void Promote(Figure::FigureType type = Figure::Queen);
-    //void UnPromote();
-    void SetFigureType(Figure::FigureType type);
-    void IncreaseMovesCounter();
-    void DecreaseMovesCounter();
-
-    const FigureType& Type;
-    const FigureSide& Side;
-    const FigurePosition& Position;
-    const int& MovesCount;
-
-    // Note: To save integrity should be used only from board class
-    void SetPosition(FigurePosition position);
-    bool IsWhite() const;
-    bool IsBlack() const;
     QChar GetUnicodeChessChar() const;
-    QChar GetFENChar() const;
     QString GetName() const;
 };
 

@@ -1,9 +1,9 @@
 #ifndef TRANSPOSITIONTABLE_H
 #define TRANSPOSITIONTABLE_H
 
-#include <QMap>
+#include <QHash>
 
-#include "positionhashcalculator.h"
+#include "positionhash.h"
 
 class TranspositionTableEntry
 {
@@ -30,6 +30,7 @@ public:
 
     void Store(TranspositionTableEntry entry);
     void Store(PositionHash hash, int estimation, int depth);
+    int Count();
     void Clear();
 
     const TranspositionTableEntry* FindEntry(const PositionHash& hash) const;

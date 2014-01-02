@@ -1,13 +1,24 @@
+//#include <math.h>
+
 #include "ai.h"
 #include "exception.h"
+
+int AI::m_staticFigurePositionEstimation[SIDE_COUNT][FIGURE_TYPE_COUNT][8 * 8];
 
 AI::AI(Board* board, Rules *rules)
 {
     m_board = board;
     m_rules = rules;
+
     m_transpositionTable = new TranspositionTable();
 
+    ExtendSearchDepthOnCaptures = true;
+    MaxCurrentDepthToExtendSearchOnCaptures = 1;
+
+    UseMovesOrdering = true;
     UseTranspositionTable = false;
+
+    InitStaticFigurePositionEstimations();
 }
 
 AI::~AI()
@@ -15,56 +26,81 @@ AI::~AI()
     delete m_transpositionTable;
 }
 
-int AI::GetFigureWeight(Figure::FigureType type)
+void AI::InitStaticFigurePositionEstimations()
+{
+    for (int x = 1; x <= 8; ++x)
+    {
+        for (int y = 1; y <= 8; ++y)
+        {
+            POSITION position = PositionHelper::Create(x, y);
+            for (int figureTypeValue = 0; figureTypeValue < FIGURE_TYPE_COUNT; ++figureTypeValue)
+            {
+                FigureType figureType = (FigureType)figureTypeValue;
+                int serial = PositionHelper::Serial(position);
+
+                m_staticFigurePositionEstimation[(int)FigureSide::White][figureTypeValue][serial] = CalculateFigurePositionEstimation(figureType, position, FigureSide::White);
+                m_staticFigurePositionEstimation[(int)FigureSide::Black][figureTypeValue][serial] = CalculateFigurePositionEstimation(figureType, position, FigureSide::Black);
+            }
+        }
+    }
+}
+
+int AI::GetFigurePositionEstimation(FigureType type, POSITION position, FigureSide side)
+{
+    return m_staticFigurePositionEstimation[(int)side][(int)type][PositionHelper::Serial(position)];
+}
+
+
+int AI::GetFigureWeight(FigureType type)
 {
     switch (type)
     {
-        case Figure::Pawn:
+        case FigureType::Pawn:
             return 100;
-        case Figure::Bishop:
-            return 300;
-        case Figure::Knight:
-            return 300;
-        case Figure::Rock:
-            return 500;
-        case Figure::Queen:
-            return 900;
-        case Figure::King:
-            return 0; // can not be killed
+        case FigureType::Bishop:
+            return 350;
+        case FigureType::Knight:
+            return 330;
+        case FigureType::Rock:
+            return 600;
+        case FigureType::Queen:
+            return 1000;
+        case FigureType::King:
+            return 0; // can not be killed -> it weight doesn't not matter
         default:
             throw Exception("Invalid figure type");
     }
 }
 
-int AI::GetFigurePositionEstimation(Figure::FigureType type, FigurePosition position, Figure::FigureSide side)
+int AI::CalculateFigurePositionEstimation(FigureType type, POSITION position, FigureSide side)
 {
-    int homeHorizontal = (side == Figure::White ? 1 : 8);
+    int homeHorizontal = (side == FigureSide::White ? 1 : 8);
 
-    int x = GetX(position);
-    int y = GetY(position);
+    int x = PositionHelper::X(position);
+    int y = PositionHelper::Y(position);
 
     float center = 4.5f;
 
     switch (type)
     {
-        case Figure::Pawn:            
+        case FigureType::Pawn:
             return (int)(0.5f * (5 - abs(x - 5)) * abs(y - homeHorizontal)); // promotion priority
-        case Figure::Bishop:       
+        case FigureType::Bishop:
             return (int)2 * ((5 - abs(x - center)) + (5 - abs(y - center))); // center priority
-        case Figure::Knight:
+        case FigureType::Knight:
             return (int) 2 * ((5 - abs(x - center)) + (5 - abs(y - center))); // center priority
-        case Figure::Rock:
+        case FigureType::Rock:
             return 0;
-        case Figure::Queen:
+        case FigureType::Queen:
             return (int) 3 * ((5 - abs(x - center)) + (5 - abs(y - center))); // center priority
-        case Figure::King:
+        case FigureType::King:
             return 8 - abs(y - homeHorizontal); // home priority
         default:
             throw Exception("Invalid figure type");
     }
 }
 
-int AI::GetFiguresEstimation(Figure::FigureSide side) const
+int AI::GetFiguresEstimation(FigureSide side) const
 {
     int estimation = 0;
     FigureList figures = m_board->FiguresAt(side);
@@ -77,7 +113,7 @@ int AI::GetFiguresEstimation(Figure::FigureSide side) const
     return estimation;
 }
 
-int AI::GetRelativeEstimationFor(Figure::FigureSide side) const
+int AI::GetRelativeEstimationFor(FigureSide side) const
 {
     int currentSideEstimation = GetFiguresEstimation(side);
     int opponentSideEstimation = GetFiguresEstimation(m_rules->OpponentSide(side));
@@ -85,7 +121,7 @@ int AI::GetRelativeEstimationFor(Figure::FigureSide side) const
     return currentSideEstimation - opponentSideEstimation;
 }
 
-int AI::GetTerminalPositionEstimation(Figure::FigureSide side, int depth) const
+int AI::GetTerminalPositionEstimation(FigureSide side, int depth) const
 {
     // when side have no possible turns - is game over
 
@@ -100,7 +136,7 @@ int AI::GetTerminalPositionEstimation(Figure::FigureSide side, int depth) const
 }
 
 // main negamax worker function
-int AI::Negamax(Figure::FigureSide side, int depth, int& analyzed)
+int AI::Negamax(FigureSide side, int depth, int& analyzed)
 {
     if (m_rules->IsPassiveEndGame())
         return 0; // draw game
@@ -111,7 +147,7 @@ int AI::Negamax(Figure::FigureSide side, int depth, int& analyzed)
         return GetRelativeEstimationFor(side);
     }
 
-    MoveList possibleMoves = m_rules->GetPossibleMoves(side);
+    MoveCollection possibleMoves = m_rules->GetPossibleMoves(side);
 
     if (possibleMoves.count() == 0) // is terminal node
         return GetTerminalPositionEstimation(side, depth);
@@ -129,18 +165,18 @@ int AI::Negamax(Figure::FigureSide side, int depth, int& analyzed)
         m_rules->UnMakeMove(possibleMove);
 
         if (estimation > bestEstimation)
-        {            
-            bestEstimation = estimation;            
-        }       
+        {
+            bestEstimation = estimation;
+        }
     }
 
     return bestEstimation;
 }
 
 // Negamax search initializer
-Move AI::NegamaxSearch(Figure::FigureSide side, int depth, int& bestEstimation, int& analyzed)
+Move AI::NegamaxSearch(FigureSide side, int depth, int& bestEstimation, int& analyzed)
 {
-    MoveList possibleMoves = m_rules->GetPossibleMoves(side);
+    MoveCollection possibleMoves = m_rules->GetPossibleMoves(side);
 
     Move bestMove;
     bestEstimation = -INT_MAX;
@@ -165,64 +201,65 @@ Move AI::NegamaxSearch(Figure::FigureSide side, int depth, int& bestEstimation, 
 }
 
 
-int AI::MovePriority(Move::MoveType type)
+AI::PrioritizedMove AI::CalculatePriority(const Move& move)
 {
-    switch (type)
+    PrioritizedMove prioritizedMove;
+    prioritizedMove.UnderlyingMove = move;
+
+    // claculate priority class
+    switch (move.Type)
     {
-        case Move::PawnPromotion: return 10;
-        case Move::Capture: return 8;
-        case Move::EnPassant: return 7;
-        case Move::LongCastling: return 6;
-        case Move::ShortCastling: return 6;
-        case Move::LongPawn: return 4;
-        default: return 0;
+        case MoveType::PawnPromotion:   prioritizedMove.PriorityClass = 10; break;
+        case MoveType::Capture:         prioritizedMove.PriorityClass = 8; break;
+        case MoveType::EnPassant:       prioritizedMove.PriorityClass = 7; break;
+        case MoveType::LongCastling:    prioritizedMove.PriorityClass = 6; break;
+        case MoveType::ShortCastling:   prioritizedMove.PriorityClass = 6; break;
+        case MoveType::LongPawn:        prioritizedMove.PriorityClass = 4; break;
+        default:                    prioritizedMove.PriorityClass = 0; break;
+    }
+
+    // calculate priority value
+    if (move.Type == MoveType::Capture)// captures sort
+    {
+        // MVV/LVA (Most Valuable Victim - Least Valuable Aggressor) captures sort
+        int captureProfit =
+                GetFigureWeight(move.CapturedFigure->Type)
+              - GetFigureWeight(move.MovingFigure->Type);
+
+        prioritizedMove.PriorityValue = captureProfit;
+
+    } else // other moves sort
+    {
+        int moveEstimationDelta =
+                GetFigurePositionEstimation(move.MovingFigure->Type, move.To, move.MovingFigure->Side)
+              - GetFigurePositionEstimation(move.MovingFigure->Type, move.From, move.MovingFigure->Side);
+
+        prioritizedMove.PriorityValue = moveEstimationDelta;
+    }
+
+    return prioritizedMove;
+}
+
+// returns true when m1 move has greater priority than m2 move
+bool AI::MoveByPriorityGreaterThan(const PrioritizedMove& pm1, const PrioritizedMove& pm2)
+{
+    if (pm1.PriorityClass != pm2.PriorityClass)
+    {
+        return pm1.PriorityClass > pm2.PriorityClass;
+    } else
+    {
+        return pm1.PriorityValue > pm2.PriorityValue;
     }
 }
 
-// returns true when m1 should be considered before m2
-bool AI::MoveComparator(const Move& m1, const Move& m2)
-{
-    //return false;
-
-    int m1Priority = MovePriority(m1.Type);
-    int m2Priority = MovePriority(m2.Type);
-
-    if (m1Priority != m2Priority)
-    {
-        return m1Priority > m2Priority;
-    }
-    else // priorities is equals
-    {
-        Move::MoveType type = m1.Type; // == m2.Type
-
-        // captures sort
-        if (type == Move::Capture)
-        {
-            // MVV/LVA (Most Valuable Victim - Least Valuable Aggressor) captures sort
-            int capture1Profit = GetFigureWeight(m1.CapturedFigure->Type) - GetFigureWeight(m1.MovingFigure->Type);
-            int capture2Profit = GetFigureWeight(m2.CapturedFigure->Type) - GetFigureWeight(m2.MovingFigure->Type);
-
-            return capture1Profit > capture2Profit;
-        } else //if (type == Move::Normal || type == Move::LongPawn)
-        {
-            int move1EstimationDelta = GetFigurePositionEstimation(m1.MovingFigure->Type, m1.To, m1.MovingFigure->Side)
-                    - GetFigurePositionEstimation(m1.MovingFigure->Type, m1.From, m1.MovingFigure->Side);
-
-            int move2EstimationDelta = GetFigurePositionEstimation(m2.MovingFigure->Type, m2.To, m2.MovingFigure->Side)
-                    - GetFigurePositionEstimation(m2.MovingFigure->Type, m2.From, m2.MovingFigure->Side);
-
-            return move1EstimationDelta > move2EstimationDelta;
-        }
-
-        return true; // doesn't matter
-    }
-}
-
-// main alpha beta worker function
-int AI::AlphaBetaNegamax(Figure::FigureSide side, int depth, int alpha, int beta, int& analyzed)
+// Fail-soft negamax search function
+// see: http://chessprogramming.wikispaces.com/Alpha-Beta
+//      http://chessprogramming.wikispaces.com/Fail-Soft
+int AI::AlphaBetaNegamax(FigureSide side, int depth, int alpha, int beta, int& analyzed, Move*& bestMove, bool isTopLevel)
 {
     if (UseTranspositionTable)
     {
+        // if position evaluated before with equal or bigger depth use it as estimation
         const TranspositionTableEntry* hashEntry = m_transpositionTable->FindEntry(m_board->GetCurrentPositionHash());
         if (hashEntry != NULL && hashEntry->Depth >= depth)
         {
@@ -230,8 +267,11 @@ int AI::AlphaBetaNegamax(Figure::FigureSide side, int depth, int alpha, int beta
         }
     }
 
+    // checks passive end game rule
     if (m_rules->IsPassiveEndGame())
+    {
         return 0; // draw game
+    }
 
     if (depth == 0)
     {
@@ -239,75 +279,119 @@ int AI::AlphaBetaNegamax(Figure::FigureSide side, int depth, int alpha, int beta
         return GetRelativeEstimationFor(side);
     }
 
-    MoveList possibleMoves = m_rules->GetPossibleMoves(side);
+    MoveCollection possibleMoves = m_rules->GetPossibleMoves(side);
+    int possibleMovesCount = possibleMoves.count();
+
+    QVector<PrioritizedMove> prioritizedMoves(possibleMovesCount);
+    for (int i = 0; i < possibleMovesCount; ++i)
+    {
+        prioritizedMoves[i] = CalculatePriority(possibleMoves.at(i));
+    }
 
     // moves sort to increase alpha beta pruning productivity
-    qSort(possibleMoves.begin(), possibleMoves.end(), MoveComparator);
+    if (UseMovesOrdering)
+    {
+        qSort(prioritizedMoves.begin(), prioritizedMoves.end(), MoveByPriorityGreaterThan);
+    }
 
     if (possibleMoves.count() == 0) // is terminal node
     {
         return GetTerminalPositionEstimation(side, depth);
     }
 
-    foreach(Move possibleMove, possibleMoves)
-    {
-        // temporary make move
-        m_rules->MakeMove(possibleMove);
+    int bestEstimation = -INT_MAX;
 
-        int estimation = -AlphaBetaNegamax(m_rules->OpponentSide(side), depth - 1, -beta, -alpha, analyzed);
+    foreach(const PrioritizedMove& prioritizedPossibleMove, prioritizedMoves)
+    {
+        Move move = prioritizedPossibleMove.UnderlyingMove;
+
+        // temporary make move
+        m_rules->MakeMove(move);
+
+        int estimation;
+
+        // extend search depth when move is capture
+        if (ExtendSearchDepthOnCaptures
+                && depth <= MaxCurrentDepthToExtendSearchOnCaptures
+                && (move.Type == MoveType::Capture || move.Type == MoveType::EnPassant))
+        {
+            estimation = -AlphaBetaNegamax(m_rules->OpponentSide(side), depth, -beta, -alpha, analyzed, bestMove, false);
+        }
+        else
+        {
+            estimation = -AlphaBetaNegamax(m_rules->OpponentSide(side), depth - 1, -beta, -alpha, analyzed, bestMove, false);
+        }
 
         // unmake temporary move
-        m_rules->UnMakeMove(possibleMove);
+        m_rules->UnMakeMove(move);
+
+        bestEstimation = std::max(estimation, bestEstimation);
 
         if (estimation > alpha)
         {
             alpha = estimation;
+
+            if (isTopLevel)
+            {
+                if (bestMove != NULL)
+                    delete bestMove;
+
+                bestMove = new Move(move);
+            }
         }
+
+        if (isTopLevel && bestMove == NULL) // fill best move if it is not filled yet
+        {
+            bestMove = new Move(move);
+        }
+
+        // for debug  purposes
+//        if (isTopLevel)
+//        {
+//            qDebug() << "  " << move << "estimation: " << estimation << "alpha: " << alpha;
+//        }
 
         if (alpha >= beta)
         {
-            if (UseTranspositionTable)
-                m_transpositionTable->Store(m_board->GetCurrentPositionHash(), alpha, depth);
-            return alpha; // prune
+            // alpha prune
+            //return beta; // fail-hard
+            return alpha; // fail-soft
         }
     }
 
+    // store exact mathches only, see: http://en.wikipedia.org/wiki/Negamax
     if (UseTranspositionTable)
-        m_transpositionTable->Store(m_board->GetCurrentPositionHash(), alpha, depth);
+    {
+        m_transpositionTable->Store(m_board->GetCurrentPositionHash(), bestEstimation, depth);
+    }
 
-    return alpha;
+    // no alpha-prune occured, return exact estimation
+    return bestEstimation;
 }
 
 // alpha beta serach initializer
-Move AI::BestMoveByAlphaBeta(Figure::FigureSide side, int depth, int& bestEstimation, int& analyzed)
+Move AI::BestMoveByAlphaBeta(FigureSide side, int depth, int& bestEstimation, int& analyzed)
 {
     m_transpositionTable->Clear();
 
-    Move bestMove;
-    bestEstimation = -INT_MAX;
+    Move* bestMove = NULL;
     analyzed = 0;
 
-    MoveList possibleMoves = m_rules->GetPossibleMoves(side);
+    bestEstimation = AlphaBetaNegamax(side, depth, -INT_MAX, +INT_MAX, analyzed, bestMove, true);
 
-    // moves sort to increase alpha beta pruning productivity
-    qSort(possibleMoves.begin(), possibleMoves.end(), MoveComparator);
-
-    foreach(Move possibleMove, possibleMoves)
+    if (bestMove == NULL)
     {
-        m_rules->MakeMove(possibleMove);
-
-        int estimation = -AlphaBetaNegamax(m_rules->OpponentSide(side), depth - 1, -INT_MAX, -bestEstimation, analyzed);
-
-        m_rules->UnMakeMove(possibleMove);
-
-        if (estimation > bestEstimation)
-        {
-            bestEstimation = estimation;
-            bestMove = possibleMove;
-        }
+        throw Exception("There is no possible moves to the turning side");
     }
 
-    return bestMove;
+    Move result = *bestMove;
+    delete bestMove;
+
+#ifdef QT_DEBUG
+    qDebug() << "Amount of records in transposition table: " << m_transpositionTable->Count();
+#endif
+
+    return result;
 }
 
 

@@ -6,13 +6,13 @@
 
 AsyncAI::AsyncAI(Board* board, QObject *parent) :
     QThread(parent)
-{    
+{
     m_depth = -1;
-    m_side = Figure::White;
+    m_side = FigureSide::White;
     m_sourceBoard = board;
 }
 
-void AsyncAI::StartBestMoveSearch(Figure::FigureSide side, int depth)
+void AsyncAI::StartBestMoveSearch(FigureSide side, int depth)
 {
     m_side = side;
     m_depth = depth;
@@ -38,7 +38,5 @@ void AsyncAI::run()
     qDebug() << "AsyncAI::run(): analyzed" << analyzed << "positions, best estimation:" << bestEstimation
              << "[" << timer.elapsed() << "ms]";
 
-    QString bestMoveString = ToString(bestMove.From) + " " + ToString(bestMove.To);
-
-    emit BestMoveFinded(bestMoveString);
+    emit BestMoveFinded(PositionHelper::ToString(bestMove.From) + ' ' + PositionHelper::ToString(bestMove.To));
 }

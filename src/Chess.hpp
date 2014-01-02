@@ -52,7 +52,7 @@ class Chess : public QObject
     Figure* m_selectedFigure;
 
     int m_depth;
-    Figure::FigureSide m_userSide;
+    FigureSide m_userSide;
 
     NavigationPane* m_navigationPane;
     Page* m_gamePage;
@@ -69,7 +69,7 @@ class Chess : public QObject
     Control* FindCell(int x, int y);
     void ResetCellsHighlighting(bool resetPrevMoveHighlight);
     bool CheckForEndGame();
-    void HighlightMove(FigurePosition from, FigurePosition to);
+    void HighlightMove(POSITION from, POSITION to);
     void ShowEndGameNotification(QString text);
     void UpdateTurnNotification();
 

@@ -1,5 +1,5 @@
 1
-33
+34
 Cell.qml
 game.qml
 images/back.png
@@ -33,3 +33,4 @@ images/user_group.png
 level-selector.qml
 main.qml
 Piece.qml
+puzzle-selector.qml
