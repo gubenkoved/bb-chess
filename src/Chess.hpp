@@ -7,6 +7,7 @@
 #include <bb/cascades/Page>
 #include <bb/cascades/Control>
 #include <bb/cascades/Label>
+#include <bb/cascades/DataModel>
 #include <QObject>
 #include <QString>
 #include <QMap>
@@ -96,6 +97,9 @@ public:
     Q_INVOKABLE bool getIsFlipped() { return m_boardFlipped; }
     Q_INVOKABLE void setIsFlipped(bool value) { m_boardFlipped = value; }
     Q_INVOKABLE bool getAiThinking() { return m_aiThinking; }
+
+    Q_INVOKABLE void SetupPuzzleSelector(QVariant puzzleSelector);
+    Q_INVOKABLE QVariant GetPuzzlesDataModel();
 
 signals:
 	void aiThinkingChanged();

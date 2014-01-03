@@ -57,6 +57,10 @@ NavigationPane {
                         puzzleSelector.app = app;
                         puzzleSelector.navigationPane = navigationPane;                        
                         navigationPane.push(puzzleSelector);
+                        
+                        puzzleSelector.bindToDataModel();
+                        //console.log(puzzleSelector);
+                        //app.SetupPuzzleSelector(puzzleSelector);
                     }
                     imageSource: "asset:///images/puzzle.png"
                 }

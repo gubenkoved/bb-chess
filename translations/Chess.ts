@@ -4,69 +4,69 @@
 <context>
     <name>Chess</name>
     <message>
-        <location filename="../src/Chess.cpp" line="151"/>
-        <location filename="../src/Chess.cpp" line="508"/>
-        <location filename="../src/Chess.cpp" line="543"/>
+        <location filename="../src/Chess.cpp" line="155"/>
+        <location filename="../src/Chess.cpp" line="512"/>
+        <location filename="../src/Chess.cpp" line="547"/>
         <source>Please, wait while AI is thinking</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/Chess.cpp" line="157"/>
+        <location filename="../src/Chess.cpp" line="161"/>
         <source>Existing save will be overriden</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/Chess.cpp" line="207"/>
+        <location filename="../src/Chess.cpp" line="211"/>
         <source>White&apos;s turn</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/Chess.cpp" line="209"/>
+        <location filename="../src/Chess.cpp" line="213"/>
         <source>Black&apos;s turn</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/Chess.cpp" line="213"/>
+        <location filename="../src/Chess.cpp" line="217"/>
         <source>Blackberry&apos;s turn</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/Chess.cpp" line="215"/>
+        <location filename="../src/Chess.cpp" line="219"/>
         <source>Your turn</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/Chess.cpp" line="336"/>
+        <location filename="../src/Chess.cpp" line="340"/>
         <source>You lose</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/Chess.cpp" line="341"/>
+        <location filename="../src/Chess.cpp" line="345"/>
         <source>You win!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/Chess.cpp" line="349"/>
+        <location filename="../src/Chess.cpp" line="353"/>
         <source>Black&apos;s win!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/Chess.cpp" line="354"/>
+        <location filename="../src/Chess.cpp" line="358"/>
         <source>White&apos;s win!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/Chess.cpp" line="362"/>
+        <location filename="../src/Chess.cpp" line="366"/>
         <source>Draw game</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/Chess.cpp" line="375"/>
+        <location filename="../src/Chess.cpp" line="379"/>
         <source>Passive draw game</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/Chess.cpp" line="560"/>
+        <location filename="../src/Chess.cpp" line="564"/>
         <source>Confirmation</source>
         <translation type="unfinished"></translation>
     </message>
@@ -151,13 +151,26 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="64"/>
+        <location filename="../assets/main.qml" line="68"/>
         <source>Continue</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="70"/>
+        <location filename="../assets/main.qml" line="74"/>
         <source>Quit</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>puzzle-selector</name>
+    <message>
+        <location filename="../assets/puzzle-selector.qml" line="7"/>
+        <source>Reset progress</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/puzzle-selector.qml" line="11"/>
+        <source>All progress will be lost</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

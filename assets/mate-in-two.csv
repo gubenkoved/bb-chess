@@ -1,0 +1,923 @@
+id,authors,source,date,stipulation,fen
+1,"Ahues, Herbert Siegfried Oskar",Stern,1/1/1999,#2,4R1rb/2R4q/B3b1n1/2B5/p2Q3r/Nkp4p/3P4/K7
+2,"Ahues, Herbert Siegfried Oskar",Sächsische Zeitung,1/1/1997,#2,8/5n2/ppPPk3/4p3/4B1nB/QK3R2/2Pb2r1/3R4
+3,"Ahues, Herbert Siegfried Oskar",stern,1/1/1994,#2,7B/6r1/3N3b/R7/1RNk4/K7/1Pb1P3/8
+4,"Ahues, Herbert Siegfried Oskar",Die Schwalbe,1/1/1992,#2,3RR3/2rp1Pb1/Q1p5/1nN5/N2k4/p2PpK2/Bq2Pn2/B7
+5,"Ahues, Herbert Siegfried Oskar",Die Schwalbe,6/1/1980,#2,7b/3N4/Kp6/1B4Q1/1B1kP1N1/3P3R/b7/2r1r3
+6,"Ahues, Herbert Siegfried Oskar",Problemas,1/1/1980,#2,brr5/5B1p/3P3K/n2n1N1R/3pk3/3Np1P1/4P3/q7
+7,"Ahues, Herbert Siegfried Oskar",De Waarheid,1/1/1976,#2,2Q3Bn/3r4/2pPN2B/R3p2R/b2Nk1n1/2p3K1/4P3/8
+8,"Ahues, Herbert Siegfried Oskar",Tidskrift för Schack,1/1/1975,#2,5Kn1/B4b2/3p4/pP1k4/p1NN4/1r1P3n/B3Rp2/2Q1b3
+9,"Ahues, Herbert Siegfried Oskar",Schakend Nederland,1/1/1964,#2,5q2/3B1N2/2nQ1P2/2Kpp1B1/3pk3/1R4P1/b5Pb/1n3N2
+10,"Ahues, Herbert Siegfried Oskar",Themes 64,1/1/1963,#2,3K4/1pP3nB/4p3/R1B1k1Pp/3R1p2/p7/r1P3Nr/2nbb1N1
+11,"Åkerblom, Johan Axel",Schackvärlden,1/1/1935,#2,5K2/3R4/Q1bNk3/R7/6N1/8/8/8
+12,"Akimow, Nikolai",Sächsische Zeitung,10/12/2002,#2,3b1N1r/8/8/8/8/1K1k1P2/5Q2/8
+13,"Albertz, Heinrich",Promadas,1/1/1930,#2,3R2B1/5N2/2p5/P1k5/P2q4/1nPQ3n/4Pr2/3KN1B1
+14,"Albrecht, Hermann",Schach-Echo,1/1/1938,#2,1nK3B1/3P4/n1k5/Pp3RN1/1bN5/B2r3r/2Q5/3R4
+15,"Aliovsadzade, Rauf Gadschiaga Ogl",Kommunist Sumgaita,1/1/1981,#2,8/4N3/1N6/2R5/4kp2/8/3K4/5R2
+16,"Andersson, J.",Land og Folk,1/1/1967,#2,2K5/3p3p/1p4B1/1Q2NR2/nbp1k3/5r1n/4p3/2rb2B1
+17,"Andersson, Sven Tore",Die Schwalbe,9/1/1952,#2,1B2nN1K/p6B/r2PP3/r3k3/1N1b3Q/1R5n/1pRp1p2/8
+18,Anonymous,8th WCCT,1/1/2007,#2,4N3/p1b5/K1Q2p1r/3Rn3/2p1kpRp/4Np2/5p2/2B5
+19,Anonymous,8th WCCT,1/1/2007,#2,2n4K/p2p1R1b/Pb1r3p/2Pk4/Q2pR1N1/1N1B2p1/4r3/5n2
+20,Anonymous,Schach-Echo,1/1/1933,#2,Q1K5/3PNBp1/1Pp3R1/1pq1P3/1N1PkP2/2p1Pp2/5P1b/6r1
+21,Anonymous,,,#2,Q2B4/3k1P2/4r1B1/5P2/2N1p3/b2NR3/3P1K2/7R
+22,"Antollovich, Antonio",Ajedrez de Estilo,1/1/1985,#2,N3r1R1/1P3r2/kPP3b1/p7/8/2pRp3/2K1B2b/1Q6
+23,"Apró, László",Magyar Sakkélet,1/1/1956,#2,q1bNN3/p2n1p2/r7/b2k4/2R1R3/8/8/3K3Q
+24,"Argüelles Ferrer, Antonio Fernandez",Шахматы в СССР,1/1/1933,#2,4b1N1/Brp2p2/1n5R/1r1kpP2/Rq2p2K/4P1p1/1nQN4/7B
+25,"Bachl, Ernst",Die Schwalbe,12/1/1952,#2,b2r4/1PQ5/2N5/1Nkn3R/P1rp3K/4PpBn/B1RP4/5qb1
+26,"Bachl, Ernst",,,#2,3KR3/3Q4/8/1n6/1B2pp2/1q5N/3Nk1nb/1B3R2
+27,"Backe, Espen",Die Schwalbe,1/1/1983,#2,7r/8/8/8/4B3/5NB1/6N1/5K1k
+28,"Bähr, Walter",Mainfränkische Zeitung,8/22/1936,#2,8/3K4/3N4/pN1k1p2/P2P4/P1p3PB/2P3P1/8
+29,"Baird, Edith Elina Helen",Field,1/1/1902,#2,3R3B/N1n3N1/8/P2pPQ2/1p1k4/1P6/2P2P2/2K5
+30,"Baird, Edith Elina Helen",Leeds Mercury Weekly Supplement,12/31/1899,#2,2B5/3n2K1/1Ppk1pN1/3n1R2/8/P5N1/7B/3Q4
+31,Bakalarczyk W,Szachista,1/1/1996,#2,8/1k2K3/1PN5/8/7Q/3B4/8/8
+32,"Bakcsi, György",L'Italia Scacchistica,1/1/1992,#2,8/8/8/1Kbp4/B2N4/p1k1p1p1/R2p1P1r/2BR2Q1
+33,"Bakcsi, György",Probleemblad,1/1/1978,#2,1B1K2b1/3p1pN1/1p3kPP/3qN1pp/1p1RB1p1/2Q5/3P4/8
+34,"Bakcsi, György",Probleemblad,1/1/1975,#2,1B1Kn3/1p1PNp2/pRrnkP2/2p5/2P1b3/1N3P2/1Q6/8
+35,"Bakcsi, György",Československý šach,1/1/1961,#2,2nQ1r2/6q1/N1ppb3/1pbkrpp1/3P4/3KPP2/2P3N1/8
+36,"Banaszek, Marcin",Biuletyn Częstochowskiego O. Z. Szach,10/1/1985,#2,5k2/8/3N1K2/5Q2/7R/8/b7/2r5
+37,"Bär, Wolfgang",Freie Presse,1/1/1975,#2,3N4/2b5/1p5r/1K3Q2/3kNB2/3P4/1PP3b1/4r3
+38,"Barnes, Barry Peter",The Problemist,1/1/1997,#2,3rN3/1Q2p3/4P2K/3PP3/R2n1k2/6n1/3P2PB/1B6
+39,"Barnes, Barry Peter",Die Schwalbe,1/1/1987,#2,2BRb3/1r6/n3pB1q/1p1pNRp1/1Qn1k1P1/3pP2r/6P1/K4N2
+40,"Baroch, Jaroslav",Právo lidu,1/1/1904,#2,8/3B2P1/1B1p2nb/3kp1n1/4R3/3b2P1/1N4P1/K7
+41,"Barron, Philip",Parallèle 50,2/4/1949,#2,2NN4/K1k5/4BB2/R1n5/1pr5/2pb4/2n5/3Q4
+42,"Barrow, John Hugh",Grantham Journal,1/1/1927,#2,8/3pp3/3rp3/4k1pN/3n2P1/3R1P2/1Q6/3KN3
+43,"Barth, Michael",Schach-Aktiv,1/1/1991,#2,Kn2B3/1R5p/1P6/p1N1Pk1r/3PR3/4BP1p/1r4b1/6Q1
+44,"Batori, Alberto",Good Companion,3/1/1920,#2,1rbnK2b/B1Np4/3Q4/1pRB1p2/5r2/1NpqkPR1/4pp2/8
+45,"Baumgarten, Ernst",Schach (magazine),4/1/1969,#2,2nN2N1/2p5/2P1R1p1/pRPk3b/3Pn1rq/6br/p1K1Q2p/B6B
+46,"Beach, Lennox F.","The Pittsburgh Gazette Times, Densmore MT",8/11/1918,#2,BB4K1/1q3QN1/8/rr6/1p2k2n/np2pN1R/4P3/1b2b3
+47,"Beck, Friedrich",Die Schwalbe,1/1/1985,#2,K7/3BB3/3n4/3k4/N4RN1/P1pqP3/3Q4/3r4
+48,"Becker, Christopher Bennett",Northwest Chess,1/1/1975,#2,8/5n1N/8/3n1k1P/7R/KB1r4/6P1/BQ2Rb2
+49,"Belli, Nicolo",L'Italia Scacchistica,1/1/1920,#2,r7/8/rb4B1/1p2pNp1/NB2K1P1/5Pp1/Ppk4q/R3R3
+50,"Benedek, Attila",Christmas card,1/1/1968,#2,8/8/8/1nnP1rPp/1Q3B1K/1NPP1kpN/1p1p3P/1qbR1BrR
+51,"Benoit, Marc",Arbejder-Skak,1/1/1954,#2,8/p1bp1B2/4n3/8/N1k2pNR/2n1Br1p/1RQ3PK/8
+52,"Berd, Benjamin M.",The Brisbane Courier,7/4/1931,#2,6r1/R5b1/1R2qkNp/7b/4P3/7N/8/K5Q1
+53,"Berg, Wolfgang",Hlas ľudu,1/1/1989,#2,2Q4n/1NP1q2N/8/1P4pp/3nk3/2PR2B1/5R2/1B5K
+54,"Berhausen, Fritz",Funkschach,1/1/1926,#2,1b1N4/p2p4/R3p3/1N1kp2R/1P1p4/1P2pK2/2P1PnQ1/8
+55,"Berlin, Dieter",,,#2,7n/3K3p/1bp3rQ/NN2k1P1/3nP1R1/4B1p1/2rR4/1B3b2
+56,"Bettinger, Clark C.",Chess Life,1/1/1957,#2,8/n1rq1P2/4P2B/1P1kpN2/1PR1R2r/5p1B/Q7/2K5
+57,"Bettmann, Henry Wald",Good Companion,5/1/1920,#2,8/3K4/2Q1R3/8/4N3/8/1R1p1P2/2NkB3
+58,"Bidleň, Anton",Šachové umění,1/1/2009,#2,8/8/1BpP4/2P3p1/1N1kN1Q1/3B4/1K6/8
+59,"Bistika, Emil","Smena (Bratislava), Prvotina",1/1/1961,#2,1b1R1n2/3p1P2/1B1k1P2/1K2N2R/8/1B6/2p5/8
+60,"Blake, Percy Francis",,,#2,1rNq2b1/b1nN2R1/4k1PK/4p1pp/8/5Q2/8/8
+61,"Booth, David",Deaf Times,1/1/1913,#2,8/6p1/p5P1/K6p/4N2k/5Qrr/2p2N2/2B5
+62,"Boros, Sándor",Magyar Sakkvilág,1/1/1926,#2,8/8/8/5K2/7k/7p/5P1R/8
+63,"Bosch, Bedřich",Národní listy,1/1/1909,#2,1NN5/8/1b6/2k5/5K2/4P3/2P3b1/Q7
+64,"Boswell, Edward",Svenska Dagbladet,1/1/1928,#2,8/8/8/8/8/n1p4K/4N3/Qb5k
+65,"Boswell, Edward",The Brisbane Courier,7/9/1927,#2,1nn4B/b1qpp3/p2Np3/p1k5/P2R4/K7/BR3pQ1/N7
+66,"Bouchet, Laurent",diagrammes,1/1/1989,#2,Kb1NrQ2/6B1/1pn4N/4pR1q/b2kr3/1B2pn2/1P2P3/2R5
+67,"Bourd, Evgeni",StrateGems,1/1/2004,#2,5q2/8/2R1Pp1b/3B4/2pk3r/R1Np1Q1p/br3p1B/5N1K
+68,"Boyer, Jean-Pierre",The Problemist,1/1/1981,#2,K4B2/7p/Qbp2p2/1rPkNP2/1p1nnpN1/8/8/2RR3B
+69,"Boyer, Jean-Pierre",Probleme,1/1/1968,#2,4Q1r1/4q3/3R2pN/3pp1P1/1r2k1B1/1pP2N2/5P2/2BR2K1
+70,"Boyer, Jean-Pierre",Europe Échecs,1/1/1967,#2,q2R4/2p1p1n1/4pNKp/4k2P/1Q1b3R/6pp/2n3r1/4B1NB
+71,"Brenner, Klaus",Problemesis 50,1/1/2006,#2,6B1/3K4/3N4/Qpkr4/P1NnR3/8/6nB/8
+72,"Brogi, Giuseppe",Sinfonie Scacchistiche,1/1/1967,#2,N4n2/4NPq1/2PP4/2k5/1R1R4/P3P3/5p1B/K2n4
+73,"Brogi, Giuseppe",Europe Échecs,1/1/1961,#2,1b3N2/1B6/5P1B/5k2/1P2NP1q/7P/KQ5n/5R2
+74,"Brunner, Erich Anselm",Ranneforths Schachkalender,1/1/1927,#2,2Q5/8/4R3/8/8/1K6/4P3/3NkN2
+75,"Büchner, Richard",Dresdner Volkszeitung,10/23/1928,#2,r7/2p5/2pkP1Np/1r2R2K/5Q1n/8/b1p1P3/5NBB
+76,"Buchwald, Julius",Arbejder-Skak,1/1/1954,#2,7q/rPPQPP2/p2N4/P1kp1pRN/4R3/1Kp4b/3B4/8
+77,"Buerke, Paul",Die Schwalbe,5/1/1968,#2,6q1/2p1R2p/p1N2k1B/K1P5/P7/2P1N3/2B2P2/1Q6
+78,"Burda, Josef",Resitelsky zpravodaj,1/1/2008,#2,KBNnn2b/1R1N3r/2k5/R7/4ppQ1/8/2B2q2/4rb2
+79,"Burda, Josef",Vox,1/1/2004,#2,3b4/2rRQBK1/1p1qp1N1/1p1NR3/1Bk5/4P3/2P5/8
+80,"Burda, Josef",Zemědělské noviny,1/1/1986,#2,K5B1/B5p1/4P1p1/1QPk3N/3P1R2/2p3N1/3nr3/3R3q
+81,"Burda, Josef & Solarczyk, Rudolf",Zemědělské noviny,1/1/1976,#2,Q1Nr4/4R3/2q1pp2/2pkpp2/R7/3B1N2/1K6/8
+82,"Butwillo, Br.",The Tablet,7/1/1944,#2,2K5/8/1pkp4/P1p5/8/1Q6/3P4/8
+83,"Bwee, Touw Hian",Die Schwalbe,4/1/1961,#2,5RbB/2K5/5Qp1/2p5/2n1kp2/1P1p4/2P5/2b3N1
+84,"Bwee, Touw Hian",Schakend Nederland,1/1/1961,#2,8/4nB2/q2ppP2/1N3kbN/r2QpP1P/5p1K/3n4/4R3
+85,"Bwee, Touw Hian",Шахматы в СССР,1/1/1960,#2,6N1/2rRp2K/1N3p2/2n1kP1p/1p3n1q/4PP2/2Q5/3r1b2
+86,"Caine, Walter Edmond",Chess,1/1/1950,#2,K3Q3/1p1pBp1p/1P2k2P/1R2n2R/1P2q2P/1N2p2N/4P3/8
+87,"Caine, Walter Edmond",The Brisbane Courier,11/30/1929,#2,R4Bbb/KPq5/2p5/2Q2R1B/k6r/8/1pP5/rN6
+88,"Casa, Alex",Die Schwalbe,1/1/1996,#2,8/8/K1R1Q1R1/1N2N3/4k3/8/4b2B/1q6
+89,"Cè, Saverio",L'Italia Scacchistica,1/1/2006,#2,8/8/2nPn3/1NrkrNQ1/1P6/2R1R3/3K2P1/8
+90,"Cè, Saverio",Best Problems,1/1/2006,#2,3Q4/2p1P3/2R5/3pp3/4k3/8/4K1P1/5R2
+91,"Ceder, Sven Ture",Magasinet,1/1/1939,#2,2qN3B/2PN4/b4r2/rn1k1n2/pQ3P1p/6pK/4p3/b1RBR3
+92,"Ceriani, Luigi",The Chess Amateur,1/1/1928,#2,NR6/NbK5/8/p7/kq6/Bp6/1P6/Q7
+93,"Ceriani, Luigi",L'Italia Scacchistica,1/1/1916,#2,1r1n4/p1p1N3/2pPb3/RnB1kpP1/3Nr3/Q1P1pKP1/8/8
+94,"Chandler, Guy Wills",Le Strategie,1/1/1909,#2,8/K2b4/3R4/4k3/2PR2Pn/8/1Q1N3r/6b1
+95,"Chandrasekaran, K. R.",The Problemist,1/1/1996,#2,6Q1/8/8/2P1P1P1/1p6/brp1kNP1/1pPNprp1/nB2RbKn
+96,"Cistjakov, Alexandr",Керченский рабочий,10/9/1991,#2,8/8/5P2/2Q3pp/7k/8/7K/8
+97,"Clark, Cecil Henry Douglas",The Field,6/18/1949,#2,7K/1N2R3/QPp2n1p/1pN3pR/2Pkp2P/2p5/B1P2P2/8
+98,"Coppens, J. P.",The Brisbane Courier,9/4/1920,#2,2QR3b/1p5b/2N3p1/p3p2n/r2pk1B1/r4p1N/n1P2K2/8
+99,"Cornejo, Jesus J",Chess,1/1/1952,#2,3q4/2N1pP2/pB2Q2p/1pr1b2K/2Pk1p2/PR4N1/1P1n4/3r4
+100,"Cornwell, W. P.",The Brisbane Courier,2/9/1929,#2,1b1Rb2B/3qN1n1/1P5r/K5N1/1P1knP1p/2R4r/1P2Bp1p/5Q2
+101,"Coultaus, Joseph A.",The Chess Amateur,1/1/1922,#2,8/2p5/4Q3/1kP5/2R5/2P5/2K5/8
+102,COUTURE William J.,Chess Life,1/1/1956,#2,B7/2R3pK/p2B4/1p6/p2kp1bQ/3qN3/NnPR1P2/2r2nr1
+103,"Cox, H.",Chess World,6/1/1950,#2,8/pnQ2p2/4NR1p/3k2nR/N3ppB1/K1P2r2/8/8
+104,"Cresswell, J.",The Problemist,1/1/1993,#2,3n4/2B5/1R1N4/r1k1p3/pb1pB3/2pRp3/2P1K3/N1Q5
+105,"Cristoffanini, Guido",Una Splendente Meteora,1/1/2006,#2,3RK3/2p2p2/1pP5/3NQ2B/Ppk2P2/p3n2R/2b5/4rnB1
+106,"Cristoffanini, Guido",Pittsburgh Post,1/1/1926,#2,4bR2/r3p2B/p1Q1pP1B/4k2p/KN6/p4P1n/3R4/5rn1
+107,"Cristoffanini, Guido",La Stratégie,1/1/1926,#2,3R4/3q1P2/8/2r2Rb1/Q1Bk3r/1P1N1bN1/P1K1n3/2B5
+108,"Cumpe, Josef",Lov a les,1/1/1912,#2,8/p7/P2P4/pk6/Nb3R2/3N4/1P5K/5B2
+109,"Cuppini, Alessandro",Problemesis,6/1/2004,#2,8/4n3/K4R2/2k3r1/4RB2/bBp3r1/3PpPP1/7Q
+110,"Cuppini, Alessandro",Freie Presse,9/29/2000,#2,4R3/2K5/PBp2p2/2NP1P1p/r2rPkpP/2Q1Np2/4p3/1B4R1
+111,"Cuppini, Alessandro",L'Italia Scacchistica,5/1/2000,#2,1b4RB/2nq1p2/1p2p1pp/2N2k2/rn1Q1ppP/6R1/p2KN3/8
+112,"Dasni, Schamil Ade",Кудесник,1/1/1992,#2,8/8/8/8/8/R1p1p1Q1/8/3K3k
+113,"Davey, D. M.",The Tablet,6/28/1947,#2,6QB/7B/8/8/4pk1q/5p2/5P1p/7K
+114,"Dawson, Thomas Rayner",Springbok,1/1/1940,#2,2B5/4p3/2p4N/2B2R2/4k1N1/7n/2P5/3K4
+115,"Dawson, Thomas Rayner",The British Chess Magazine,1/1/1901,#2,8/7K/6R1/5N2/4k3/3N4/2R5/1B6
+116,"De Barbieri, Vittorio",Revista Română de Şah,1/1/1938,#2,1r3B2/8/1R2p3/3pkb2/5Rr1/6p1/3K4/5Q2
+117,"De Langhe, L.",De Problemist,1/1/1929,#2,4nRr1/2b1p3/1pP1kqnR/1N2Pp1B/5p2/1P3Q2/6N1/B5K1
+118,"Degener, Udo",Schach (magazine),1/1/1983,#2,q6B/2RN1P2/1n6/1r2pR2/1pbk1n1p/1P1P1P2/2B2P1K/4Q1N1
+119,"Dennis, Charles Edwin","Good Companion, 8th American Chess Problem Congress Ty",8/1/1921,#2,1Q1Bnn1r/p1NPPP2/1rqk1N1R/1P2p2b/1P2R3/8/2p1B3/2K5
+120,"Di Vincenzi, Renato",Problemi di Scacchi Inediti,1/1/1998,#2,2r1nN2/6q1/p7/1Pk1P2R/P7/2K1N2Q/5B2/4r3
+121,"Di Vincenzi, Renato",Problemi di Scacchi Inediti,1/1/1998,#2,8/2K5/4p3/2pk2n1/8/2P5/4QN2/8
+122,"Di Vincenzi, Renato",Problemi di Scacchi Inediti,1/1/1998,#2,8/2K5/2p2R2/3k4/8/B1PP4/8/8
+123,"Di Vincenzi, Renato",Problemi di Scacchi Inediti,1/1/1998,#2,8/N7/1Qp4n/7r/2kB4/4p2r/2K3Nn/8
+124,"Dieffenbach, Harald",Schach (magazine),1/1/1980,#2,B7/3N4/4n2Q/5b1n/p2k2p1/2RN4/1P6/6K1
+125,"Dietrich, Albert",Freie Presse,,#2,1Q2N2B/8/2p5/3p1p1B/K2Nk3/p4Rq1/Rb3P1n/7b
+126,"Dittrich, Kurt",Die Schwalbe,1/1/1929,#2,8/2Kp2B1/3N4/n1kb3R/P2r4/Pp2r3/1N1Rn3/3Q4
+127,"Dittrich, Stefan",Chess Life,1/1/1988,#2,1N2R3/Nkpp1r1R/p7/P3B3/8/4Q3/pr4q1/Kb5B
+128,"Dobbs, Gilbert S.",Chess,1/1/1937,#2,K7/1p2BB2/1b5R/nk3N2/1p2PN2/1p6/1P6/Q7
+129,"Dobbs, Gilbert S.",Good Companion,1/1/1920,#2,2Q4B/p2N1K2/Pp1p2P1/1P1pq1N1/p1bk4/P2p4/3P4/8
+130,"Dombrovskis, Alfreds A.",Шахматы в СССР,1/1/1948,#2,8/NR1p1K2/n6p/3p1Qb1/Npkp1p2/6qr/2B1P3/2R2r2
+131,"Drążkowski, Krzysztof",Szachy,1/1/1988,#2,8/2B5/5r2/8/p2P4/k2B4/N7/K1N2Q2
+132,"Driver, John Edward",The Problemist,1/1/1962,#2,b1Q1r2B/2n2rn1/1R4NR/K2k4/1P6/p2BPP2/q7/5N2
+133,"Drnek, Josef",Nové pařížské mody,1/1/1903,#2,5R2/2K5/3P1Pp1/1R1qk1N1/5b2/2P4P/8/Q7
+134,DUBOUCHET Robert,diagrammes,1/1/1989,#2,8/6N1/3rN1Pq/7R/6kp/3r4/6PP/1Bb1B1QK
+135,"Đukić, Milenko",L'Italia Scacchistica,1/1/1977,#2,8/Q7/8/1N1bk1K1/8/4p3/8/8
+136,"Ebert, Hilmar",Die Schwalbe,1/1/1990,#2,8/5Q2/8/8/8/8/8/2k1K2R
+137,"Ellerman, Arnoldo",Themes 64,1/1/1962,#2,8/8/8/nR1p4/5K2/2k1B1NR/8/Nn3B2
+138,"Ellerman, Arnoldo",Шахматы в СССР,1/1/1946,#2,bB3K2/4Q1Np/1p2B1r1/p3P3/Rb3k1r/2N3R1/5PP1/5n2
+139,"Ellerman, Arnoldo",Chess,1/1/1946,#2,3R2BB/1pr1pR2/7Q/3b4/PPkN1r1p/Pp3p1K/1P5n/4N3
+140,"Ellerman, Arnoldo",Arbeidermagasinet,1/1/1935,#2,4NN2/1b1p4/1q1B2p1/3k1nR1/p2P3p/1r1Q3K/B7/2R5
+141,"Ellerman, Arnoldo",Tijdschrift vd NSB,1/1/1934,#2,K6Q/B7/R1n1p3/2nkP2N/2p4R/8/1N2P3/2r5
+142,"Ellerman, Arnoldo",Šahovski glasnik,1/1/1932,#2,3Rb3/4N2B/4p1P1/R3p2K/4k1NQ/4P3/1bPpqPP1/3r4
+143,"Ellerman, Arnoldo",Svenska Dagbladet,1/1/1932,#2,8/2nQ4/3P4/b2r1R1B/2P1k1q1/R2N1NPb/2P2B2/3K4
+144,"Ellerman, Arnoldo",El Ajedrez Argentino,1/1/1926,#2,3NR3/4Npp1/2KR4/b1QPk1p1/6n1/3P1qP1/6n1/8
+145,"Ellerman, Arnoldo",L'Alfiere di Re,1/1/1925,#2,BB6/K2Q1qN1/2P5/8/3Pk3/p3p1p1/2P2pr1/1n1R1N2
+146,"Ellerman, Arnoldo",Good Companion,1/1/1920,#2,8/7B/7K/1R6/2pk1pP1/R3q3/3b1B1Q/6nb
+147,"Ellerman, Arnoldo",Good Companions Folder,1/1/1917,#2,2n2b2/8/n3N1p1/3k1PP1/1q1N3K/1PR2p2/3R3B/1Q5b
+148,"Ellerman, Arnoldo",Good Companion Folder,1/1/1917,#2,6b1/4Qp2/4p3/R1K1kpN1/2pn4/1pb1qP1N/2r3n1/B3Rr2
+149,"Erlinger, Konrad",La Presse,1/1/1911,#2,5Q2/8/4R3/8/2b1B1p1/4k3/4p3/4B1Kn
+150,"Ernst, Erich",Badische Neueste Nachrichten,1/1/1998,#2,2Q5/8/pppp4/2k5/8/2K5/8/8
+151,"Érsek, Tibor",Sakkélet,1/1/1998,#2,8/3K2p1/3Np1PP/2pkbR1N/p1pn3n/2PR4/3q4/3B4
+152,"Érsek, Tibor",Sakkélet,1/1/1997,#2,K2N1B2/p5r1/3bpp2/nN2kpp1/1q1p4/1p1p2P1/8/2Qn3B
+153,"Fasano, Alessandro",L'Italia Scacchistica,1/1/2010,#2,5K2/2RP1Q1P/p2n4/1p2p2b/3kB1N1/1RN3p1/5q1r/6B1
+154,"Fasano, Alessandro",L'Italia Scacchistica,1/1/2002,#2,1b6/4Q2p/3RP1bK/2ppkpR1/1P1r4/1nB1P3/2rPNN2/1B2n3
+155,"Fastosky, Pedro",Boletim da UBP,1/1/1962,#2,3R2KB/2N1R1n1/2r5/p2pnP2/rQ1pk2N/1bp3P1/B3PP2/8
+156,"Feigl, Maximilian",Reclam-Sammlung V,1/1/1908,#2,b7/B1K1p2N/Q3p3/4k3/1p2B1q1/4R1p1/P4PN1/8
+157,"Fiebig, Reinhardt",Freie Presse,1/1/1979,#2,1b3Kb1/1np5/5p2/1B1k1p2/N7/1nPP1PB1/4R1NQ/5r2
+158,"Fillery, William Edmund Frank",Chess Life,1/1/1960,#2,Q3b3/2R2B2/2nkPB2/P3pp2/4prp1/1PN1KpP1/2R2P2/8
+159,"Fillery, William Edmund Frank",Chess,1/1/1952,#2,B1R3Q1/3p4/2n1nK2/2N5/1P1k4/1P6/1b1B4/3R4
+160,"Fink, Adolph Jay",The Pittsburgh Gazette Times (after A.White),12/10/1916,#2,2n5/7p/1n2PBkp/2pNR2b/1p3R2/3Kp3/3Pp3/1B2Nrb1
+161,"Fink, Adolph Jay",The Pittsburgh Gazette Times,1/1/1911,#2,5B2/1KNpq2r/pp1k2b1/2p2p1r/Q6n/1Pp1R2B/5Rn1/8
+162,"Fleck, Ferenc",Die Schwalbe,1/1/1981,#2,Q5B1/3pr3/1P1Pr3/KNk1p1q1/3Np3/3bp3/1P1R3B/8
+163,"Fleck, Ferenc",Magyar Sakkélet,1/1/1972,#2,5R2/1QP5/1B2P3/1B1NkP2/4NR1K/8/8/8
+164,"Fleck, Ferenc",Die Schwalbe,1/1/1966,#2,1K6/6B1/p7/1p3N2/1P2k3/3N1RPp/Q2bppq1/3R3B
+165,"Fonteyn, A.L.",Die Schwalbe,6/1/1952,#2,8/4B2B/3npN1p/R2qkNnR/1p1p1p2/8/4b2r/2K1Q3
+166,"Freiherr Von Wardener, Friedrich",Accademia Scacchistica di Viareggio,1/1/1907,#2,4B2n/3R1qQ1/2k2r2/3R4/P7/2p1BP2/4K3/8
+167,"Freiherr Von Wardener, Friedrich",Offiziers-Schachzeitung,1/1/1905,#2,8/8/1B2pK2/8/nQ6/3pN2p/1n1Np3/R2Bk3
+168,"Friedländer, Louis",Chess Poetry,1/1/1919,#2,3K4/8/2pkp3/6RR/8/8/8/8
+169,"Fröberg, Johan Hilding Laurentius",Roi Blanc Peugeot,1/1/1959,#2,8/7p/4Q2p/7p/3p1P1P/3K4/6k1/5RnR
+170,"Fröberg, Johan Hilding Laurentius",Schackvärlden,1/1/1943,#2,2Rr4/8/1r5Q/1b6/q7/2B1N3/p2R4/K1kB4
+171,"Fröhlich, Georg",Freie Presse,1/1/1974,#2,3NR3/3K1p1b/1B3p2/RP1k4/qP3P1b/3P3Q/7n/8
+172,"Funk, Jacob E.",Simple Two-move Themes,1/1/1924,#2,nq3B1Q/N7/R2rPP2/2k3p1/b1npP3/8/N1R2K2/8
+173,"Funk, Jacob E.","Good Companion, 8th American Chess Problem Congress Ty",8/1/1921,#2,4nBn1/2r2P1K/5kBp/8/8/1Q3N2/8/b7
+174,"Funk, Jacob E.",Good Companion,1/1/1919,#2,n7/1B6/8/2pN2b1/K1kp1p1R/R7/4P3/B3n3
+175,"Fuß, Georg",Die Schwalbe,3/1/1953,#2,4NQB1/2p1p2r/1P5p/b6R/RrPkp3/1p1p4/1P1B4/2Kn4
+176,"Galbraith, C. A. L.",Manchester Guardian,1/1/1959,#2,5nK1/5R2/4N1pb/1PPk4/3PbPQ1/rp2R2r/1N6/8
+177,"Gallery, Terence C.",The Tablet,3/6/1948,#2,8/2Q2pK1/r1n5/3b1kB1/4R3/5N2/1p6/2b4B
+178,"Gamage, Frederick E.",Frederick Gamage,1/1/2004,#2,5BK1/3N2PR/q3k1P1/8/Q2n1p1N/r7/3R2B1/b2b4
+179,"Gamage, Frederick E.",The Chess Amateur,1/1/1912,#2,1BR5/1n5q/p1N1r1b1/P1kPp3/P6r/7p/BR6/K1N4Q
+180,"Garai, Toma",Magyar Sakkélet,1/1/1957,#2,2r5/1R1R4/7b/3N4/PPk5/4P3/2BPp1N1/1Kn5
+181,"García Llamas, Juan",2nd International Team Match,1/1/1967,#2,B1r2q1b/p1nN4/3N1n2/K1Q2r2/4p3/2pk2P1/1P4RR/6B1
+182,"García, Mario Guido",//arellerman.topcities.com,1/1/2000,#2,8/K3N1p1/2R2ppq/2Nbkr2/5R1B/7Q/1b4n1/2n5
+183,"García, Mario Guido & García, J. L.",//arellerman.topcities.com,1/1/2001,#2,8/p2KpB2/3PRP2/r2kP3/1R2Np2/2B4b/2Pr3p/1n1N3Q
+184,"Garofalo, Antonio",The Problemist,1/1/1978,#2,4K2B/4NN1B/2p1QP2/8/1P1k4/8/3Prn2/4Rr1b
+185,"Gevers, Raymond C. J.",L'Italia Scacchistica,1/1/1918,#2,8/3p2Q1/K2n3B/2Rpq3/3kN3/N1R2P2/pnB2b2/rb6
+186,"Giegold, Fritz Emil",Deutsche Schachblätter,1/1/1932,#2,qr6/3N3p/6bK/2N5/1pPk3P/1P6/2P2P2/b5Q1
+187,"Giöbel, Bengt Rudolf",Aftonbladet,1/1/1929,#2,8/1p2p3/nB2PbQ1/2r1p1q1/4B3/8/p3R3/R3K1k1
+188,"Giorgetti, Fosco",Telescacco 2000,5/1/2000,#2,8/8/3pQ3/2kp4/1Rp5/P7/N1K5/8
+189,"Godbout, Alain",Kontakt,1/1/1997,#2,1n1k3r/6pB/3K4/8/8/Q7/8/8
+190,"Gold, Sámuel",,,#2,3B4/1p5K/3kB1p1/3Pnn2/N1p1Q3/b7/r2N4/8
+191,"Goldschmeding, Cornelis",problem (Zagreb),1/1/1957,#2,n7/8/p1K5/kr1PQ3/NRR5/3p4/8/8
+192,"Goldschmeding, Cornelis",Arbejder-Skak,1/1/1952,#2,3Q1b2/6p1/P1P3pq/2k1p3/KN5R/3p2rn/4pr2/R4n1B
+193,"Gooderson, Arthur Robert",The Observer,1/1/1944,#2,K4Nb1/1B4R1/7N/b3pp2/Q3nk2/1R5p/8/1q3rBr
+194,"Goulding, W.",Chess,1/1/1940,#2,r3k3/1r2p3/BP2P3/4K3/8/8/8/Q7
+195,"Grand-Didier, Claude",Telescacco 92,11/1/1998,#2,8/1K6/1b6/1p2p3/1Bk1r1NR/2Pp1B2/7q/Q1N4r
+196,"Gray, Robert",The Journal,1/1/1935,#2,8/2nRbQ2/1B4r1/4kN2/r3p1pn/6P1/p4N2/K7
+197,"Greenwood, William M",,,#2,1N1B4/8/Kn2B1P1/4k3/5pb1/2PQ4/8/8
+198,"Groeneveld, Cornelis",Schach (magazine),1/1/2004,#2,K1BR4/4Pr2/5p1n/4B3/4k3/2bp1N2/5Q2/n1r5
+199,"Groeneveld, Cornelis",Probleemblad,1/1/2004,#2,4R3/8/8/1K1k4/1P3R2/3Np3/1r2rp1B/3Qb2b
+200,"Groeneveld, Cornelis & Van Gool, Johann Christoffel",Hlas ľudu,1/1/1984,#2,3q4/p1pp1p2/B1P3nB/K3N1r1/R5p1/1NP1k1P1/4P3/5QRn
+201,"Grossi, Damien",Parallèle 50,12/13/1947,#2,8/3r4/2RPkp2/4b2Q/3pRpP1/pN1p4/8/K7
+202,"Groth, Reinhard",Freie Presse,5/26/2006,#2,1b1Nb3/1p2B2n/2B1n3/r3k2r/p3N1P1/2P2R1p/K7/3R4
+203,"Groth, Reinhard",Freie Presse,3/14/1997,#2,1K2Q2b/2N4P/5k1P/5b2/3R2qP/1nn2N2/BB6/1r4R1
+204,"Gruber, Bratoljub",Mat Plus,1/1/1995,#2,8/8/8/5p2/5P1b/1p2NRNk/1Qb4P/4K2R
+205,"Gruber, Bratoljub",Mat Plus,1/1/1995,#2,4BB2/5N2/2p2k2/2p1rP2/2n3p1/2QpN1pb/3P2P1/4K2R
+206,"Gruber, Bratoljub",original,,#2,8/8/4p2N/3n2BR/4B1pP/6kN/6P1/4K2R
+207,"Gruber, Lutz-Dieter",Troll,1/1/2010,#2,5B1K/2R1bBQ1/rn6/p2nN2R/3k1pN1/2p2P2/2Ppp3/8
+208,"Gruber, Sándor",Sakk,1/1/1921,#2,r7/1b2N1rB/Rb4P1/1P6/4k3/2Q1P3/4K3/8
+209,"Guidelli, Giorgio",Il Secolo,1/1/1921,#2,bn6/brp5/q7/p1B2p2/1p1P4/5N1p/1R2Pk2/1R3N1K
+210,"Guidelli, Giorgio",Good Companion Folder,1/1/1918,#2,b3Q3/3p1N2/nrp2p2/8/2Bk1N2/1Pp5/2n3R1/3r3K
+211,"Gunn, Robert Ivan",Chess,1/1/1943,#2,Q7/8/8/6p1/3Pn1P1/1Np5/2bpkPK1/R4R2
+212,"Gvozdják, Peter",Die Schwalbe,1/1/1993,#2,BN3BQn/5N2/1p6/3q1R2/1p1k2p1/2pp1p2/2p4b/4RK2
+213,"Gvozdják, Peter",Pravda,1/1/1987,#2,5N2/8/8/2p1B3/K1N1k2P/4P3/8/3BR3
+214,"Gvozdják, Peter",A Feladvány,1/1/1983,#2,1B2B3/1p3PqP/1P1P1QP1/1p1k2KR/1pR2pp1/1P4bb/3N4/8
+215,"Hähnel, Peter",Freie Presse,7/20/1990,#2,8/8/8/1Qp1B1p1/6pr/8/3p1NpN/r3k1K1
+216,"Hamina, O. & Sola, Pentti Olavi",Uusi Aura,1/1/1935,#2,7k/8/r3p1RK/5B2/8/1b6/8/4Q3
+217,"Hannelius, Jan Ingvar",Suomen Tehtäväniekat,1/1/1989,#2,6r1/8/8/5Q2/5N1k/8/6PK/3b4
+218,"Hannelius, Jan Ingvar",Schach-Echo,1/1/1971,#2,2B2KR1/8/4Nk2/3R3b/1p3p1r/4P1b1/5q2/2B2Q2
+219,"Hannelius, Jan Ingvar",stella polaris,1/1/1970,#2,3k1B2/2p5/3qB1Q1/K7/8/8/2p5/3R4
+220,"Hänneschen, Hartmut",Troll,1/1/2002,#2,4n3/3bKp2/2pp4/4k1B1/1N1p1ppN/p3pP2/8/5Q2
+221,"Hanning, John R",The Field,9/1/1951,#2,B1K5/pN6/R2p1P2/2Pk4/P1Rp2P1/P2p2N1/3P3B/8
+222,"Hansen, Lorenz",,,#2,8/8/1Kn5/1b2kpP1/3R1N2/3Pp3/5b2/Q7
+223,"Haralović, Mato",Hlas ľudu,4/2/1981,#2,8/8/8/1N3R1B/5br1/3Pk3/1P2n3/K2Q2RN
+224,"Haring, Jacobus",Die Schwalbe,1/1/1981,#2,3RR3/2b2Q2/B3p3/3bNq2/8/2pPkP2/4N1P1/4K3
+225,"Haring, Jacobus",De Telegraaf,2/21/1976,#2,2K2n2/2B1b1r1/2P1p1p1/2P1n1q1/2N1k1b1/R1Q1ppr1/BR3p2/8
+226,"Haring, Jacobus",The Problemist,1/1/1957,#2,3B1b2/5B2/7q/r1R1Nk2/5N2/4K2P/2P1P3/rQ3R2
+227,"Hartong, Jan",Good Companion,11/1/1919,#2,K7/3pRp1p/5PB1/nQPkp1nr/8/3P3p/2N1P3/3r3b
+228,"Havel, Miroslav",Haarlemsche Courant,10/31/1919,#2,1QnR1rb1/4PR1N/4k3/4p3/2p5/p7/Kb3nq1/8
+229,"Heathcote, Godfrey",The Chess Amateur,1/1/1911,#2,2K4B/8/2pP1Q2/4RP2/2Pkqp1N/3B4/1P6/3R4
+230,"Henke, Walter",Arbeiter-Schachzeitung,1/1/1924,#2,8/5p2/p1PBbP2/P1N5/Kp1k2p1/1p2N1P1/1P1P1nQ1/8
+231,"Henriksen, Thorleif Cammillo",Nová Paka,3/31/1927,#2,1b5Q/4R3/6K1/3k4/B4p2/3pp3/8/8
+232,"Henrych, Miroslav",Mat-Pat,1/1/1994,#2,4Q2B/7b/2PRP2N/b3np2/r3k2r/4p1PB/4P1K1/1N3R2
+233,"Herland, Sigmund",Deutsches Wochenschach,1/1/1911,#2,R3b3/2n1Pk2/5P2/7K/3B2Q1/8/8/8
+234,"Herman, Jiří",Svobodné slovo,1/1/1953,#2,2N5/2nr4/bpnp4/pk6/p3N3/P7/Q2p4/3K4
+235,"Hermanson, Halvar",Il Due Mosse,1/1/1958,#2,5R2/1p1N4/8/3pN2K/r3kp2/2Pn2Pp/2q1pPP1/1Q2R3
+236,"Herrmann, Frank",Freie Presse,1/1/1977,#2,5K2/1n6/2b1Bk2/B1PppPpR/2P2P1r/2N5/3b1Q2/8
+237,"Herschel, Hans-Jürgen",Deutsche Schachblätter,1/1/1986,#2,8/2Kp4/p2Ppp2/r1k3p1/p1P2pp1/P1P3N1/1N3n2/2BRRB2
+238,"Hertmann, Sándor",The Australasian Chess Review,8/1/1929,#2,6K1/4QRN1/5P1p/7B/5k2/4N1qR/3P4/7n
+239,"Hewitt, W. A.",The Australasian Chess Review,11/1/1929,#2,K5Q1/1p6/p2R1p2/r1n2k2/4N3/6B1/5n2/5r2
+240,"Heydon, Joseph Kentigern",Good Companions Folder,1/1/1920,#2,2n5/n2pppp1/Bq6/1r6/4QBRN/5P1k/1pP5/1K1N4
+241,"Heyl, Peter",Freie Presse,5/29/2008,#2,6n1/3Q4/1NpR4/K1k1p1nR/b1p1p3/2r5/1P6/3qB3
+242,"Heyl, Peter",Schach-Aktiv,1/1/2002,#2,2b4n/2p4Q/n1BkrP1N/K2Pr1q1/1P6/3R4/2R4B/8
+243,"Hicks, Geoffrey K.",The Problemist,1/1/1992,#2,b7/b2NN3/3P1r1n/2p1P1B1/2P1kqnR/K2R1pQr/1pNBP3/1B2R3
+244,"Hirschenson, Aaron",Práca,1/1/1996,#2,3QK3/7B/2p1NP1p/2PPkr2/Rn1N2p1/2R1Bp2/3p4/8
+245,"Hjelle, David",Die Schwalbe,12/1/1960,#2,5r2/1Q1Nr3/5n2/2PPpR2/R2Nk3/6P1/K1P2P2/b7
+246,"Hjelle, David",Шахматы в СССР,1/1/1960,#2,2B2r2/5nQp/KN1P2br/2pp2p1/Rb1pk1N1/8/2P5/5R2
+247,"Hjelle, David",Chess Life,1/1/1959,#2,2B4R/4B3/2K5/2P3qn/R1P4k/4N1pr/6Q1/6nb
+248,"Hjelle, David",problem (Zagreb),1/1/1955,#2,b1B5/2N2p1K/5p2/2P1kP1p/1p2P2r/1p1RP1P1/2nN4/bQ6
+249,"Hjelle, David",Arbejder-Skak,1/1/1949,#2,2R5/1B6/R1p5/pkp5/pPp5/8/N1K5/8
+250,"Hoek, Willem",Jaarboek van de Nederlandse Bond,1/1/1980,#2,2K5/kpNP4/4R3/8/8/8/8/8
+251,"Hoffmann, Klaus Peter",Heilbronner Stimme,1/1/1994,#2,R3K2Q/1k6/N7/2P5/8/8/6R1/8
+252,"Hoffmann, Martin Wolfgang",Кудесник,1/1/2005,#2,8/2p5/Bk6/1NN5/8/1KQ5/8/8
+253,"Holladay, Edgar Dinwiddie",The Observer,1/1/1951,#2,3B4/p6p/k5qR/1p2p2b/6p1/3Q2p1/6B1/1K6
+254,"Holladay, Edgar Dinwiddie",The Field,10/2/1950,#2,Brn2N2/1r4PK/5QN1/2nk4/8/B2q4/8/1b1RR3
+255,"Holm, Helmer",Springaren,1/1/1948,#2,8/8/8/4K3/4p3/4k3/1P2p2P/4Q3
+256,"Howard, David M.",Problem Observer,1/1/1996,#2,8/3p1K2/3p4/2p1pp1N/R1pbk2p/Q6B/2P2BP1/1N4n1
+257,"Hoy, Paul",Freie Presse,1/1/1968,#2,2B1r2b/1b6/1B2n1N1/2Qp3R/3Pkp2/1R6/r2P2PK/qN2n3
+258,"Hüfner, Alfred",,,#2,2KR4/1N3p2/1Rp5/P1p3p1/2k2bQ1/8/4r3/B1nb1N1B
+259,"Hulka, Ladislav",Ruch,1/1/1948,#2,4B3/8/8/3K4/3p4/kN2p3/1n6/2N1Q3
+260,"Hultberg, Gustav Herbert",Schackvärlden,1/1/1927,#2,5NqB/6P1/4Bk2/5Np1/3P1pP1/5K2/8/8
+261,"Ivanić, Petar",To Mat,1/1/1954,#2,1B1b4/2p5/b1B2Rp1/kppN2Rp/7K/PQ6/8/8
+262,"Jakab, Árpád",Magyar Sakkélet,1/1/1954,#2,1Q6/1n1r3B/q1b1R2P/1Pb3pK/2N3P1/5kP1/r1n2B1R/8
+263,"Jakoubek, Jan",Šachové umění,2/1/1976,#2,3rrN1n/2pR4/Qp6/pPBBk1P1/6K1/2N5/1b6/8
+264,"Janček, Ján",Československý šach,2/1/1954,#2,5n1K/3bQ1p1/6p1/6N1/2NkB2p/1Pp4q/2p4b/2B5
+265,"Janet, Frank","The Pittsburgh Gazette Times, Densmore MT",7/21/1918,#2,n1r3rB/Kb3p2/1p5p/3R2bN/4k3/1Bp5/3pnP2/Q5N1
+266,"Janet, Frank",The Pittsburgh Gazette Times,3/10/1918,#2,8/8/4Q3/1K2bP1B/2N1k3/4P3/8/8
+267,"Janet, Frank",The British Chess Magazine,12/1/1916,#2,8/2R5/6kp/n2N4/1p4qQ/b3p1R1/2K4n/1B6
+268,"Janet, Frank",The Pittsburgh Gazette Times,11/5/1916,#2,7K/8/p2N4/6k1/3P1N2/7P/3BP2P/8
+269,"Janet, Frank",St. Louis Globe-Democrat,1/1/1916,#2,6b1/2n1p2p/8/8/r4kNK/4Np2/2B2P2/3Q1n2
+270,"Janoušek, Ladislav",Ruch,1/1/1948,#2,8/8/2p3K1/6p1/6p1/5NR1/p1Qn4/nr5k
+271,"Jimeno, Carlos Jr.",The Chess Review,1/1/1935,#2,7Q/1R6/4R1n1/2r2Nrp/7P/1p1B1k1P/pq1B1Pp1/2n3K1
+272,Johann Hilding Lau.,Springaren,1/1/1960,#2,4R3/8/6kN/4B1B1/8/8/8/4K3
+273,"Jones, Christopher James Austin",Troll,1/1/2004,#2,2K3B1/4b1n1/1ppP1p2/1pk2p2/1R6/N1B1p3/1P1n3Q/3R4
+274,"Jönsson, Nils Gustav Helmer",Die Schwalbe,12/1/1952,#2,8/2K5/1R2BR2/2p5/2Nknr1Q/5PN1/1PPb4/4r3
+275,"Jordan, Gunter",De Problemist,1/1/1928,#2,8/8/5b2/p1nK1p2/1P2pr2/rn3P2/1QNkPR2/7R
+276,"Joseph, Samuel M.",Chess Journal,1/1/1901,#2,4K3/2B1p3/2Rb4/3k4/3N2P1/8/P3B3/Q7
+277,"Juříček, Stanislav",Freie Presse,10/22/2004,#2,8/3N4/1N1n1R2/r2p2p1/p3k3/1r4R1/4P1b1/3Q2K1
+278,"Kainer, Čeněk",Prager Presse,2/13/1927,#2,1K6/8/8/1B6/5N2/3Q2P1/5k1b/8
+279,"Källström, Ingvar",Tidskrift för Schack,1/1/1930,#2,3K4/kpP5/b1R5/3Q4/8/8/8/8
+280,"Kapralos, Dimitris N.",Arbejder-Skak,1/1/1957,#2,1r2bB2/3PR3/1P1kq2N/N1p2R2/1pP5/3K4/8/n2Q4
+281,"Kapros, Jorge Marcelo",Springaren,1/1/2005,#2,nQ6/P7/2p5/1Pk2r2/2N1RN2/K7/3P4/5b2
+282,"Kapros, Jorge Marcelo",Problemas,1/1/1997,#2,n2R2n1/1p3p2/1p1K1pP1/3BBp2/2p1pP2/3k4/3P1P2/3Q4
+283,"Kardos, Tivadar",Diagramme und Figuren,1/1/1968,#2,8/4P3/4k3/8/4K3/4Q3/8/8
+284,"Kardos, Tivadar",Magyar Sakkélet,1/1/1952,#2,Nb1Q1n2/2pn1p2/2P1pP1p/1P1kP1pN/1Pp3KP/2Bq1P2/8/3RR3
+285,"Karge, Fritz",Die Schwalbe,1/1/1981,#2,3r3N/2pQn3/3ppNb1/4k1K1/3RB3/2P1n1P1/6qB/8
+286,"Kavnatsky, Isaak & Промышлянский, Григорий Александрович",StrateGems,1/1/2000,#2,7q/NQ2pn1R/K1pkp3/p1r5/1PRbP3/2r2PNB/8/6B1
+287,"Keller, Michael & Zirkwitz, Thorsten",The Problemist,1/1/2001,#2,4nK2/1N1p1R2/4k2p/2p2p2/1bPnpPB1/2N5/r1rP3p/1Q6
+288,"Kennard, Walter Irving",Good Companions Folder,1/1/1920,#2,8/6N1/5pq1/1N2kbp1/8/4b1R1/4Q3/K6B
+289,"Kipping, Cyril Henry Stanley",Chess,1/1/1952,#2,8/1p1R3r/2k3N1/PpN1p2n/1B6/1BQ5/4P2b/2nK3b
+290,"Kipping, Cyril Henry Stanley",Chess,1/1/1943,#2,3bR3/3pq3/8/2NQ1p2/K1N4B/p7/r3pRP1/3Bk3
+291,"Ķīsis, Imants J.",The Problemist,1/1/1973,#2,6BB/8/1R6/n7/p6Q/kq5R/8/5K2
+292,"Ķīsis, Imants J.",Die Schwalbe,1/1/1963,#2,K5Q1/8/2pp1p2/1pr1N3/3Pk2n/2n1PppB/3P4/4N3
+293,"Ķīsis, Imants J.",Československý šach,1/1/1962,#2,8/1p3B1b/4pp1q/2n1Nk2/1R6/K3pp1p/3PN2Q/3n2R1
+294,"Kiss, János",Sakkélet,1/1/1991,#2,3Q4/2P5/p2Nppb1/3pkp2/rR2p2P/r2p1R1K/B1p2N2/q3B3
+295,"Kling, Josef",,,#2,5B2/1b6/3R1n2/2k1N3/p2R4/8/2KPn1q1/8
+296,"Kneffel, E. Heinz",Die Schwalbe,7/1/1951,#2,5R2/K1p5/1Q1r1p1p/6kP/p5P1/1b1NNpPp/r2B4/b6q
+297,"Knuppert, Hugo & Larsen, Lars Aksglæde",Schakend Nederland,1/1/1961,#2,2NN4/1P3p1K/4qkp1/7n/2B2bPP/2R5/1R6/B7
+298,"Koder, Gábor",Scacco!,1/1/1974,#2,8/6B1/3pQ3/1p2q3/4k3/2R2R2/3P2K1/8
+299,"Köller, Paul",Schach (magazine),4/1/1965,#2,8/8/1b2Q1p1/3p4/n1Np4/PB1k4/4R1K1/7n
+300,"Kopáč, Ladislav",Šachové umění,1/1/1971,#2,4B3/8/N2p4/1np5/7R/1k5K/1P6/nQ1N4
+301,"Kotrč, Jan",Nové pařížské mody,1/1/1998,#2,K2B4/1B1p4/3k4/5PN1/P1p5/2P1r3/2Q5/8
+302,"Kováčik, Jozef",Práca,1/1/1955,#2,KB6/2RP2pN/2B5/p2rkPQ1/P1bRrpP1/1p3p2/1N3P2/8
+303,"Kovács, Ferenc & Neukomm, Gyula R.",Gÿori Torn.,1/1/1925,#2,8/B1p2N2/1n2B3/1pk5/2pN4/p1Q5/K7/8
+304,"Kovács, Flórián János",Die Schwalbe,3/1/1951,#2,8/p4np1/p2p2B1/P5RK/1Qpk2NP/r1pP2NR/b3p3/B3r3
+305,"Kricheli, Josif Michailowitsch",Die Schwalbe,6/1/1965,#2,1K1R4/4BN1n/BP5R/2r2k2/4pp2/2p4P/2n1N1P1/8
+306,"Križovenský, Marián",Pravda,12/16/1988,#2,8/B7/3QKN2/3p3p/2ppp2p/3k4/bR6/3B4
+307,"Kroc, Henryk",Szachy,1/1/1957,#2,1K2R3/4N1p1/p2k2pb/Rb1PN1p1/1P3pn1/3PnP1B/8/B3Q3
+308,"Kruk, Henryk",Szachy,1/1/1978,#2,8/8/1kP5/1P6/K4Q2/4R3/8/4B3
+309,"Kubat, Franz",Freie Presse,3/3/1989,#2,7K/6p1/1pppp3/1P1qP3/1p4R1/4P1p1/k1P3R1/N1Q5
+310,"Kuiper, H. R.",,,#2,8/4p1R1/4P2p/1P1Nnp1k/qp4pP/3n2P1/4QP1K/8
+311,"Kukajnis, Voldemārs",Atpūta,10/15/1937,#2,8/PkP1P1Q1/8/8/2K5/8/8/8
+312,"Kulakow, S.",Шах-М (Боровичи),1/1/1988,#2,5B2/4p3/5kB1/7K/3R4/3N4/8/8
+313,"Kulakow, S.",За огнеупоры,1/1/1987,#2,8/8/8/1P3B2/KB1k4/1P6/5R2/8
+314,"Kūlis, Imants",Hlas ľudu,1/1/1983,#2,Q6K/5B2/4R3/4pkpp/4R3/6P1/2bnPP2/B1rr4
+315,"Kurz, Alois",Augsburger Allgemeine Zeitung,1/1/1983,#2,1KR5/5b1Q/p2NRbp1/1p3p2/2pk4/4p1B1/1PP4n/2n3NB
+316,"Labai, Zoltán",«e4 e5»,12/1/2010,#2,nKR5/4R3/3p1p2/1B1kPp2/n2N2P1/1bbP3p/q1r1PQ2/4r3
+317,"Labai, Zoltán",Hlásnik,1/1/1999,#2,8/4Q2R/6kp/8/8/3K1P2/7N/8
+318,"Labai, Zoltán",Hlas ľudu,1/1/1988,#2,8/2Q5/2P5/2k5/8/NB3K2/2P5/8
+319,"Labai, Zoltán",Pedagógusok lapja,1/1/1982,#2,Q7/3p4/K2p4/1PRNRP2/3k3P/3N4/8/1B6
+320,"Labai, Zoltán",Hlas ľudu,1/25/1973,#2,2nK4/8/3k4/3P4/1P1B4/5B2/2R4b/2r5
+321,"Laib, Kurt Friedrich",Kieler Neueste Nachrichten,1/1/1933,#2,8/4P3/1k6/2N5/4Q3/K7/8/8
+322,"Lakeland, Rev. T",The Tablet,6/4/1932,#2,k7/p7/K5P1/4Bp2/1N2p3/8/1b6/1Q6
+323,"Lambă, Stelian",Probleemblad,1/1/1972,#2,1Qbr1b2/1nnp4/2P1P1K1/2B1k1N1/5p2/4pP2/2N5/3R4
+324,"Lane, Kurt",L'Alfiere di Re,1/1/1922,#2,1Q6/K4p2/1B6/p1RN3q/3kn3/Rn4N1/1PPb4/1b6
+325,"Langstaff, William A.",The Chess Amateur,1/1/1922,#2,4k2r/8/5B1P/3R1KpP/8/8/8/8
+326,"Larsen, Lars Aksglæde",Suomen Shakki,1/1/2003,#2,8/3P4/2PPkppR/1n2PN2/3r4/3p1QP1/1B6/5K2
+327,"Larsen, Lars Aksglæde",The Problemist,1/1/1993,#2,2k5/1pP1K3/2R5/4p3/8/8/1Q6/8
+328,"Larsen, Lars Aksglæde",Springaren,1/1/1988,#2,2Rb2B1/3p4/1rq1bN1K/1p2P3/pnkB1N1R/Q1p5/2PP4/3nr3
+329,"Larsen, Lars Aksglæde",,,#2,4R1N1/3p2r1/5bp1/4N1kB/3K2P1/2pQ2P1/p1Pr4/qbB5
+330,"Láttero, Alfredo Mario",Práca,1/1/1959,#2,7K/3p4/3N4/2p1k3/1Pp2N2/2P5/7P/7Q
+331,"Latzel, Gerhard Paul",Deutsche Schachzeitung,1/1/1968,#2,8/8/8/2Q5/8/8/1N1k4/6K1
+332,"Latzel, Gerhard Paul",Schach (magazine),1/1/1951,#2,3n4/3K3B/1N1R4/4kP2/2ppp2R/1pr2ppn/4bb1N/4Q3
+333,"Latzel, Gerhard Paul",Schackvärlden,1/1/1929,#2,8/5R1B/K1p5/2p5/p1k3N1/p1p1bP2/2p1P3/8
+334,"Latzel, Gerhard Paul",,,#2,4N3/2PR4/rb1Q2p1/4n2p/5k2/2N2pRK/6P1/8
+335,"Latzel, Gerhard Paul",,,#2,1nr1b1rn/2P1B1P1/3NpN2/1P2k2P/8/2P3P1/8/R3K2R
+336,"Le Grand, Henk & Le Grand, Piet",Probleemblad,1/1/1952,#2,5B2/4nN2/2b4Q/1p4rr/1P1kBp2/2R1n3/3P1N2/2K1R3
+337,"Le Grand, Piet",Probleemblad,1/1/2008,#2,4B3/4p3/4P2p/2Knpn2/4k1P1/4P2N/2P3P1/2R3B1
+338,"Le Grand, Piet",The Problemist,1/1/1993,#2,1B3R2/4n1pr/4p1R1/q3rbb1/2PN1k2/pP5p/K1Bn1NpP/4Q3
+339,"Lebeck, Donald",Mate in Two,1/1/1992,#2,6Q1/8/8/pp6/bkpP2R1/1n5K/3P4/2B5
+340,"Lebloch, Ivo",Pravda,2/11/1994,#2,8/5p2/b2Bp3/3B4/3kN1p1/1Q1P4/n2PR1K1/8
+341,"Lebloch, Ivo",Šachprofil,1/1/1993,#2,Q7/1R6/2K1p1p1/1PP1p3/1N2k1pB/4Pr2/1p3RP1/5N2
+342,"Lebloch, Ivo",Troll,1/1/1992,#2,7Q/2p2rp1/2Kp4/1pp5/1p1k4/1P6/3PRnnb/1B2N3
+343,"Legentil, Georges",Georges Legentil (1885-1949) Problèmes d'Échecs,1/1/1951,#2,1r1b4/1r1Q1N1K/Rq3k1P/4N2p/4RP1p/8/8/8
+344,"Lenţa, Nicolae",Nepujsag 1962-64,,#2,8/PPPPPPP1/1p3p2/1B1b1R2/1P1k1K2/3p4/3B4/8
+345,"Leopold, Rudolf",Deutsche Schachzeitung,1/1/1916,#2,6N1/2pp4/P2kp2n/8/3BP2p/5P2/K7/6Q1
+346,"Leopold, Rudolf",Magyar Sakkvilág,1/25/1914,#2,8/2p2p2/2R5/4kp2/Q3B3/p2pP3/nb5K/8
+347,Lepschin W,Красное знамя,1/1/1974,#2,8/8/8/8/4Qp2/3K4/5k2/4R3
+348,"Leroy, J.",Het Belgisch Schaakbord (L'Echiquier Belge),1/1/1985,#2,R7/8/B7/3b4/8/8/4N1R1/k1K5
+349,"Lertoria, Ernest",The Problemist,1/1/1977,#2,2B4K/1R6/k3p3/p3N3/p2n4/3p4/q4B2/b4Q2
+350,"Lertoria, Ernest",Time & Tide,1/1/1952,#2,2K5/3R1Q1p/2B5/4k1p1/7r/2Pp4/4b3/4R3
+351,"Lewandowski, Andrzej J.",problem (Zagreb),1/1/1958,#2,5B2/n4Q2/R1br1p2/1Pk1bR2/P2N4/P3P3/1n1K1p2/5B2
+352,"Lewis, Robert Tony",The Problemist,1/1/2003,#2,2k5/B3K3/P5p1/3NR3/3P4/1p3P2/2q5/2R5
+353,"L'Hermet, Rudolf",Deutsche Schachblätter,1/1/1941,#2,2K2bQ1/2P5/3P4/3pk1B1/1P1rP3/3p4/3P4/8
+354,"Lincoln, Robert A.",Кудесник,1/1/2006,#2,k1b5/ppK5/1R6/8/1Q6/8/8/8
+355,"Lincoln, Robert A.",Кудесник,1/1/2003,#2,8/8/8/7N/4R3/5k1b/2Q5/6nK
+356,"Lincoln, Robert A.",Still More Fun with Chess Miniatures,1/1/2002,#2,8/6p1/7B/5B1k/6n1/8/8/4Q1K1
+357,"Lincoln, Robert A.",Fun with Chess Miniatures,1/1/1996,#2,8/1b3n2/6N1/1Q6/4k3/8/4NK2/8
+358,"Lincoln, Robert A.",Fun with Chess Miniatures,1/1/1996,#2,1b2Q3/1kp5/8/2B5/8/1K6/R7/8
+359,"Lincoln, Robert A.",Fun with Chess Miniatures,1/1/1996,#2,b7/6K1/8/2Q5/4k1n1/6B1/4P3/8
+360,"Lincoln, Robert A.",Fun with Chess Miniatures,1/1/1996,#2,4N3/8/8/3kbK2/8/8/3PN3/2Q5
+361,"Lincoln, Robert A.",Fun with Chess Miniatures,1/1/1996,#2,7r/4Q3/4N3/4N2k/8/7n/8/4K3
+362,"Lincoln, Robert A.",Fun with Chess Miniatures,1/1/1996,#2,5B2/1K6/5Q2/1p1k4/1r6/8/8/3B4
+363,"Lincoln, Robert A.",The Problemist,1/1/1991,#2,8/8/8/N4N2/6B1/1p1k1P2/1K1p2p1/3Q3n
+364,"Lindmark, C. E.",The Times,8/22/1902,#2,1Nb4n/5pp1/3PPk2/1pR1R3/3K4/6p1/1Q6/1B6
+365,"Lindner, László",Magyar Hirlap,1/1/1931,#2,4K3/8/3Np3/2ppk1P1/3N4/B7/1Q5P/8
+366,"Lipton, Michael",South African Chess Player,1/1/1958,#2,K5Q1/1Rppk3/8/2N4N/4b3/2n3B1/8/4R3
+367,"Lipton, Michael & Rice, John Michael",problem (Zagreb),1/1/1957,#2,8/B7/2np4/3kp3/K1N1r3/3r3Q/8/3R3B
+368,"List, Reto",Feenschach,1/1/1981,#2,8/q1N5/1Bp5/p2R4/8/kB1N4/3R4/nrnQbK2
+369,"List, Reto",Schach-Echo,1/1/1980,#2,B3R1RB/5p2/4N3/2p2k1p/2p2p1r/1pKN2bn/5p1n/3Q4
+370,"Locker, Miklós S.",Schweizerische Schachzeitung,1/1/1972,#2,2b5/8/8/2K1k1Nn/8/8/6N1/5Q2
+371,"Löepert, Fritz",Mate,1/1/1982,#2,5B2/1Kp5/3b4/2k1p3/6PQ/P3p3/3R4/3nRB2
+372,"Lois, Jorge Joaquín",Problemas,1/1/1980,#2,2K1Q3/8/4NP1R/4kN2/1BPn4/3P1ppP/8/bR2r3
+373,"Loustau, Jean-Marc",Themes 64,1/1/1974,#2,r7/8/Q4R2/P3kN1N/8/Rb3P2/3r1P2/2b1B2K
+374,"Ložek, Jozef",The Problemist Supplement,1/1/2008,#2,1R6/2bp4/K1kPN3/p1BpP2B/8/R1pr4/2N5/8
+375,"Lundkvist, A.",Springaren,1/1/1992,#2,8/4Q3/1K6/2N5/1kb5/8/1P6/2r5
+376,"Mach, Julius Zdeněk",Nymburské listy,1/1/1942,#2,8/3N1p2/3R1p2/3B3b/3k4/1R1Nnp2/3P2n1/b6K
+377,"Mach, Julius Zdeněk",Cas,9/10/1922,#2,3K4/8/8/8/N2p1B2/3Q1n2/pN1q4/r1k5
+378,"Mach, Julius Zdeněk",Světozor,7/18/1913,#2,8/7p/4R2p/7k/3Q1n2/8/6R1/3K4
+379,"Mackenzie, Arthur Ford",,,#2,8/4R3/b3N3/Pn1k1P2/B3NR2/8/4Q3/5K2
+380,"Macleod, Norman Alasdair",Stratford Express,1/1/1951,#2,KB3bq1/8/1pQ5/8/2nk4/1Bn2r2/2PP4/2NbR1N1
+381,"Madsen, Mads Arthur Valdemar",Het Belgisch Schaakbord (L'Echiquier Belge),1/1/1946,#2,8/p7/R1R3B1/3r4/2N3pQ/Pk6/1N6/K2bB3
+382,"Mai, Guglielmo",Sinfonie Scacchistiche,1/1/1977,#2,K1BB3b/7n/2N1PPN1/2p2kpP/2R1n3/8/5p2/3Q3b
+383,"Makaronez, Leonid",Echecs Francais,1/1/1983,#2,Q3NK2/2p1p2B/1p2p3/1RqNk3/3p2P1/6P1/5n2/8
+384,"Maleika, Gerhard",Die Schwalbe,1/1/2004,#2,4kN2/2P2pP1/p2PN1P1/1b6/B1rp3b/2p1B1PK/5P2/4R3
+385,"Maleika, Gerhard",Heilbronner Stimme,1/1/2003,#2,8/5Q1p/4n3/6k1/8/6BK/8/7R
+386,"Maleika, Gerhard",Die Schwalbe,2/1/1971,#2,q7/1r6/8/8/2Q5/k1N5/N7/K7
+387,"Maleika, Gerhard",Memorial Schulte 1992-93,,#2,6r1/5QpB/1n4N1/2nrB3/4kp2/bP1NP1p1/4R1PP/qb3R1K
+388,"Maleika, Gerhard",,,#2,1br2rb1/7N/pR2pp2/P1Pkpp1R/B2p3Q/BP1N1K2/8/8
+389,"Mansfield, Comins",Complete Mansfield/III,1/1/1999,#2,N7/8/Q4B2/2kP4/p7/pqnP3K/P1R5/8
+390,"Mansfield, Comins",L'Italia Scacchistica,1/1/1965,#2,Q7/PnKN1p2/5p2/5P2/2k5/1R2P3/B7/8
+391,"Mansfield, Comins",The Problemist,1/1/1960,#2,2B4n/6qp/7B/2p1N3/2PPk1NQ/6K1/7P/3R4
+392,"Mansfield, Comins",Adventures in Composition,1/1/1944,#2,2Q5/K2p3r/5p2/6pb/4P2p/RB4Pk/7B/4N2R
+393,"Mansfield, Comins",Chess,1/1/1944,#2,8/8/n7/3B1pr1/5kp1/R3N2n/6Q1/B1bK4
+394,"Mansfield, Comins",Skakbladet,1/1/1934,#2,4B2K/pN4pb/1p2Q2b/2Pr3p/2k1p3/n1B2Rq1/r1P5/1N6
+395,"Mansfield, Comins",The Observer,1/1/1928,#2,8/Kp5N/P2B3R/RN3k2/2pQn3/2qn1rpP/2B2b2/1b6
+396,"Mantelli, Ugo",Nuova Rivista Degli Scacchi,1/1/1901,#2,k4r2/p2p4/P2B4/1N4nB/8/2Q5/6PK/8
+397,"Mari, Alberto",L'Italia Scacchistica,1/1/1925,#2,8/8/6B1/8/5N2/p3n3/K2B1R2/3k4
+398,"Mari, Alberto",La Stratégie,1/1/1920,#2,8/1p2p3/1pk1pN2/6p1/P7/Q1KPbr2/2R1Pr1B/3q3B
+399,"Mari, Alberto",L'Italia Scacchistica,1/1/1917,#2,2Q5/3pppK1/1p2k3/1N6/B4Pp1/1P4P1/8/8
+400,"Markevitch, Alex",StrateGems,1/1/2002,#2,8/1KP5/p1P2PB1/P2Nk3/R1b5/2N3R1/1B6/8
+401,"Markkola, Paavo Johannes",Suomen Shakki,1/1/1986,#2,8/3K4/4Q3/p2R4/kp6/3N4/8/8
+402,"Markx, B. J. M.",Handelsblad,1/1/1915,#2,1R6/8/2Q5/4K3/PN6/qkp5/8/R7
+403,"Maryško, Miloš",Land og Folk,11/14/1971,#2,6Q1/4P3/1K2R3/2pp2P1/2Pkp3/2p5/b1P1r3/2nNbB2
+404,"Maryško, Miloš",Chess Life,1/1/1956,#2,8/4p3/4Q1K1/5P2/B6p/1n4p1/NRpp1bN1/n2k1rRr
+405,"Maryško, Miloš",Práca,1/1/1947,#2,1rb3QK/5pP1/B2B3n/1nNP4/3k1Pp1/2pPN3/1P6/4R3
+406,"Maryško, Miloš",,,#2,7Q/b7/2Rp4/4N3/3kp1K1/8/B4P2/8
+407,"Mcclelland, D. C.",The Chess Review,1/1/1934,#2,qb4n1/r2p2Q1/2p1kP2/r7/2N3P1/B5pN/B7/3R2K1
+408,"Mcgregor, John N. O.",The Brisbane Courier,6/6/1925,#2,3R4/n1kpPb2/P2R1N2/Pp2P3/1P6/8/6K1/8
+409,"Mcintyre, Donald Glenoe",Problems for my Friends,1/1/1957,#2,n2NN3/1q2Q2b/3P1r1p/np1k2rp/1Rp1R2b/8/3P1PB1/1K6
+410,"Měchura, Ivan",Resitelsky zpravodaj,1/1/2010,#2,1Q1B4/8/4R2N/8/1K2p2P/4kpp1/2bp2P1/R7
+411,"Mees, Wouter Jakob Gregorius",Jaarboek van de Nederlandse Bond van Probleemvrienden,1/1/1951,#2,8/8/8/6N1/4p3/4K3/5Ppk/3QN2b
+412,"Meschick, A. G.",The Brisbane Courier,11/1/1919,#2,6r1/5p2/1pPppp1n/1B4pQ/1PKBn1r1/1P4p1/R2Pk1Nb/R3Nb2
+413,"Mészáros, Ferenc",Magyar Sakkélet,2/1/1952,#2,3R1B2/1B1nr3/p1N2bR1/p2k1K2/P7/2P5/4Q3/8
+414,"Meyer, Max Julius",Western Daily Mercury,1/1/1906,#2,4N1b1/3p4/R3B3/1p2k1P1/1KPp4/5P2/8/2Q5
+415,"Meynsbrughen, Michel",perso.infonie.fr/clafouti,1/1/1999,#2,3n4/4N3/p3p2p/P4p1K/N1pk1p2/P7/3PQ2p/7B
+416,"Michel, François",Themes 64,1/1/1962,#2,3K4/1pp1Q3/2p2p2/B1P1N3/3k1p1p/R6r/B2N2n1/4n2b
+417,"Milewski, Stefan",Problemista,1/1/1995,#2,5Q1b/3p3b/KPpp1n1r/2k1p3/R2N2p1/PB6/1R4pq/r1N5
+418,"Milošeski, Boško & Mihajloski, Zlatko",Liga Problemista,1/1/1985,#2,bQ4B1/K1N5/p2N1p2/1p2Rp2/1P1k4/n1R2P1p/4p2q/4B3
+419,"Miltner, Vratislav",Práca,1/1/1949,#2,1KnN2B1/2n3PQ/pp1B1k2/2N4R/q7/8/8/2b2r2
+420,"Mladenović, Slobodan",Sinfonie Scacchistiche,1/1/1980,#2,8/6P1/r1p5/1pB1pP2/1Pk4r/p1N1Q2p/K2P2q1/5NnB
+421,"Mladenović, Slobodan",Revista Română de Şah,1/1/1972,#2,1NkqRN2/2r1pP2/P3P3/KpP3P1/5B1P/1P1P1p1B/8/2R4Q
+422,"Mlynka, Karol",Кудесник,1/1/2006,#2,8/8/8/5n2/5B1n/7k/5K2/6Q1
+423,"Mlynka, Karol",Fakty,1/1/1998,#2,5B2/8/8/7K/1N6/kr1B3R/PNP5/2Q5
+424,"Mlynka, Karol",A.Pituk JT C,1/1/1989,#2,3R4/2QN4/B1pNp3/1pP1Pp2/3kPp2/P1p2p2/2P2K2/8
+425,"Morice, L.",Themes 64,1/1/1958,#2,2B1Nn2/5Qp1/4n2b/1r2k2r/2p1bp2/qpN1B2p/2p4K/4R3
+426,"Morra, Juan Carlos",Magyar Sakkélet,6/1/1958,#2,1qn2N2/Rb6/1p1k4/4p3/1N1P3B/4p3/B6K/2Q5
+427,"Morse, Christopher Jeremy",The Problemist,1/1/1974,#2,6rk/6RB/7P/8/8/8/K7/7Q
+428,"Mosiaschwili, Giwi",Проблеміст України,1/1/2013,#2,B1b5/nRppB3/1pN5/1p1kPP2/1P5R/1K1p2Qp/4p2n/8
+429,"Mosiaschwili, Giwi",Задачи и этюды,1/1/2005,#2,1qB4B/n3rN1b/3p2Qp/1PP2R2/4k2r/2n5/2K1PbN1/8
+430,"Mosiaschwili, Giwi",The Problemist,1/1/2003,#2,1r6/1R6/pnpR4/K7/2p1p3/P1kBN3/Q2ppB2/2r1b3
+431,"Mosiaschwili, Giwi",Probleemblad,1/1/1997,#2,4Q3/8/5N2/2B2p2/2k5/8/1KN5/8
+432,"Moutecidis, Pavlos N. & Сорокин, Евгений Павлович",Probleme Supplement,1/1/1969,#2,rRq1kB1N/4P3/p3rpP1/b2RpQp1/b3N1K1/1p6/8/8
+433,"Müller, Dieter",Freie Presse,6/9/1989,#2,8/7p/1nN2p2/2Q2P1K/R3pkP1/4N3/5P2/1b1rr1nB
+434,"Münch, Günter",Die Schwalbe,1/1/1944,#2,8/2B5/8/8/K2k4/1P3Q2/8/8
+435,"Mündel, Manfred",Schach (magazine),8/1/1971,#2,1K6/4N3/5p2/3nkB2/3R1n2/8/3Q4/8
+436,"Muriac, François",Telescacco 2000,1/1/2004,#2,8/8/4n3/R1bp1N2/Kpk1p2Q/8/1P2P3/8
+437,"Mursikow, Nikolai A.",Het Belgisch Schaakbord (L'Echiquier Belge),1/1/1981,#2,6B1/8/8/2k5/P1N4p/8/7K/5Q2
+438,"Musante, Horacio L.",Arbejder-Skak,1/1/1952,#2,8/p6K/r2n4/Q2N1pN1/1PPkB2p/3p1bnr/7B/2R5
+439,"Musketier, Thomas",Rheinisch-Westfälische Zeitung,7/1/1917,#2,8/3Q4/8/8/3p4/2NkN3/8/3K4
+440,"Navon, Emanuel",Internet Tourney Award,1/1/1999,#2,4b1n1/2p2P2/Q5N1/KPPP2R1/1nk4r/2PN4/2BPPr2/6B1
+441,"Nemmer, Max F.",,,#2,1b6/1n6/8/2PQ1Np1/RKB2kp1/1PB5/b2p4/1n1r4
+442,"Nemmer, Max F.",,,#2,1N1r4/n2p3Q/KR6/p1k1P3/4P3/2P5/B4n2/4N3
+443,"Nešić, Milivoj S.",Problemas,1/1/1966,#2,nbN3n1/p2p3R/3pk1p1/1Q5p/8/1K2pR2/7B/7B
+444,"Nešić, Milivoj S.",Politika ekspres,8/14/1965,#2,k7/1pK5/3p4/8/3Q4/r1p5/8/8
+445,"Neukomm, Gyula R.",Magyar Sakkvilág,1/1/1931,#2,K7/nQ6/8/2k1P3/3p4/3B4/8/8
+446,"Nield, Josua",Hull Times,1/1/1921,#2,8/3K1p2/B7/B1kp1p2/5N2/4R2R/8/4n3
+447,"Niemeijer, Meindert",Problemas,1/1/1975,#2,2B5/2p3P1/2kb3R/P1p1BK2/P1R2P1p/2N4p/6nP/7Q
+448,"Niemeijer, Meindert",Neujahrsgruß,1/1/1970,#2,6N1/8/6R1/3K1kbB/8/8/6N1/8
+449,"Niemeijer, Meindert",Mededeelingenblad van den Nederlandschen Schaakbond,1/1/1943,#2,5R2/QpK1P3/4P3/1P1Bk1B1/1NP1N1bp/3p2br/3P3r/5q2
+450,"Nikotić, Zoran",Mat Plus,1/1/2008,#2,8/8/6Q1/2kp2P1/P7/1K4R1/8/8
+451,"Notaro, Rosario",Land og Folk,1/1/1978,#2,2K5/8/3kB1QN/8/8/8/8/6B1
+452,"Oen, Tan Hoe",The Problemist,1/1/1964,#2,4br2/8/1p1Bp2r/1QPpn1Nq/K2k1n1R/1pNP4/1P1R1P2/8
+453,"Öhquist, Johannes",Die Schwalbe,1/1/1933,#2,rb6/8/k1N4Q/4pq1b/8/1R1N4/1p3P2/1K3B2
+454,"Öhquist, Johannes",84 Schachprobleme,1/1/1932,#2,2K5/3N4/4p3/3kp3/8/8/4NQ2/8
+455,"Öhquist, Johannes",Die Schwalbe,1/1/1932,#2,8/2Q3N1/3p1B2/1p1k2nr/1b6/1K2pP1P/4P3/6RB
+456,"Onkoud, Abdelaziz",Scacco!,5/1/1998,#2,8/Kp4B1/pR2p1q1/N1kp2N1/p1Bp4/4p3/1P3r2/7Q
+457,"Orlik, Peter Rolf",Deutsche Schachzeitung,1/1/1982,#2,Q7/8/3n4/b7/8/8/N1K5/k7
+458,"Ort, Josef",Národní politika,1/1/1918,#2,3N1b2/6p1/b5N1/4Pk1p/5B1K/8/1n4Q1/8
+459,"Ortmans, F. H. Josef",Skakbladet,1/1/1907,#2,2b1r3/7Q/3kPP2/2b1p1N1/1N6/2R5/p5P1/K7
+460,"Paalanen, Erkki",Die Schwalbe,8/1/1963,#2,Q4K2/8/6b1/6B1/4p2b/1p3k2/3P2R1/7B
+461,"Palkoska, Emil",Tidskrift för Schack,1/1/1904,#2,K4b2/Q7/4B3/P1R5/3k4/1n1ppPp1/3n4/4q3
+462,"Palkoska, Emil",Checkmate,1/1/1903,#2,8/8/8/8/2p2KN1/5n1N/1Q4R1/r4n1k
+463,"Panijan, Emil",Šahovski glasnik,1/1/1988,#2,2B3K1/3R4/8/3N1k2/8/3P4/8/1Q6
+464,"Papandrossos, E.",Il Due Mosse,1/1/1954,#2,3B4/3K4/3N4/RpPkPpR1/3n4/8/3Q4/8
+465,"Pape, Edouard",L'Échiquier de Paris,1/1/1947,#2,1n3Q2/1P3b2/1Rp2k2/2P5/1pNN3P/pR6/Kp5n/1B6
+466,"Pape, Edouard",Good Companion Folder,1/1/1916,#2,3nq3/2R1P1BP/b1p1k3/2P4p/2P4N/4K3/4B3/4R3
+467,"Papic, Ljubisa & Стојнић, Драган",The Problemist,1/1/2009,#2,4Bb2/2r1Qn2/2pn1N2/7K/2k1p3/1R2P3/pR6/B3N3
+468,"Paslack, Rainer",Die Schwalbe,1/1/2010,#2,1R6/3K1p2/pN2p3/2k1P3/Pp2Qb1R/1P1p4/6rq/2r4B
+469,"Paslack, Rainer",The Problemist Supplement,1/1/2009,#2,B4R2/5b2/4N3/4P3/2R5/3Nk1r1/2P1p3/4Kn2
+470,"Paslack, Rainer",Die Schwalbe,1/1/2007,#2,5R1K/r3b2p/1Q3N2/p2pkp2/r1P5/5B1q/4N3/4R3
+471,"Paslack, Rainer",Troll,1/1/2006,#2,8/3R3p/3bPQp1/1K6/pN1pk3/rp6/2n1pBP1/1B1br3
+472,"Paslack, Rainer",Probleemblad,1/1/2002,#2,3n2K1/5ppP/1p1P1kN1/Q1r1N3/5P2/5p1B/4b3/4R3
+473,"Paslack, Rainer",Die Schwalbe,1/1/1999,#2,6b1/2pr3q/1pB5/1Nk1pQ1r/KNp3RR/2p4p/6p1/8
+474,"Paslack, Rainer",Slovenský denník,1/1/1992,#2,6B1/2p5/2Nr4/1Pk3BR/P1Nr4/3p4/3K4/5Q2
+475,"Paslack, Rainer & Maleika, Gerhard",Sächsische Zeitung,1/1/1994,#2,3R4/p1Q3p1/8/2nbn1N1/3k4/1PpPp3/K7/2BR4
+476,"Pauly, Wolfgang",The Properties of Castling,1/1/1928,#2,1r1k4/1BrPqp1p/1B4bP/2N1N1Q1/8/8/3P1P2/R3K2R
+477,"Peake, JL",Chess,1/1/1952,#2,5K2/2p1pP2/2r5/Nb6/1PNkB2Q/2b3n1/1qR5/Br2R3
+478,"Peake, JL",Chess,1/1/1947,#2,4B1N1/r2r4/1Bpk2bR/5Q2/3P4/4Pp2/PP6/1KR1n1q1
+479,"Pedersen, Eigil Palle",Arbejder-Skak,1/1/1944,#2,4Nnb1/pr2Pp1P/Rq2k1n1/2Qpp2R/B7/B7/8/6K1
+480,"Pedersen, Eigil Palle",Dagens Nyheder,3/2/1936,#2,5K2/6R1/7p/Q4B1k/1R6/5r2/4b1n1/4B3
+481,"Petite, Efrén",Уральский проблемист,1/1/2011,#2,2Q2R2/1p4nK/2pPP2p/2P1kP1r/1NR1N2p/5b2/5P2/2B1n3
+482,"Phelps, Frank Bradley",The Pittsburgh Gazette Times,12/9/1917,#2,2B2bN1/2n1p3/2pB2R1/1n1kP3/3p2Q1/1K6/4N3/7b
+483,"Piatesi, Antonio",Canadian Chess Chat,1/1/1980,#2,2r3B1/4nQ2/6p1/Rb2P1PN/1p1PkN1p/1Pp5/3R1K2/B7
+484,"Piatesi, Antonio",Die Schwalbe,1/1/1975,#2,n4Kn1/1pRpN3/b2p2p1/B2N2Q1/2pk1p1r/R3p3/p1B1P3/q7
+485,"Pieprzyk, Rudolf",Šachové umění,1/1/1978,#2,4b3/B2BN1b1/4qrN1/p3QP2/1Pk2P2/P6R/n2PK2n/4R3
+486,"Pirrone, Santi",Boletim da UBP,1/1/1962,#2,5R2/4N1n1/R1r2n2/2PPk1N1/3p1p2/1p3b2/Q3P3/6K1
+487,"Pituk, Alexander",Pravda,4/7/2000,#2,3R2bq/4pr1p/2pP2p1/2p1kBP1/p3nN1K/r1p1NRp1/8/3Q4
+488,"Pituk, Alexander",Freie Presse,12/2/1994,#2,BB1n1Rq1/K1p1Qbr1/2r3p1/4p3/4k1p1/4P3/1N1pNpP1/4R3
+489,"Pituk, Alexander",Schach (magazine),1/1/1980,#2,5K2/1N3Q2/3NB3/1p2r3/nB1kb3/r2P2R1/4P3/7n
+490,"Pituk, Alexander",Pedagógusok lapja,1/1/1980,#2,1n2B1rb/1Kp1R2p/5N2/1N2BkpP/1P1R2p1/nrp1pP2/Q1b1p3/6q1
+491,"Pituk, Alexander",Svet socializmu,1/1/1954,#2,8/2b2PK1/1p3Qn1/2Pk4/RP3pB1/1n3P2/N2Pr1r1/2R5
+492,"Pituk, Alexander",Esti Ujság,1/1/1941,#2,8/4K1p1/2rPN1N1/1Ppk4/2R5/3Bpn1r/3p2n1/7Q
+493,"Pituk, Alexander",Wiener Schachzeitung,1/1/1937,#2,2B5/pN3r1p/1p1R1p1Q/1n1pkN2/r7/2q2P2/bBn1P2p/7K
+494,"Pniak, Edmund Jan",problem (Zagreb),1/1/1957,#2,2N5/p2N4/1p3p2/1P1k1P2/2nrn3/8/Q7/2R1R1K1
+495,"Popa, Nicolae",Buletin Problemistic,1/1/2000,#2,7R/N3bK2/N1PkP3/3n4/1P2Q3/2p5/8/8
+496,"Postma, E.",Die Schwalbe,,#2,n3N3/8/2p5/3k4/qr5p/BrbPQ2K/1p1pBN2/2R5
+497,"Preziosi, Bruno",L'Italia Scacchistica,1/1/1959,#2,8/3p1q2/1KPB1p2/2R5/1N1k1P2/6n1/1P1N1P2/2n5
+498,"Pries, Alfred",Die Schwalbe,6/1/1953,#2,1K1N4/B2R4/2p3b1/1R1pk3/2r4P/2P3PB/4nN2/5Q2
+499,"Přikryl, Bohuslav",České listy šachové,12/31/1899,#2,q6N/p1p1P1Pp/7k/4p2N/5PP1/2Q5/8/2K2b2
+500,"Protopopov, & Fa",Šahmati,1/1/1940,#2,b1B5/4PK1p/8/1R2PN2/3Nk2r/nQ6/3qP2B/5Rn1
+501,"Quack, Godfrey C.",The Problemist,1/1/1976,#2,3r4/1npr2N1/1p4Q1/p1kp1RK1/2P5/PnB3N1/1PR5/5B1b
+502,"Quack, Godfrey C.",The Observer,1/1/1965,#2,1qbr2Nb/2n2pnR/r7/4p3/5NkP/8/5RpK/1Q6
+503,"Ragó, István Stefano",Feladvanykedvelök Lapja,1/1/1970,#2,7k/P7/8/8/8/8/8/K5R1
+504,"Rasmussen, Viktor Emanuel",Vejle Amts Folkeblad,1/1/1952,#2,8/5K2/1p1Q4/kp6/1p6/2P5/8/8
+505,"Razu, Ionel",Revista Română de Şah,1/1/1983,#2,6b1/3R4/4NN1K/2n2kp1/2n2P2/2B5/B7/4R3
+506,"Reddmann, Hauke",Die Schwalbe,1/1/2004,#2,4B1NK/8/4p3/8/4pQPk/5brq/5P2/6N1
+507,"Reddmann, Hauke",Schach-Report,1/1/1992,#2,B7/8/2R5/r3k3/8/8/8/3QKR2
+508,"Reeves, Arthur Christopher",Šahs/Шахматы (Rīga),1/1/1964,#2,8/3NbK2/b1p5/R1nkP3/1rrp2RP/N2P2BQ/6P1/8
+509,"Reichert, W.",Heilbronner Generalanzeiger,1/1/1923,#2,8/8/3p2N1/1K3B2/3k4/6P1/3B4/8
+510,"Reimann, Fritz",La Stratégie,1/1/1912,#2,8/8/8/3p4/4kp2/4P2Q/2KP4/8
+511,"Reiprich, Gejza",Hlas ľudu,2/22/1973,#2,5N2/4N3/8/4p3/1K2k1p1/6B1/7R/Q7
+512,"Rice, John Michael",The Problemist,1/1/1993,#2,8/8/8/4Q3/2b5/1p3P2/2k5/R3K3
+513,"Rice, John Michael",Die Schwalbe,1/1/1970,#2,2q1r1b1/2n5/r7/5n1R/4pkN1/2B2p2/p6P/K5Q1
+514,"Rice, John Michael",BCSC Starter,,#2,2N5/1n1p2p1/2p3Q1/2bkP3/5P2/1nR5/2N5/7K
+515,"Rice, William Bayard",The Pittsburgh Post,4/29/1923,#2,5n2/8/1NpR2p1/4kppb/3R4/3p4/1n1K1P2/7Q
+516,"Richards, Ronald",Chess Life,1/1/1955,#2,1bNn1B2/nr6/Kp4R1/Pp1k4/p2p1P2/1p4N1/B3Q3/2R4b
+517,"Riczu, Lajos",Deutsche Schachzeitung,1/1/1973,#2,7k/1b6/6Q1/8/8/8/2RP4/1K6
+518,"Riczu, Lajos",L'Italia Scacchistica,1/1/1964,#2,8/4K3/3NN2p/4k3/2P5/2RprpRB/4n3/7Q
+519,"Riczu, Lajos",Problemista,1/1/1962,#2,3n2Q1/2BpPq2/1P2pR2/1KNk2nr/8/1N1PR3/8/4r3
+520,"Righi, Mario",L'Italia Scacchistica,1/1/1998,#2,Br1Q4/2b2p2/n1N1b3/5p2/2kN3R/Bp6/1P2K3/8
+521,"Riley, H. E.",Vancouver Province,1/1/1956,#2,4K3/8/3pkp2/4p3/6R1/8/4Q3/8
+522,"Rimkus, Mečislovas",Probleemblad,1/1/1977,#2,K1Q2n2/1P2BR1q/pN1p2p1/4k3/R3N2b/4P3/3rb3/5r1B
+523,"Ring, Ulrich",Darmstädter Echo,1/1/1960,#2,K7/8/8/8/8/3kPP2/3N4/2B1Q3
+524,"Riva, Rodolfo",Probleemblad,1/1/1984,#2,3rqB2/b1p2pP1/1pR3NK/1P1k2p1/pQ6/2p1RN1B/b2r4/8
+525,"Rosado, Virgilio Ernesto",Chess Review,2/1/1938,#2,8/7Q/6B1/6B1/8/8/pn1P1N2/K1kqb2R
+526,"Rosenthal, Moisej Schlemowitsch",Československý šach,12/1/1968,#2,2b5/2Q5/8/3P2n1/1N1pk1P1/4N3/5PK1/8
+527,"Rosenthal, Moisej Schlemowitsch",Freie Presse,,#2,3R4/4KN2/5p1p/2p2k1P/2n3n1/3Pp2R/4BrNp/8
+528,"Roth, Alfred",Revista de Şah,1/1/1927,#2,8/K1Q2p2/1R1rkPn1/6P1/4PqP1/3B2p1/6P1/8
+529,"Rovere, Vittorio",Il Secolo XX,1/1/1928,#2,8/8/8/4N1K1/4k3/2RN4/8/1B4B1
+530,"Ruben, C. L.",Tijdschrift vd KNSB,1/1/1936,#2,8/2p5/1pQ5/2pP4/p1krRP1K/B2p1R2/1P6/Nb3B2
+531,"Ruditsch, S.",Вестник проблемиста,1/1/1992,#2,6Q1/8/8/8/3p4/8/3K1k2/4R3
+532,"Runge, F.",Deutsche Schachblätter,1/1/1941,#2,r6k/6p1/2p3K1/2PpB3/8/qB6/RQ6/8
+533,"Russ, Colin Albert Harry",Time & Tide,1/1/1955,#2,5K2/8/5p2/2p4p/2P4k/4BP2/5pQp/5r1r
+534,"Sabol, František",Šachové umění,1/1/1995,#2,r7/6p1/8/5R2/3N1QKb/8/bR1PBP2/1n2k3
+535,"Salai, Ladislav",Mat-Pat,1/1/1994,#2,7K/B6p/8/3P4/2PRB3/3pk1P1/p1Pnrn1N/3Q4
+536,"Salai, Ladislav Sr.",Hlas ľudu,2/19/1981,#2,3K2b1/3ppP2/1Q1pNpPB/1p1PkP1p/4NR2/2b1n3/8/3R3B
+537,"Salthouse, T.",,1/1/1911,#2,K1N1B3/p1PR1p2/r1kp1p2/q1N1nR2/bp6/1p1Q4/1P6/8
+538,"Saunders, Denis M.",The Wizard of Oz,1/1/1999,#2,1b3qbr/3B4/1r6/5N2/5k2/3Q4/1BNn2RR/3K1n2
+539,"Savionok, Alejandro",Sächsische Zeitung,12/11/1999,#2,8/2K5/4P3/8/k7/p1PB3Q/8/8
+540,"Savournin, Jacques",La Clé,1/1/1971,#2,2B1b1q1/3n2np/4R1P1/3ppkNP/3r3B/p2N2Q1/K1Ppr3/8
+541,"Savournin, Jacques",,,#2,4nB2/b7/4p1Nr/Q2P2P1/1p1k1rn1/1P6/2Bp1q2/1K1N4
+542,"Savournin, Jacques & Laffitte, Maisons",Sakkélet,7/1/1999,#2,1NR2Bb1/4pN2/2ppkp1n/1p2P3/8/5Q1n/K2R4/1B2b3
+543,"Sawtschuk, N.",Тихоокеанская звезда,6/25/1966,#2,8/8/8/5P2/5pk1/3Q1N2/7K/4R3
+544,"Schächter, Nuchim",Die Schwalbe,1/1/1929,#2,4B3/8/8/r1P1pp1N/NnK1kpPb/2p4R/2r2P2/8
+545,"Schafft, Willy",Шахматы в СССР,1/1/1935,#2,3N4/Kp6/2bp4/2kpn2R/1R3Qq1/PP4N1/5b2/B6B
+546,SCHIEFER,,1/1/1939,#2,5Q2/3N4/2K1k3/7r/8/5N2/1b6/8
+547,"Schiffert, György",Magyar Sakkvilág,1/1/1927,#2,8/8/1Q6/8/2p5/2kP4/8/N2RK3
+548,"Schiffmann, Israel Abraham",L'Italia Scacchistica,1/1/1927,#2,q3R3/5pK1/3p1Qpp/4B3/2PNkNnr/R7/2P4p/4n1bb
+549,"Schiller, Anton",Turnier Niederelbischer Schachbund,1/1/1924,#2,1k6/8/K2R2q1/8/8/6B1/6Q1/7b
+550,"Schlotterbeck, Benno",Die Schwalbe,3/1/1950,#2,3r4/B4N1p/2R5/1Pnk4/p4R2/1q2PN1K/B1n5/8
+551,"Schneider, Johann Bernhard Michael",Freie Presse,1/1/1967,#2,B2qr3/1N1p4/7r/2pnp1b1/P1kp3p/1Rn2N2/PP2P1Q1/2R4K
+552,"Schneider, Matthias",Schweizerische Schachzeitung,1/1/2003,#2,2KQNB1q/5P1b/2PRP3/N1r1kp2/R2p1p2/2p3p1/2B5/8
+553,"Schneider, Vilmos",Magyar Sakkszövetség,1/1/1966,#2,4R3/q3N1bK/1rpB4/6P1/RN2k1PP/2p2p1p/3pPQ2/1b1r2n1
+554,"Schönberger, Tibor",Magyar Sakkvilág,1/1/1934,#2,8/8/p7/N7/2Q5/k7/1p6/nK6
+555,"Schrader, Carl",,,#2,k2B3R/Np6/1p6/2P3rp/BN1p2pK/6Qp/5n2/R3qb1r
+556,"Schreckenbach, Michael",Freie Presse,3/5/1993,#2,1N1krN2/3pp3/1PR5/3B1R2/4K3/8/8/8
+557,"Schröder, Jochen",Heilbronner Stimme,1/1/2005,#2,5N2/4Bp2/4N3/4k3/8/5Q2/1K6/8
+558,"Schröder, Jochen",,,#2,8/4ppN1/n2p2R1/bb5r/3kp3/3P2B1/BK1PPp2/N1Q5
+559,"Sedgwick, Stanley",The British Chess Magazine,1/1/1949,#2,4NBn1/2p3P1/2P1k1P1/6RB/2P1r3/8/K1QP3b/3b1R1q
+560,"Segers, Marcel",The Problemist,1/1/1990,#2,4N1Kb/rppP1P2/2BpP1R1/B2Nkb2/1P1pPp2/5Pp1/3R1n2/4Q2n
+561,"Segers, Marcel",L'Echiquier,1/1/1935,#2,K1Bb1B2/p1p2R2/1p6/1Q1nkNR1/r2p4/r2p2P1/1NP1PP2/2q4b
+562,"Segers, Marcel",Schackvärlden,1/1/1935,#2,5B1K/6P1/5N2/1N1R3Q/pPkP2p1/b7/PnB4n/2R4q
+563,"Segers, Marcel",Die Schwalbe,1/1/1934,#2,4Br2/2nQPr2/3p2N1/3k1b1R/1P1qnB1K/N1b1PPp1/5p2/3R4
+564,"Segers, Marcel",Els Escacs a Catalunya,10/1/1933,#2,8/8/8/2N5/6K1/8/5k1B/3Q4
+565,"Segers, Marcel",Schackvärlden,1/1/1932,#2,3RK1Q1/1p1n4/1p1k4/1P4P1/1p2pP2/1PNpr2b/3PrN2/2R3B1
+566,"Senkus, Raimondas",Apprenti Sorcier,1/1/1991,#2,6b1/4p3/1KR2bR1/2pk4/1pNP4/5P2/4P3/6Q1
+567,"Shanahan, Ian",The Problemist,1/1/2007,#2,7k/5K1N/8/8/5R2/8/2p2p2/8
+568,"Sheppard, Charles William",Sheppard's 2movers,1/1/1963,#2,2BqN3/1r6/1np5/2R1p2b/1np1kp1r/2P2RPp/3QP3/bN1K4
+569,"Sheppard, Charles William",The Chess Review,1/1/1943,#2,b1R4K/8/2p5/1Np2P2/RpkN4/1n1rp2Q/2P5/3nB2B
+570,"Shire, David J.",The Problemist Supplement,1/1/1997,#2,Q2K2n1/5b2/2N3p1/4Bkp1/R2R4/5N2/4Bn2/8
+571,"Shire, David J.",U.S. Problem Bulletin,1/1/1997,#2,3r4/b4R1p/4Q3/4PNpK/N2Pk3/5n2/5P1B/q2r1B2
+572,"Shire, David J.",The Problemist,1/1/1996,#2,8/B4Kp1/2p5/2rN2p1/R1p1k1P1/3bNpQ1/3R4/4r3
+573,"Shire, David J.",The Problemist,1/1/1985,#2,R7/5Q1p/2p1P3/3N2B1/K3k2r/R4Nn1/B4n1b/4r3
+574,"Shire, David J.",The British Chess Magazine,1/1/1983,#2,6b1/6r1/N1p4R/2bk1B2/2nP1RN1/pQ1p1p1K/8/2q1n3
+575,"Sim, Malcolm",Toronto Telegram,1/1/1935,#2,8/3RKP2/pR1Npr2/N2k4/nQ3p2/8/5pqn/7b
+576,"Sim, Malcolm",La Presse,1/1/1922,#2,1b6/4p1K1/1pQ5/1r2k1pb/2p2R2/2n1N3/q3Nr2/1BB1R3
+577,"Šindelář, Miroslav",Úder,4/18/1974,#2,k1N5/2r5/2P5/8/8/1R6/8/1K4B1
+578,"Siotis, Nikos",Hlas ľudu,3/26/1981,#2,3R3Q/2N1pN2/p7/P1p2B2/1pk2n2/2p2nB1/2P5/3R3K
+579,"Slagmolen, Cornelis",Probleemblad,1/1/2004,#2,1Q5K/3b4/r4p2/PpRP3n/Np1k1N1B/1P2pP2/1r6/1B6
+580,"Smith, JAJ",Evening News,1/1/1933,#2,1Q6/1p3q2/1RB2B2/4R1b1/3k1PPN/2r1n1pK/b2nPP2/1N6
+581,"Sobolewski, S.",Wiadomoscy Szachowy,1/1/1935,#2,8/5p2/3K1Q1p/1p2Pp2/1P1k4/2NbN1bq/3PP1r1/8
+582,"Sola, Pentti Olavi",Die Schwalbe,1/1/1931,#2,8/1P6/8/8/8/6p1/5PBk/5K1N
+583,"Solarczyk, Rudolf & Burda, Josef",Schach (magazine),1/1/1984,#2,n7/K2b4/p1k1p3/rp5R/5B2/bN2NRP1/3q1Q2/7B
+584,"Soltsien, Kay",Die Schwalbe,11/1/1954,#2,4R1K1/1Bb3P1/Qpr1N1N1/2p2k2/2n3RB/7P/b2p4/qn6
+585,"Sonnenfeld, Felix Alexander",,,#2,8/8/QpKp4/3p4/3k4/2RNpP2/3bp3/2N1r3
+586,"Sparke, Arthur M.",Good Companion,12/1/1918,#2,4R3/1qpP1P2/1p2Bp1p/5N1K/1R1Pk3/Q5p1/P1prr1Nb/8
+587,"Sparke, Arthur M.",The British Chess Magazine,1/1/1917,#2,6b1/2Rp3p/N4p1K/r2k4/5B2/p3Q3/n1N1P3/3rb3
+588,"Speckmann, Werner",Deutsche Schachzeitung,1/1/1986,#2,K1k5/P1P5/6p1/2Q3B1/8/8/8/8
+589,"Speckmann, Werner",Berliner Morgenpost,1/1/1980,#2,8/KQ6/8/p7/k1N5/B2n4/8/8
+590,"Speckmann, Werner",Deutsche Schachzeitung,7/1/1971,#2,6k1/5R2/6K1/8/8/8/8/B7
+591,"Speckmann, Werner",Berliner Morgenpost,1/1/1964,#2,3b4/4PQ2/2k5/1p6/1P3PPK/8/8/8
+592,"Speckmann, Werner",,,#2,6r1/1kN2R2/1p3Q2/8/1K3p2/1p6/8/8
+593,"Spiess, Jean-Yves",diagrammes,1/1/1989,#2,8/8/B7/bb6/3RN3/1k6/2N3r1/1KnQ4
+594,"Stange, Manfred",Schach (magazine),1/1/1974,#2,8/5KP1/3PNp2/3p1k1p/3PRB2/4pb1R/3n2pN/2Q5
+595,"Staudte, Hans Hilmar",Diagramme und Figuren,5/15/1964,#2,8/Q2P4/4k3/4N3/4K3/8/8/8
+596,"Staudte, Hans Hilmar",Diagramme und Figuren,1/1/1964,#2,8/3P4/4k1K1/1Q6/8/8/8/8
+597,"Stephenson, Edward",Double Pin-Mate after a Black King Move,1/1/1980,#2,5B2/1p3K2/5Pp1/3kN2R/2nPb3/3r4/BP1RQPn1/3r4
+598,"Stephenson, Edward",The Brisbane Courier,7/22/1933,#2,n7/2B1R1nb/4NPq1/1P1kP3/4Nppp/2pK1Bb1/2P3Q1/4R3
+599,"Stocchi, Ottavio",933 Problemi di O.Stocchi,1/1/1995,#2,8/K3b3/1N1P3R/p2NknB1/q7/3Qp2B/4pr2/8
+600,"Stocchi, Ottavio",Federazione Scacchistica Italiana,1/1/1954,#2,2br4/2NN4/p1Rp4/b4p2/r2k1Pn1/B1p3Q1/2B2n2/2K5
+601,"Stocchi, Ottavio",Szöghy-tema,1/1/1951,#2,8/3K2bb/5p2/n1pk4/1P3Q2/1P3R2/4n3/B7
+602,"Stocchi, Ottavio",L'Enigmistica Popolare,1/1/1933,#2,b1kB4/PNpp4/PR6/3Q4/6P1/8/7p/7K
+603,"Strerath, Otto",Die Schwalbe,9/1/1951,#2,q4b2/pbn5/p1p2R2/K1k4r/3N4/N2R3P/B4PQB/2n5
+604,"Strerath, Otto",Schach-Express,1/1/1949,#2,3K4/b1pN4/B1p2pp1/2r3r1/R2PkB2/6p1/3QN1P1/8
+605,"Strydom, Jan",The Tablet,5/4/1963,#2,1NQ3n1/r2R2pb/4k1p1/1N1R4/2r1pp2/b1B5/8/5K2
+606,"Stubbs, Arthur Goodwin",Good Companion Folder,1/1/1920,#2,rn2Q3/p4Kp1/P2P4/2Bk4/4N1N1/1Pp3P1/2P5/3n4
+607,"Subotić, Miroslav",The Problemist,3/1/2010,#2,8/K7/Np6/1k6/8/1n6/R1Q5/8
+608,"Subotić, Miroslav",,,#2,7b/1bp1p3/Np1kp3/1B2N1Q1/2P5/1R6/3B4/K7
+609,"Sutter, Martha",Basler Nachrichten,1/1/1959,#2,8/3n4/3P4/1RPkPK2/3P4/3Q4/8/8
+610,"Svennerstedt, Stig Herman Svenning",Vart Hem,1/1/1938,#2,2R5/1n3NK1/3P2Q1/1N1k1P2/6nR/2P2p2/6q1/bB1rr1B1
+611,"Svetec, Srdan",Boletim da UBP,1/1/1962,#2,bb5B/7B/4NR2/2ppk3/8/8/5K2/2R5
+612,"Sydenham, Colin Peter",The Problemist,1/1/1974,#2,7B/1B1b2b1/2N3Q1/3p1n2/R3pk1N/5p2/p6K/4R3
+613,"Szentgyörgyi, Ernő",Magyar Sakkvilág,1/1/1936,#2,8/1N1p4/3p4/5K2/3k1N2/8/8/2Q5
+614,"Szentgyörgyi, Ernő",Magyar Sakkvilág,1/1/1936,#2,8/p7/R7/8/2kBB3/K3P3/8/8
+615,"Szentgyörgyi, Ernő",Magyar Sakkvilág,1/1/1936,#2,6N1/1Kpk2N1/2R5/B7/8/8/8/8
+616,"Szentgyörgyi, Ernő",Magyar Sakkvilág,1/1/1933,#2,QR6/8/8/qp6/k7/8/NK6/8
+617,"Szentgyörgyi, Ernő",Magyar Sakkvilág,1/1/1931,#2,4R1n1/4b3/2KPk3/8/5Q2/8/8/8
+618,"Szentgyörgyi, Ernő",Magyar Sakkvilág,1/1/1931,#2,8/8/8/4B3/8/8/1p3k2/1B1K3Q
+619,"Szentgyörgyi, Ernő",Magyar Sakkvilág,1/1/1929,#2,8/1K3p2/3k1B2/3P4/2P3Q1/8/8/8
+620,"Szentgyörgyi, Ernő",Magyar Sakkvilág,1/1/1928,#2,4B3/3R1pP1/4k3/4P3/5K2/8/8/8
+621,"Szentgyörgyi, Ernő",Magyar Sakkvilág,1/1/1928,#2,6QN/6p1/7k/8/6K1/8/8/8
+622,"Szentgyörgyi, Ernő",Magyar Sakkvilág,1/1/1926,#2,3R3K/5k1B/3B4/4P3/4P3/8/8/8
+623,"Szöghy, József",Sinfonie Scacchistiche,1/1/1968,#2,Kn2N3/1R2p2b/pNk1r1n1/2p2p2/5bp1/q3B3/8/1Q3B2
+624,"Szügyi, Gyula",Manchester Guardian,1/1/1958,#2,5R2/8/2Bkp3/3pN1B1/R2N4/3K4/8/8
+625,"Szwedowski, Leopold Mieczysław",Match Varsovie-Slask,1/1/1959,#2,2Bnn2r/2Nbp3/3kNp1R/1p3QP1/5PK1/2R5/3r1b2/8
+626,"Taale, Cornelius J.",Die Schwalbe,12/1/1936,#2,8/3Q4/1N1B3p/3PrP1P/2Rnk1KR/2r4P/2P3P1/bB3N2
+627,"Taraba, Jozef",Hlas ľudu,3/22/1979,#2,6B1/5R2/b1pPp2p/2p4Q/Ppkp2K1/2B5/P3R3/2N1N3
+628,"Taraba, Jozef",Podtatranské noviny,1/1/1979,#2,8/2Bp1R2/5N1K/Q1N1pkp1/1Rb5/2n3P1/1p2P3/8
+629,"Tazberík, Ján",Ľud,1/1/1964,#2,8/2N5/2N5/5p2/2p1k1p1/8/bn1BK3/2Q1n3
+630,"Ten Cate, Pieter",Boletim da UBP,1/1/1981,#2,5B2/1q1bRn1n/1p6/pBkr1R2/P1N4b/1p3Np1/1P6/K3Q3
+631,"Ten Cate, Pieter",Hlas ľudu,4/26/1973,#2,Q6B/6R1/5K2/3p4/1pNkN3/3p4/4P3/8
+632,"Terenzani, David",Ajedrez (Buenos Aires),3/1/1960,#2,4b3/3R1p1K/5k2/1pN1N3/r2n2PP/4R3/4p2B/b2r4
+633,"Thompson, Walter Hood",Les Tours de Force,1/1/1906,#2,b4Q1n/Nn1p4/PBR1BKPp/r1q2p2/p2k2p1/3p4/1P1N4/4R3
+634,"Thompson, Walter Hood",Les Tours de Force,1/1/1906,#2,5q2/p4P2/p1R5/4QR2/rk5r/p2P1p1p/2P1bP1K/2B1b3
+635,"Thomson, Robert Gavin",London Opinion,1/1/1908,#2,7K/8/3P4/p2rR3/P2Nr2p/P1k4P/B3p3/2B1N1Q1
+636,"Tomašević, Miloš",Mat Plus,1/1/1996,#2,8/1R6/8/3k4/4N1K1/4p3/1Q6/8
+637,"Tomašević, Miloš",Mat (Beograd),1/1/1983,#2,7k/7P/4K3/8/8/8/8/7Q
+638,"Tóth, Imre",The Chess World,6/1/1933,#2,5N2/8/1KNp4/3k2pR/5BRb/1P2pP2/Bnn1PP2/2qb2rQ
+639,"Tóth, József",Šahovski glasnik,1/1/1927,#2,8/1pN5/1B6/2pp1Kp1/1pk2bR1/1R1nQ3/5n2/N7
+640,"Townsend, A.",Lebanon Herald,,#2,4QN2/1b4p1/2Rr1bP1/3p2p1/3kB1N1/3P4/1P4K1/8
+641,"Trilling, Anton A. C.",Die Schwalbe,1/1/1930,#2,7K/5p1B/3P1Pp1/4p1PR/2Q1N1kn/2p1P1pR/2P3p1/6B1
+642,"Trilling, Anton A. C.",Die Schwalbe,1/1/1930,#2,1b6/NP1p4/Pk1p2R1/6BR/1N6/1K2p3/4P3/8
+643,"Trubač, Michal",Smer,1/1/1964,#2,8/6Kp/2p1pB1n/2Rbrk2/1p6/1P1NPPpr/Q6P/3B1N2
+644,"Tryssesoone, Louis M.",The Problemist,1/1/1984,#2,8/7K/B3R3/7R/6kB/8/3N4/8
+645,"Tschernyi, O.",За огнеупоры,1/1/1987,#2,8/8/7p/R5pk/4B3/6K1/1p6/8
+646,"Tucakov, Joza","QCT, Beograd",1/1/1998,#2,8/2n5/2Np4/6Q1/2B1k3/6P1/5nK1/2q1b3
+647,"Tucker, H. J.",The Australasian,1/1/1917,#2,rq3b2/nbrBn3/3Q4/2p5/2k1p3/BR6/P7/1K6
+648,"Tuhan-Baranowski, Leon",Polen-Dänemark,1/1/1933,#2,K7/p6B/rp3p2/n2N3R/2k3bR/4Bpr1/1Q6/N3bq2
+649,"Tuxen, Harry Viggo",Jyllands-Posten,1/1/1960,#2,2Q1K3/1rN5/1k6/1P6/1P6/8/8/8
+650,"Tuxen, Harry Viggo",Tidskrift för Schack,1/1/1920,#2,n3b3/1pp2p2/2k2P2/7R/4N3/2K3PB/8/3R2B1
+651,"Valuška, Ján",Sal'a-Zvolen,1/1/1988,#2,8/1r6/R7/pk1PN3/R7/1N1P4/8/1Q1K4
+652,"Van Den Berg, Roelof",Den Haag Vandaag,1/1/1988,#2,2b3N1/2p3q1/2nbr1p1/2P2kPp/2B2B1Q/1N2pp1K/2pR1RP1/8
+653,"Van Dijk, Nils Gustav Gerhard",Skakbladet,1/1/1963,#2,8/1q3p2/8/4b2K/R5p1/3PN2p/nQ1BkP1R/4N3
+654,"Van Schoor, L.",,1/1/1942,#2,8/n1pNr3/2Pkn2R/3P2q1/1N3R2/6Q1/3K1P1B/8
+655,"Van Woerden, Jan",,,#2,2n1BK2/1Rpbpp1p/1p1k4/N2p2N1/2PP4/6b1/7r/5Q2
+656,"Vandemeulebroucke, Ignaas",Het Belgisch Schaakbord (L'Echiquier Belge),1/1/2000,#2,3R4/2b1n1pK/4Np2/3Q1r1k/2R5/8/3pN1P1/3r4
+657,"Vătărescu, Paul",Problemas,1/1/1969,#2,8/6p1/3R2b1/1p4rq/1Nk3r1/KN6/1P6/RB6
+658,"Verdonk, Johannes Bernardus",,,#2,6r1/3P1p1B/3K1k1P/5N2/3p1p1P/5R2/1NprP2b/B2Q1n2
+659,"Vész, Tibor",Il Problema,1/1/1932,#2,4b1N1/B3Rp2/Q2p1b1r/P2kn3/2p4r/K2n2qB/3RPN2/8
+660,"Vész, Tibor",Falkirk Herald,1/1/1925,#2,K7/2R4N/4pQ2/3knn1R/7p/B2Pr2q/2N5/5r2
+661,"Vianen, A.v.",Schb,1/1/1912,#2,4b2B/1Q6/1PPP4/2pkP1N1/5Rr1/4P1pB/6K1/8
+662,"Vinagre, José C.",The Problemist,1/1/2006,#2,8/2pq1n2/8/2Q2P1K/pR1pk3/2B1bR1N/B1n1P3/8
+663,"Visintin, Roberto",Probleemblad,1/1/1986,#2,2B5/5R2/8/3p1n2/2N2p1b/3P1k1P/R6B/4n1K1
+664,"Visserman, Eeltje",Schach-Echo,1/1/1954,#2,N2B2N1/3p4/P2p2Pp/R1pkn2R/8/2P3P1/3K4/3B4
+665,"Voda, Josef",Zemědělské noviny,,#2,8/4N1n1/1Q2R2K/2rpb1Np/b2k3r/p7/3P4/5B2
+666,"Vogel, Peter","plagiarism, плагиат (www.pevomuc.de)",1/1/2004,#2,8/8/8/N7/3p4/3Q4/K7/n1k5
+667,"Voormans, Jan",Schakend Nederland,1/1/1960,#2,N1K5/P2p1B2/rPkB4/pN1q3R/3r4/1P6/4Q3/8
+668,"Vukcevich, Milan Radoje",De Waarheid,1/1/1982,#2,2K3n1/2N1k3/3p4/5R1p/7R/7Q/4r3/5n2
+669,"Warrier, G. K.",The Field,4/12/1952,#2,4R1B1/8/1K2n3/Rb6/1p1k4/4N1Q1/5r2/4N1B1
+670,"Warton, Edwin",The British Chess Magazine,1/1/1929,#2,8/p2N4/Pp4n1/2pN2p1/4R1P1/3k1P2/1Pp3p1/2K3B1
+671,"Warton, Joseph John & Cresswell, J.",Busmen's Chess Review,1/1/1962,#2,B5K1/7N/8/2NP2R1/1Rb4p/1r2pk2/1n1P4/2n1Q3
+672,"Warton, Joseph John & Warton, Thomas Joseph",Chess,1/1/1946,#2,5bQ1/6n1/1P3Pkp/4Rp1N/p5P1/PrPN3p/B2B3K/8
+673,"Weenink, Henri Gerard Maria",The Problemist,1/1/1927,#2,6K1/5P2/3p4/3P2B1/2B3N1/1n1P1r2/1R4N1/2nk4
+674,"Weenink, Henri Gerard Maria",Algemeen Handelsblad,1/1/1915,#2,4r3/5N1p/6p1/3p4/1Ppk4/3B3Q/2KP4/8
+675,"Weigel, Richard",,,#2,8/3pR1K1/1rPN4/3kB1p1/2RN2Q1/1P6/8/2bq3b
+676,"Wenman, P.",One Hundred Published Problems,1/1/1944,#2,n1Q2B2/5p1b/5N2/4R1r1/nK1k4/4p1P1/4P3/8
+677,"Werle, Allan Theodor",Hvar 8 Dag,1/1/1927,#2,K7/8/2Q5/3p1N2/4kN2/8/6R1/8
+678,"Wertelka, Stasys",Mezija,1/1/1994,#2,8/8/8/8/8/1K5R/1p6/1k4B1
+679,"Westarp, Anton",Beckumer Zeitung,1/1/1924,#2,6N1/5p2/4p3/4k2K/N7/8/8/2Q5
+680,"White, Alain Campbell",Good Companion,12/1/1918,#2,3b4/1N6/q2pp3/Rn2nkPP/6R1/5PBQ/4N1P1/5K2
+681,"White, Alain Campbell",Checkmate,1/1/1904,#2,7K/1B6/5R2/3PpPp1/4krN1/2Pp3Q/5pnN/1q3b2
+682,"Williams, Philip Hamilton",The Chess Amateur,1/1/1922,#2,2q2NBK/n6Q/P1k5/P2R4/1B6/3p4/8/8
+683,"Wilson, Francis Vaux",Schach-Echo,1/1/1970,#2,Q7/1R6/8/3k4/8/5R2/1K6/7B
+684,"Wilson, Francis Vaux & Van Gool, Johann Christoffel",Probleemblad,1/1/1981,#2,3R4/7b/n1p1N1p1/BPPq1N2/pP5p/4RP1K/2pkBP2/7Q
+685,"Winter-Wood, E. J.",Bradford Observer,,#2,6B1/8/4Q2B/2prp3/8/2Pk1p2/K2P4/2R5
+686,"Winter-Wood, E. J.",Illustrated Sporting and Dramatic News,,#2,8/3K4/N1p3N1/n2k1n2/3p4/3P1P2/2B5/5Qbb
+687,"Wirtanen, Erkki Aukusti",Probleemblad,1/1/1972,#2,1N2Nb1r/5p1R/1n2k2r/2p3Q1/3pP1Kp/3B4/4R3/8
+688,"Witt, Andreas",Freie Presse,10/16/2008,#2,1q4b1/1N1pR3/1p1p2Q1/pK1k1p2/4pP2/1PB1P1n1/rp3n2/bN5R
+689,"Witt, Andreas",Freie Presse,8/4/2000,#2,6B1/8/8/3R4/3B4/rq6/k7/1N2QK2
+690,"Witt, Andreas",Freie Presse,7/14/1995,#2,2B2n2/2r2b2/8/p1QN4/k1KR4/2RN4/3pq3/2r5
+691,"Witte, Alberto",Boletim da UBP,1/1/1962,#2,Kb6/3pn2r/RN3R2/pPPPk1B1/qn4r1/2P1P2B/3N4/1b6
+692,"Wright Wood, S.",The Guardian,1/1/1961,#2,4N3/8/3p1p2/N2RqR2/1n2k2n/1PP1b1PP/4Q3/1K4B1
+693,"Wróbel, Marian",Het Belgisch Schaakbord (L'Echiquier Belge),1/1/1957,#2,4N3/8/B1R1p3/5p2/N2pkn2/3R1nQ1/8/3K4
+694,"Wurzburg, Otto B.",American Chess Bulletin,9/1/1939,#2,8/8/Q7/R1pk2bR/8/2B2K2/6r1/7B
+695,"Wurzburg, Otto B.",Good Companions,1/1/1921,#2,2K3b1/bp1Q1Nr1/qB1N4/2p5/7p/2nR1Bk1/7r/5R2
+696,"Yanuarta, Simadibrata",The Problemist Supplement,1/1/1993,#2,8/2Q3p1/2B1kbP1/2n2rp1/2KpP1N1/8/3PN3/8
+697,"Yanuarta, Simadibrata",Die Schwalbe,,#2,8/4p1Q1/1K2P3/pRN2b2/2k2r2/r3PB2/2PB4/b2R4
+698,"Zarur, Almiro Elias",Boletim da UBP,1/1/1990,#2,5R2/3Q1B2/4K1P1/1p6/2ppk1P1/R1n3P1/2qrpBb1/8
+699,"Žatko, Jozef",Smena (Bratislava),1/18/1964,#2,K2NN1B1/p2P4/2P5/rRnqk2P/2P2b2/2p1PPnr/7B/1Q6
+700,"Zatulni, V.",Черкаська правда,1/1/1981,#2,4B3/3K2P1/8/8/6P1/5NBk/4NRpp/6R1
+701,"Zaubitzer, Herbert",Schach (magazine),1/1/1979,#2,1q1n4/b1pB3Q/r5p1/8/1p2k1N1/3R4/2P1N1K1/8
+702,"Zilahi, Zoltán",Arbejder-Skak,1/1/1948,#2,q4R2/5N2/2rP2K1/2PR2p1/QnB1k1pb/8/2PPP2P/1bB5
+703,"Zipf, Volker",Schach (magazine),1/1/1984,#2,8/8/2p1N3/2p1n1p1/4Q1n1/4p1p1/pr2kPK1/b1R2N2
+704,"Zujevas, Nikolajus",Šachmatija,1/1/2012,#2,1b6/rp6/p1kP4/B7/1Q6/8/2K5/3R4
+705,"Zujevas, Nikolajus & Цырулик, Степан Павлович",d2-d4,1/1/2000,#2,3N3Q/2pp1N2/3p4/3k4/4p3/1K2B3/1b1P4/8
+706,"Zuncke, Klaus-Peter",Deutsche Schachzeitung,1/1/1980,#2,k7/N7/K7/8/8/8/8/R7
+707,"Zuncke, Klaus-Peter",Deutsche Schachzeitung,1/1/1980,#2,8/7P/8/8/8/3K4/2R5/1k6
+708,"Абраменко, Г. С.",Kennst Du die Bibel?,1/24/1971,#2,6K1/6Q1/6b1/6k1/4R3/6N1/8/8
+709,"Адабашев, Марк Иванович",Die Schwalbe,2/1/1936,#2,3r2QB/1q1N1n1K/1PprP2R/3k1np1/1R1PN3/1Pp2P1B/1bb5/8
+710,"Ажусин, Александр Александрович",Проблемист Дальнего Востока,1/1/1972,#2,8/8/2PpK3/B2Pp3/2k1B3/b2RQ3/b7/1n6
+711,"Александров, Владимир Александрович",Интеллектуальные игры,1/1/1993,#2,8/6p1/5RN1/8/K2pk1pq/pQ2N2n/8/8
+712,"Александров, Владимир Александрович",Schach-Aktiv,1/1/1992,#2,3B4/8/5R1p/6k1/8/8/5KNN/8
+713,"Александров, Ростислав Николаевич",Шахматы в СССР,1/1/1935,#2,2R5/3p1p2/3P1Rp1/1N1kn1Q1/1p4p1/1Pr1p1Kn/4b1N1/BB6
+714,"Алексеев, Юрий Михайлович",Шахматная композиция,1/1/2004,#2,1b2B3/4n1p1/p6p/1pR1p3/1p2k1P1/4N1RN/3KPB2/Q3n3
+715,"Амиров, Талип Хасанович",Úder,1/1/1976,#2,8/8/8/1N1Q4/5p2/4k3/4b3/4K3
+716,"Амиров, Талип Хасанович",Die Schwalbe,4/1/1966,#2,6kr/5R1R/8/4K1Bn/8/8/8/8
+717,"Амиров, Талип Хасанович & Salai, Ladislav",Šachové umění,1/1/1982,#2,2q5/1n2N3/3p2b1/1BPPPPB1/RP2k1PR/1p1p1Np1/6Q1/5K2
+718,"Андреев, Александр",Кубань сегодня,1/1/2002,#2,8/3K4/6Q1/8/3Bpk2/5p2/8/8
+719,"Андреев, Александр",Bankowskaja gaseta,1/1/1996,#2,4Q3/8/8/4Np2/7b/6k1/8/4R2K
+720,"Андреев, Александр",Bankowskaja gaseta,1/1/1996,#2,8/8/8/1KPkpQn1/8/1N6/8/8
+721,"Андреев, Александр",Bankowskaja gaseta,1/1/1996,#2,4K3/4p1p1/5k2/4p3/6Q1/8/8/B7
+722,"Андреев, Александр",Кубань сегодня,1/1/1996,#2,8/1Pk5/K2b4/1n6/3R4/1Q6/8/8
+723,"Андреев, Александр",Кубань сегодня,1/1/1996,#2,8/8/B7/4Q3/8/1r3k1K/3R4/1b6
+724,"Андреев, Александр",Кубань сегодня,1/1/1996,#2,6K1/6b1/6k1/6n1/5p2/8/4Q3/6R1
+725,"Андреев, Александр",Кубань сегодня,1/1/1996,#2,7Q/8/2K5/8/1k6/Rpp5/1b6/8
+726,"Андреев, Александр",Кубанский край,1/1/1996,#2,8/8/bp6/k7/8/K4Q2/8/8
+727,"Андреев, Александр",Вечерний Краснодар,1/1/1996,#2,8/8/8/1Q6/6p1/4K3/6k1/5R2
+728,"Антипов, Вячеслав П.",Темп-64 (Николаев),1/1/1995,#2,8/2p5/2K5/3P4/1k6/p7/Q7/1N6
+729,"Антипов, Вячеслав П.",Шах-ВВ (Боровичи),1/1/1995,#2,1B6/8/1p1N4/k7/1N6/1PK5/8/8
+730,"Антипов, Вячеслав П.",Шах (Боровичи),1/1/1986,#2,k3r3/1q6/2BQ4/8/8/4B3/K7/8
+731,"Арчаков, Виктор & Назаров, Борис Н.",Probleemblad,1/1/1973,#2,K3N3/n1p1rP1P/2R5/N1B1kB2/1pp1P1R1/8/bb1P3q/n7
+732,"Арчаков, Владимир Михайлович & Шедей, Сергій Олександрович",Hlas ľudu,1/1/1986,#2,4r3/4Q1qp/3Rn1N1/5r2/NP2k1P1/1KP3BR/1n1P2PP/8
+733,"Баев, Георгий",De Problemist,1/1/1930,#2,4K3/BB5p/2R1Q2N/r3P2r/2PNk2p/3p2P1/1qPRbPp1/8
+734,"Балашов, Евгений Фёдорович",Šachová skladba,1/1/1995,#2,2B1q3/2p1P3/Q1p1R3/2PkN2b/K1p2r2/B1P2P2/3N4/8
+735,"Банный, Дмитрий Николаевич",Шахматная Москва,1/1/1968,#2,8/2K2Qp1/p2P4/P2RP3/2kP1N2/P1r4r/n7/BR4b1
+736,"Бантыш, Николай Иванович",The Problemist,1/1/2002,#2,8/1Q2Nn1p/5pp1/R5n1/K3Pk2/2p2N1B/5PP1/8
+737,"Бирбрагер, Исаак Шулимович",problem (Zagreb),1/1/1956,#2,1K4B1/1pQ2n2/8/1p5r/3k1BR1/2Np2b1/N2p4/3b1n2
+738,"Богданов, Євгеній Михайлович",Ленінський шлях,1/1/1989,#2,R7/8/3K4/1p6/2p5/Nk6/8/Q7
+739,"Богданов, Євгеній Михайлович",Probleemblad,1/1/1982,#2,3rB3/5P2/2P1k1Nn/R2pP3/K2Qp1PB/b7/2N5/5r2
+740,"Богданов, Євгеній Михайлович",Радянське слово,1/1/1975,#2,R7/5k2/4N3/4K3/B7/8/8/8
+741,"Богданов, Євгеній Михайлович",Слава Родины,1/1/1972,#2,7Q/8/4P1K1/3p4/4kp2/2R5/8/8
+742,"Борисенко, Олексiй",Задачи и этюды,1/1/2006,#2,2Q3b1/R1p2p2/1NK2ppp/1pp1k3/7R/1Bp2P2/3b1N2/2nrr1B1
+743,"Брюханов, Іван Олександрович",Rochade Europa,8/1/2004,#2,k1K3Q1/1p1N4/8/8/8/8/8/r1b5
+744,"Бурмистров, Сергей Геннадьевич",Вечірній Харків,1/1/1982,#2,r7/8/2Q5/kP1n4/2P5/1K6/8/8
+745,"Буянов, Александр Н.",Rochade Europa,1/1/1992,#2,3r4/4p3/p1NpK3/1p6/1BkNp1Q1/1p1p4/8/n2R3b
+746,"Быков, Николай А.",«64»,1/1/1971,#2,qb6/pr1p1p1B/1r5p/5N1k/b3N1p1/8/3Q4/2B1n2K
+747,"Былевский, Андрей Степанович",Шахматные задачи (Боровичи),3/1/1987,#2,1B4B1/8/4p3/8/4R3/2k5/1N6/1K6
+748,"Былевский, Андрей Степанович",Минимат,1/1/1986,#2,5R2/8/3p4/4k3/3p2BK/8/1Q6/8
+749,"Васильев, С.",Проблеміст України,1/1/2013,#2,1B6/8/1npQB2b/3n3r/3Pk1Pq/2pR3P/4P3/KN5N
+750,"Вахлаков, Юрий Николаевич",Шахматная композиция,1/1/2000,#2,3K1B2/2N5/P1kP4/P1p5/bP2R3/3p1R2/6r1/7B
+751,"Веселенчук, Семен Іванович",,1/1/1996,#2,8/8/7B/8/8/4pN1p/5k2/3Q3K
+752,"Веселенчук, Семен Іванович",,1/1/1996,#2,8/1p6/3Q4/kp6/8/1K2p3/4B3/8
+753,"Власенко, Николай Филиппович",Уральский проблемист,1/1/2007,#2,6b1/3N1q1r/pR1n1Q2/1p1k3p/8/2p3b1/1N2R3/3B1KB1
+754,"Власенко, Николай Филиппович",Уральский проблемист,1/1/2005,#2,8/8/7Q/8/8/5pp1/6k1/R3K3
+755,"Вовнейко, Виктор Иванович",Práca,1/1/1998,#2,4B3/4Rp2/Np1k1B2/r6r/pn1P1b2/1Q4N1/6b1/1K1R4
+756,"Вовнейко, Виктор Иванович",Знамя юности (Мінск),1/1/1971,#2,8/3R4/1pp5/k7/1N6/1K6/8/4Q3
+757,"Гаврилов, Константин Григорьевич",Tijdschrift vd KNSB,1/1/1936,#2,8/2R1pr2/2Np1rn1/P1k1q2R/P7/1B1pP1N1/3Kp3/4B1Qb
+758,"Гаврилов, Константин Григорьевич",Deutsche Schachzeitung,1/1/1905,#2,8/8/3Q4/8/4P2B/3Bk3/2K3b1/8
+759,"Гайдуков, Пётр Гаврилович",Военный вестник,1/1/1957,#2,K7/1pb5/k7/5Q2/1P6/4B3/8/8
+760,"Галицкий, Александр Васильевич",Шахматный журнал,12/31/1899,#2,5r2/1b3r1p/q5pK/6P1/7Q/2N1B2B/6P1/5k2
+761,"Гегельский, Иван Иванович",Шахматы в СССР,1/1/1935,#2,2K1R3/1p1N4/BB4Q1/R1pkp1p1/p5rr/b3p1qb/4N3/4n3
+762,"Гершинський, Михайло Овсійович",Ideal-Mate Review,1/1/2001,#2,7N/5P1k/4P2p/7N/6K1/8/8/8
+763,"Горбатенко, Юрий Григорьевич",Hlas ľudu,1/1/1973,#2,1N6/8/qp6/1k6/1p1K4/p7/N7/2Q2b2
+764,"Гориславский, Михаил И.",Hlas ľudu,4/15/1976,#2,1b6/1nNN4/6q1/1n1pr1p1/1pPkP2P/1P2p2B/P3Q2K/4B3
+765,"Гориславский, Михаил И.",Šachové umění,3/1/1969,#2,6k1/6n1/6Q1/8/8/n7/8/R3K2R
+766,"Грінченко, Дмитро Михайлович",Die Schwalbe,1/1/1980,#2,5K2/8/2N5/3p1k2/3B4/3R4/8/6Q1
+767,"Гугель, Лев Николаевич & Шиф, Владимир Иосифович",Die Schwalbe,1/1/1930,#2,8/8/5p2/5R2/4k3/2K5/8/5R2
+768,"Гулак, Леонор И.",Šahs/Шахматы (Rīga),1/1/1973,#2,b1N2r2/B7/8/3Pk2B/5NQ1/K2P4/7b/8
+769,"Дикусаров, Андрей Николаевич",Freie Presse,9/14/2007,#2,2R5/2rB4/1R3Bpq/2Np3b/2kP3Q/8/nP4P1/5NK1
+770,"Дикусаров, Андрей Николаевич",Мат (Черкаси),1/1/1991,#2,8/4b3/8/5R2/8/1K6/8/k2N4
+771,"Дикусаров, Андрей Николаевич",Советский воин,1/1/1961,#2,8/K7/8/8/2NkbB2/8/4Q3/8
+772,"Дячук, Василь Васильович",Sakkélet,1/1/1994,#2,8/r4p2/1Bb4K/3kpBQ1/2N1n3/1P1n4/N4p2/8
+773,"Жежерун, Богдан Валерійович",Щорічник 2002,1/1/2003,#2,8/4N3/6K1/5R2/4k3/5p2/3Q4/b7
+774,"Желтоножко, Владимир Иванович",Sa kommunism,1/1/1989,#2,4K3/pB6/3k4/8/2p5/8/8/BQ6
+775,"Залокоцький, Роман Федорович",Die Schwalbe,1/1/1993,#2,2K1RB2/5R1b/8/3P3n/2Pk3N/7r/1P1P4/N3bB2
+776,"Залокоцький, Роман Федорович",Szachy,1/1/1978,#2,k5r1/P7/K1PB4/3R4/8/8/6B1/8
+777,"Залокоцький, Роман Федорович",Schach (magazine),1/1/1975,#2,3r1B2/3pr1Q1/1N3P2/2n1P2p/1P1k2b1/1qpP3R/4R2K/4N3
+778,"Залокоцький, Роман Федорович",Запорізька правда,1/1/1963,#2,3Rn2K/5p2/6kp/4Q3/8/8/8/8
+779,"Зенков, П.",Магаданская правда,12/25/1996,#2,8/8/8/3B4/8/2Q5/pp6/1k2K3
+780,"Зиновьев, Николай",Смена (Москва),7/1/1994,#2,1R3K2/8/8/5QBk/7P/8/6q1/8
+781,"Зиновьев, Николай",Шах-ВВ (Боровичи),1/1/1994,#2,8/8/8/8/8/7n/8/3QK1kr
+782,"Зиновьев, Николай",Мат (Черкаси),1/1/1992,#2,8/8/4R3/B7/3N4/8/5P2/5k1K
+783,"Зиновьев, Николай",Знамя Ильича,3/24/1987,#2,8/B3P2R/3k4/8/4K3/8/2N5/8
+784,"Иванов, Альберт Федотович",Советская Молдавия,1/18/1970,#2,1Q6/8/R7/2p5/2k5/8/1B6/3K4
+785,"Иванов, Вадим Александрович",Die Schwalbe,1/1/2000,#2,7B/q6B/p1prr1n1/3kp1bR/1P2N1K1/1PR2P2/2NP2Q1/8
+786,"Ивунин, Алексей Всеволодович",На смену!,1/1/1968,#2,8/7Q/NPppn3/3kr2p/3B3K/3Pp3/n3N3/8
+787,"Исарьянов, Владимир Петрович",Путь Ильича,1/1/1971,#2,6rk/6R1/1Q1K4/8/8/7p/8/B7
+788,"Јаневски, Живко",Уральский проблемист,1/1/2011,#2,5B2/4r2r/2R2Pp1/3pk1P1/1p2P1B1/1NP1R3/1p4Np/1Q5K
+789,"Кабаков, А. В.",Шахматы в СССР,1/1/1937,#2,8/8/8/7B/4KQ2/8/2p5/4k3
+790,"Казанцев, Александр Петрович",Шахматы в СССР,1/1/1961,#2,8/B1p5/7K/3pk1Nn/1Q3R2/3B2p1/5r2/8
+791,"Каменский, Вячеслав Иванович",Mémorial Kopnine,1/1/1998,#2,1N1N4/8/bn6/2k5/r1P1rp2/R2RpK2/2Q1B3/4B3
+792,"Карпов, Валерий Николаевич",Ľud,1/1/1964,#2,1Q6/2N1K3/8/8/2n2k2/2P1R1Nn/7P/3B4
+793,"Кащеев, Никтополион Павлович",Land og Folk,1/1/1978,#2,3k4/B2b4/2pK4/8/8/8/1Q6/8
+794,"Кащеев, Никтополион Павлович",Запорізька правда,1/1/1971,#2,4B3/8/2R5/p7/pk1N4/8/8/2K5
+795,"Кащеев, Никтополион Павлович",Land og Folk,,#2,8/8/pRQ5/3p4/2Nkrp2/8/3Kn1B1/8
+796,"Квятковський, Віталій I.",Смена (Москва),1/1/1993,#2,8/B4PP1/3k2K1/8/6Q1/8/8/8
+797,"Кириличенко, Станислав Алексеевич",Шахматное время (Омск),1/1/2003,#2,1Qqk4/3N4/8/8/B7/6RK/8/8
+798,"Кичигин, Виктор Владимирович",Canadian Chess Chat,1/1/1982,#2,8/4K3/p3p3/P2pkp2/3RnR2/4Q3/1P2P2P/8
+799,"Кичигин, Виктор Владимирович",Hlas ľudu,1/1/1981,#2,8/7p/2K1B1pP/4k3/4pRQ1/8/1P5P/8
+800,"Коваленко, Виталий Семёнович",,1/1/1999,#2,8/8/8/8/6p1/4Nk1b/R2K4/4Q3
+801,"Кожакин, Владимир Владимирович",Кудесник,1/1/2004,#2,8/8/8/3n4/6k1/5NN1/3Q2R1/K7
+802,"Кожакин, Владимир Владимирович",Сегодня-завтра,1/1/2004,#2,1N3Q2/K2B4/8/k3r3/r7/8/8/8
+803,"Кожакин, Владимир Владимирович",Scacco!,6/1/1999,#2,8/5n1N/B3r1n1/1r3p2/2N1kp2/1p6/3Q4/1K3R2
+804,"Кожакин, Владимир Владимирович",Молодой ленинец,1/1/1988,#2,8/8/6N1/6kp/3PQ3/4K3/4n3/8
+805,"Копаев, Вячеслав Георгиевич",Шахматы в СССР,1/1/1988,#2,3K4/2R1p3/1p2B1nN/1r2B2r/2PPkpRp/4p1pN/6P1/1b1Q4
+806,"Косолапов, Николай Яковлевич",Затейник,1/1/1953,#2,2B5/8/5K2/8/6Np/5RPk/4p3/4N3
+807,"Костюков, Александр Владимирович",Best Problems,1/1/2004,#2,3R3b/r1pBR3/1P1P4/1N1kPp2/2N5/1P1P1P2/3n3K/2qQ1bB1
+808,"Кривенко, Валерій Олексійович",Šahovska kompozicija,1/1/1990,#2,8/5R2/3pk1K1/8/2P5/4N3/8/7R
+809,"Кривенко, Валерій Олексійович",Ленінська зміна (Харків),12/8/1981,#2,8/2K5/8/3N1P2/1N1k4/3B4/8/8
+810,"Крутоус, Николай",Сегодня-завтра,1/1/1997,#2,6k1/1r3bP1/6NK/8/8/8/8/4Q3
+811,"Крутоус, Николай",Ленинское знамя,1/1/1983,#2,8/8/2N5/1N6/kp6/1p6/1KP5/8
+812,"Куббель, Карл Артур Леонид Иванович",Československý šach,1/1/1937,#2,4k2r/b4r2/np1PB3/8/8/K3p3/6Q1/7R
+813,"Куббель, Карл Артур Леонид Иванович",Vejle Socialdemokrat,1/1/1933,#2,8/K3p3/1BR1R3/3p1P2/B3N1N1/n2kp1P1/3P3Q/1n6
+814,"Кулігін, Микола Володимирович",Проблеміст України,1/1/2012,#2,1B6/8/2kN4/8/1K6/Q7/8/8
+815,"Кулігін, Микола Володимирович",Задачи и этюды,1/1/2011,#2,8/8/1n2Q3/B5K1/3p2Bn/3k1p2/R7/3r4
+816,"Кулігін, Микола Володимирович",Шаховий Леополіс,1/1/2006,#2,8/8/8/8/5KB1/5N2/4k3/2R5
+817,"Кулігін, Микола Володимирович",Индустриальное Запорожье,1/1/2001,#2,6K1/8/8/8/6B1/6p1/6rk/1Q6
+818,"Кулігін, Микола Володимирович",Запорізька правда,1/1/1987,#2,k7/b1Q5/8/2p5/K7/2N5/8/8
+819,"Лебедев, Александр Н.",De Problemist,1/1/1930,#2,4R3/K3Bq2/1pP5/1Q1NkN1R/6P1/8/2B5/8
+820,"Лебедев, Александр Н.",Schackvärlden,10/1/1929,#2,8/3p4/3Kp3/4Q3/3p2r1/5k1B/4N2P/3N4
+821,"Лебёдкин, Елисей Кондратьевич",Šahs/Шахматы (Rīga),1/1/1962,#2,B2NK3/3Q1P2/2r2p2/1pB1k3/1p3r2/q1n1Pb2/4p3/b3N3
+822,"Лебёдкин, Елисей Кондратьевич",,,#2,8/8/pp5b/1RpQ4/3p4/3kB3/N3R1n1/nK4N1
+823,"Лебідинець, Микола Григорович",Шах-ВВ (Боровичи),1/1/1994,#2,2B5/8/7B/P2k4/K7/1N6/7Q/8
+824,"Левман, Семён Семёнович",Tijdschrift vd NSB,1/1/1930,#2,6K1/5pN1/5Np1/R7/pRP2k1P/r1n4Q/pB4n1/q2b2r1
+825,"Летов, Константин",Tschowgan,1/1/1992,#2,7Q/7P/8/4B3/8/3K4/p7/1kN5
+826,"Лидер, Валентин Викторович",Schach (magazine),1/1/1982,#2,7Q/2pPpN2/2pqP1p1/2P1R3/3k2p1/4p3/4K3/2R5
+827,"Лукашёв, Виктор Сергеевич",Кудесник,1/1/2003,#2,8/4R3/3B4/4pK2/6Rp/8/7k/8
+828,"Любашевський, Леонід Аврамович & Солдатов, Володимир Володимирович",Buletin Problemistic,1/1/1993,#2,2Q3B1/Kp6/7B/2p1p3/2p1k1Pn/pN3NP1/2PrP3/3r2b1
+829,"Марков, Евгений Викторович",Ideal-Mate Review,1/1/2001,#2,5N1n/5p2/5P1k/8/5NK1/8/7P/8
+830,"Марковцій, Василь Юрійович",Probleemblad,1/1/1998,#2,8/5N2/4Q3/5r2/2Bk4/5p2/3K4/8
+831,"Марковцій, Василь Юрійович",Интеллектуальные игры,1/1/1991,#2,8/5QK1/8/8/7N/3P1N2/5p2/7k
+832,"Матрёнин, Михаил Васильевич & Жук, Олександр Гнатович",Кудесник,1/1/2006,#2,5b2/1K6/8/2k5/Q3P3/8/8/B7
+833,"Мельниченко, Віктор Олександрович",Slovenský denník,1/1/1992,#2,Nb1N3K/6Q1/3kP3/Rr1BRP2/4p3/q1P5/8/1r2n1B1
+834,"Мельниченко, Віктор Олександрович",Canadian Chess Chat,1/1/1980,#2,3rb1B1/P4P2/K1PR1b1R/p1kN4/2Nn1Q2/1P6/7n/6B1
+835,"Мельниченко, Віктор Олександрович",Probleemblad,1/1/1979,#2,7B/5B2/R3N2P/4Pk2/4ppn1/5n2/8/2K2QR1
+836,"Мельниченко, Віктор Олександрович & Великий, Микола Мойсейович",The Problemist,11/1/1999,#2,2B2Nb1/6p1/3Q1P1P/2pP4/1q1rk3/6RK/3pN3/8
+837,"Миронов, Алексей Фёдорович",Шахматы в СССР,1/1/1988,#2,1b3q2/r2p1N2/1P1RB2n/3NRpP1/1r1k3K/1pp1p3/8/1Q3b2
+838,"Моисеев, Вадим",Problemas,1/1/1975,#2,3Q1K2/r1B3p1/3N2p1/3P2Rp/3p1k2/2q4p/3P1rbN/1B4b1
+839,"Мочалкін, Олександр Вікторович",U.S. Problem Bulletin,1/1/1993,#2,8/BK1N1P1r/3p2p1/3kP1N1/1P1n4/1b1Q4/2n1B3/6bq
+840,"Мочалкін, Олександр Вікторович",Die Schwalbe,1/1/1987,#2,K3N2B/6n1/4p3/N2k1r2/1pRP1r2/5b1q/2B3p1/2Q1R3
+841,"Мочалкін, Олександр Вікторович",,,#2,6K1/1N4R1/2k2N2/P7/2P4R/7r/n3B3/8
+842,"Мурашёв, Павел Александрович",Проблеміст України,1/1/2012,#2,1K2R3/3p4/pnPkPNQn/Nb1p2p1/R1P5/2B5/8/8
+843,"Мурашёв, Павел Александрович",Mat Plus,1/1/2010,#2,1B1nB3/4R3/2p1P1p1/1n1k4/1p1N2p1/P3KPP1/1N5Q/2R4b
+844,"Надеждин, Николай Дмитриевич",Probleemblad,1/1/1993,#2,1N1nK1B1/2BP1p2/6pp/3k4/1P2R3/1p1pP1N1/1nbr4/7Q
+845,"Надеждин, Николай Дмитриевич",Schach (magazine),1/1/1981,#2,2k5/pn1p1N2/Q2B1pK1/6b1/4p1R1/4p2B/2b4r/2R2r2
+846,"Надеждин, Николай Дмитриевич",«64»,1/1/1970,#2,8/1K1p4/1Bpb4/1k6/3R2Qn/3p4/2P3p1/7b
+847,"Нептаев, Николай И.",Hlas ľudu,1/1/1984,#2,2B5/p1r5/1b1r1n2/pR1Pp1p1/Q3n2q/2pkPR2/K2ppp2/N2N4
+848,"Неунывако, Павел Ефимович",«64»,7/20/1925,#2,Q2N4/4Rn2/8/4nk1K/2P5/4P2P/5PP1/8
+849,"Никитин, Владимир В.",Probleemblad,1/1/1997,#2,3Q4/8/8/6bK/R7/6k1/7p/7B
+850,"Новик, Николай",Черкаський край,1/1/1998,#2,k3N2b/5R2/8/8/3p4/3K4/8/6R1
+851,"Новиков, Л.",«64»,1/15/1925,#2,8/8/pb6/qp6/1k1P4/2N5/2P5/2BQKB1b
+852,"Павлов, Михаил Александрович",Hlas ľudu,7/15/1982,#2,8/8/1pPKP2Q/2N1N3/1Bpkp1n1/7p/b2P4/1n1R3q
+853,"Павлов, Михаил Александрович",Československý šach,10/1/1967,#2,B3K3/1r6/2N5/2R1PP1Q/4kB1R/1N5p/2Pp3q/5r2
+854,"Панкратьев, Александр Николаевич",Europe Échecs,1/1/1994,#2,4R2Q/2p3rp/2K3pb/2pPB3/ppk3p1/7r/PPB5/3R1N2
+855,"Панкратьев, Александр Николаевич",Проблемист Прибужья,1/1/1991,#2,6Bk/6n1/7N/7R/8/8/1B4K1/8
+856,"Панкратьев, Александр Николаевич",Hlas ľudu,3/5/1981,#2,8/2Npp3/3p1n2/8/2QBPkpK/4p3/5nB1/4N3
+857,"Парадзинський, Олег Володимирович",Панорама (Запоріжжя),1/1/2002,#2,8/8/4Npp1/7k/8/R7/8/2Q4K
+858,"Парадзинський, Олег Володимирович",Проблемист Прибужья,1/1/1996,#2,8/2P2R2/8/1k6/1b1Q4/1K6/8/8
+859,"Пархоменко, Микола Олексійович",Вінницький економіст,1/1/2005,#2,5K2/4p3/B4k2/3R4/4P1R1/8/8/8
+860,"Пархоменко, Микола Олексійович",20 chwilin,1/1/2005,#2,8/8/8/8/5pBn/8/5K1p/5N1k
+861,"Пархоменко, Микола Олексійович",Строителъная газета,8/12/1984,#2,K7/1p6/k1n5/2R5/2N5/8/1P6/8
+862,"Пермяков, Евгений Николаевич",Livejournal,1/1/2011,#2,8/6p1/3p2B1/3p4/2pNpK2/2p5/2Pk4/5Q2
+863,"Пипа, Володимир Иосифович",Приокская правда (Навашино),10/13/1990,#2,8/5Q2/3N2r1/7k/7p/7N/7K/8
+864,"Пипа, Володимир Иосифович",The British Chess Magazine,1/1/1975,#2,1B3b2/1n6/K1RP4/n3kPP1/3r4/N7/1QP5/5R1B
+865,"Плотников, Николай",Кобринский вестник,1/1/1991,#2,8/8/8/6p1/8/5kN1/5PN1/Q3K3
+866,"Подушкин, Сергей Григорьевич",«64»,1/1/1971,#2,1Q6/2pN1B1P/3N4/r7/2pkb1nR/2n5/1R2P3/2B1K3
+867,"Подушкин, Сергей Григорьевич",problem (Zagreb),1/1/1968,#2,5n2/Kp4b1/8/p1B4p/k1B1R3/5r1r/3Q4/n2N4
+868,"Поздняков, Г.",Schach (magazine),1/1/1977,#2,3rk2r/3p2pR/5BPq/1n1N2Q1/4N2p/2P4b/B4K2/4R3
+869,"Полещук, Михаил Владимирович",Черкаська правда,1/1/1973,#2,1Q6/4p3/2B1Kp1B/8/2pk4/8/8/2N5
+870,"Попков, Николай Николаевич",Szachy,1/1/1978,#2,b6K/3PB3/3rN3/2N1kPp1/Q5R1/8/p7/1B6
+871,"Попонин, Владимир Григорьевич & Рычков, Владимир Николаевич",Шахматная композиция,1/1/1996,#2,8/1p6/6K1/6p1/QN3kr1/2b2Pr1/4R2P/7b
+872,"Пугачёв, Сергей Тимофеевич",Шахматы в СССР,1/1/1949,#2,2b1N1R1/K1Q2P2/2N2Pqp/2p4r/2R1BBkb/3P4/5PPn/8
+873,"Радченко, Сергей Владимирович",Проблемист Прибужья,1/1/1992,#2,8/8/8/8/B1p5/2p5/p1K5/k1N5
+874,"Радченко, Сергей Владимирович",Проблемист Прибужья,1/1/1991,#2,8/8/8/8/6B1/4pR2/8/2K1k1B1
+875,"Рухлис, Ефим Наумович",Ľud,1/1/1966,#2,1rb4b/3R4/6R1/2NN4/2k5/Q7/1nK3B1/8
+876,"Рухлис, Ефим Наумович",Práca,1/1/1958,#2,5B1Q/2n5/5N1R/4k3/3N4/4Pbn1/1K6/8
+877,"Сакс, Олег Павлович",Кудесник,1/1/1994,#2,8/8/8/8/p7/N7/kPK5/q1Q5
+878,"Сакс, Олег Павлович",Кудесник,1/1/1994,#2,6bR/8/3Q4/kp6/8/8/1K6/7B
+879,"Сакс, Олег Павлович",Керченский рабочий,1/1/1991,#2,k1b5/PR6/K1P5/8/8/8/8/8
+880,"Свергунов, Владимир Трофимович",Темп-64 (Николаев),1/1/1994,#2,k1K5/pp6/R7/1R6/8/8/8/8
+881,"Селиванов, Андрей Владимирович",Проблемист Прибужья,1/1/1990,#2,k7/1q6/8/6R1/5R2/5Q2/8/K7
+882,"Семененко, Олександр Юрьевич & Семененко, Валерий Юрьевич",Задачи и этюды,1/1/1998,#2,8/N2b4/3p2Q1/P1k4r/2N1P3/1PPp3q/K3p2b/8
+883,"Сізоненко, Віктор Миколайович",X командное первенство СССР,1/1/1978,#2,6R1/2n1pN2/7B/K1kB4/1Nbrp2p/4p2Q/4P3/2R5
+884,"Слесаренко, Анатолий Васильевич",Nikolaew-200,1/1/1989,#2,8/8/8/7Q/4K3/4p2p/4R1B1/6k1
+885,"Сорока, Іван Іванович",Freie Presse,1/1/1980,#2,5Q2/2p1N3/3P4/1B1Pkp1r/r3b3/p1b3P1/K4B2/1n1NR3
+886,"Сорокин, Денис & Чернявський, Микола Васильович",Проблемист Прибужья,1/1/1997,#2,8/8/4pk1K/2B2p2/8/4QB2/8/8
+887,"Стигнеев, Валерий Александрович",Индустриальное Запорожье,1/1/1987,#2,1R6/8/p7/1N6/k7/8/2K5/4B3
+888,"Стоянов, Кирил Н.",Het Belgisch Schaakbord (L'Echiquier Belge),1/1/1999,#2,3r4/3ppRP1/BN4K1/6B1/3Pk1p1/b1Q3pn/4N3/1b4q1
+889,"Сурков, Руслан Альбертович",Die Schwalbe,1/1/1999,#2,8/8/B7/N1pp2K1/n1p1p3/3k2N1/p2P4/rb1Q2B1
+890,"Сучков, Владимир Анатольевич",Советская Чувашия,11/4/1989,#2,5K2/8/6R1/1Q1n3k/8/8/8/1bB5
+891,"Сушков, Юрий Акимович",Шахматы в СССР,1/1/1968,#2,5R2/8/1qp2NK1/2rPk3/2p1N3/2P1R3/3rp3/2b5
+892,"Телегин, Рим Петрович",Šahs/Шахматы (Rīga),1/1/1976,#2,4KN2/1p5B/1npp1p1R/N2kp3/p5P1/2Q5/8/5n1b
+893,"Титаренко, Александр Михайлович",344 миниатюры,1/1/2006,#2,8/8/8/8/7K/R4B2/6bB/5N1k
+894,"Титаренко, Александр Михайлович",344 миниатюры,1/1/2006,#2,8/8/4B1N1/8/6p1/6k1/8/4K2R
+895,"Титаренко, Александр Михайлович",344 миниатюры,1/1/2006,#2,8/8/8/8/3K4/8/4B1k1/5NBR
+896,"Ткаченко, Сергій Іванович",Magyar Sakkélet,1/1/2001,#2,4k3/7R/4N3/3n4/8/8/7B/4K3
+897,"Ткаченко, Сергій Іванович",Hlas ľudu,1/1/1992,#2,K7/5N2/Q7/3p1Np1/1b1pk3/4P3/5R2/1b4r1
+898,"Томић, Жива",Problem Observer,1/1/2005,#2,8/1B4p1/6pb/NR4BP/p2k1PKR/Pr6/1Pp2P2/Q1N5
+899,"Тренин, П.",64 — Шахматное обозрение,1/1/1988,#2,1K1R4/2p1p3/2PN4/1R1N3Q/3kp3/p2pp1P1/1r3p2/B4B2
+900,"Туроверов, Валентин Алексеевич",Probleemblad,1/1/1974,#2,Q7/1B6/1P4Rp/4p2p/3p1b1B/P1p1k3/2P1N1Pp/3nK2R
+901,"Ударцев, Валентин Филиппович",«64»,1/1/1978,#2,3r3B/4Q3/1pPp1P1p/4Np1K/3k4/R4B2/8/N1R2bb1
+902,"Урусов, Кирилл В.",Шах (Боровичи),9/1/1987,#2,8/8/2B5/5nB1/5p2/2K1k3/3R4/8
+903,"Фаріон, Петро Петрович",Wola Gułowska,1/1/1999,#2,3n4/1N6/p2Qpr2/pk6/pN3p1R/pn1pBB2/7K/8
+904,"Фомичёв, Евгений Васильевич",Freie Presse,9/25/1998,#2,5b2/P4Np1/5PK1/2ppN1P1/4kpP1/1BQ5/1p1nPR2/1qBR1n1b
+905,"Хайрабедян, Крикор",Chess Life,1/1/1957,#2,B7/3p4/2pN3R/1N1k2b1/pP5p/5qPn/6QB/1K2R1n1
+906,"Цаплін, Олександр",Проблеміст України,1/1/2008,#2,N4nK1/6p1/pRp4p/p1kBP3/p2p4/5Q2/P4Pr1/7q
+907,"Цаплін, Олександр",Šachová skladba,1/1/1987,#2,b7/P7/3p4/2Bk1Bn1/QP1b1P2/1K2RP2/8/8
+908,"Цырулик, Степан Павлович",Проблемист Прибужья,1/1/1992,#2,3QK3/bk1N4/4p3/1B6/8/8/8/8
+909,"Чепижный, Виктор Иванович",За огнеупоры,11/19/1987,#2,8/8/R7/6pk/4R3/2Bp4/8/3K4
+910,"Чепижный, Виктор Иванович",Sinfonie Scacchistiche,1/1/1972,#2,3K4/2p4B/8/2Pk4/6P1/3N4/PQ2P3/8
+911,"Чернявський, Микола Васильович",Шаховий Леополіс,1/1/2006,#2,8/5K2/7p/4Q1N1/6pk/8/7N/8
+912,"Чистяков, Николай",Шах-ВВ (Боровичи),1/1/1998,#2,8/8/R7/bkB3Q1/R7/8/8/6K1
+913,"Шаньшин, Валерий Юрьевич & Bonivento, Oscar",Ferrari MT,1/1/1980,#2,4B2K/8/1p6/3npn1N/2p1k1p1/1NRbP3/3Q2P1/8
+914,"Шаповалов, Евгений Иванович",Шахматная поэзия,1/1/2008,#2,8/3N4/r2p1p2/3pP3/3pkb2/4N1P1/2PP4/3Q2nK
+915,"Шапошников, Авенир Григорьевич",60 шахматных задач-малюток,1/1/1982,#2,8/8/3K4/3N4/3k4/3b4/8/3Q4
+916,"Шапошников, Авенир Григорьевич",60 шахматных задач-малюток,1/1/1982,#2,8/6pp/7k/8/7K/8/Q7/8
+917,"Шедей, Сергій Олександрович",Задачи и этюды,1/1/2012,#2,r1R4b/5N2/n1B5/3P4/p1krN3/K1p3q1/P1RPP3/5QB1
+918,"Шедей, Сергій Олександрович",Красное знамя,1/1/1955,#2,8/8/3B2p1/3p1b2/N3k1p1/3p2b1/3P4/Q1KB1Rq1
+919,"Шедей, Сергій Олександрович & Чернявський, Микола Васильович",9-e командное первенство СССР,1/1/1976,#2,1K1N4/4p3/4B1n1/3pk1B1/4N3/8/5P2/2Q5
+920,"Шматов, Владимир Афанасьевич",Кудесник,1/1/2007,#2,6R1/8/4kB2/4P3/8/1P6/8/3KQ3
+921,"Шумарин, Владимир Павлович",Кудесник,1/1/2002,#2,4B3/5P1k/4KP1b/6R1/8/8/8/8
+922,"Шумарин, Владимир Павлович",Шахматная поэзия,1/1/2001,#2,2n1Q3/8/5K2/8/3NR3/3k4/1B6/8

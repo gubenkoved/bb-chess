@@ -1,5 +1,5 @@
 1
-34
+38
 Cell.qml
 game.qml
 images/back.png
@@ -27,10 +27,14 @@ images/pieces/white-rock.png
 images/puzzle.png
 images/pvc.png
 images/pvp.png
+images/remove-white.png
 images/save.png
 images/save_black.png
+images/solved.png
 images/user_group.png
 level-selector.qml
 main.qml
+mate-in-two.csv
 Piece.qml
 puzzle-selector.qml
+test-qml.qml

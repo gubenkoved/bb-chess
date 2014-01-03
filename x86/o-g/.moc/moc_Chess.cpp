@@ -22,8 +22,8 @@ static const uint qt_meta_data_Chess[] = {
        6,       // revision
        0,       // classname
        0,    0, // classinfo
-      17,   14, // methods
-       3,   99, // properties
+      19,   14, // methods
+       3,  109, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
@@ -51,11 +51,13 @@ static const uint qt_meta_data_Chess[] = {
      294,    6,  172,    6, 0x02,
      315,  309,    6,    6, 0x02,
      334,    6,  172,    6, 0x02,
+     365,  350,    6,    6, 0x02,
+     404,    6,  395,    6, 0x02,
 
  // properties: name, type, flags
-     350,  172, 0x01095001,
-     362,  172, 0x01095103,
-     372,  172, 0x01495001,
+     426,  172, 0x01095001,
+     438,  172, 0x01095103,
+     448,  172, 0x01495001,
 
  // properties: notify_signal_id
        0,
@@ -75,6 +77,8 @@ static const char qt_meta_stringdata_Chess[] = {
     "title,message\0ShowNotification(QString,QString)\0"
     "getIsGameEnded()\0getIsFlipped()\0value\0"
     "setIsFlipped(bool)\0getAiThinking()\0"
+    "puzzleSelector\0SetupPuzzleSelector(QVariant)\0"
+    "QVariant\0GetPuzzlesDataModel()\0"
     "isGameEnded\0isFlipped\0aiThinking\0"
 };
 
@@ -105,6 +109,9 @@ void Chess::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void 
         case 15: _t->setIsFlipped((*reinterpret_cast< bool(*)>(_a[1]))); break;
         case 16: { bool _r = _t->getAiThinking();
             if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = _r; }  break;
+        case 17: _t->SetupPuzzleSelector((*reinterpret_cast< QVariant(*)>(_a[1]))); break;
+        case 18: { QVariant _r = _t->GetPuzzlesDataModel();
+            if (_a[0]) *reinterpret_cast< QVariant*>(_a[0]) = _r; }  break;
         default: ;
         }
     }
@@ -142,9 +149,9 @@ int Chess::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 17)
+        if (_id < 19)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 17;
+        _id -= 19;
     }
 #ifndef QT_NO_PROPERTIES
       else if (_c == QMetaObject::ReadProperty) {

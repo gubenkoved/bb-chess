@@ -5,14 +5,18 @@
 #include <bb/cascades/QmlDocument>
 #include <bb/cascades/AbstractPane>
 #include <bb/cascades/NavigationPane>
+#include <bb/cascades/ArrayDataModel>
+#include <bb/cascades/ListView>
 #include <bb/system/SystemToast>
 #include <bb/system/SystemPrompt>
 #include <bb/system/SystemDialog>
 #include <bb/system/SystemUiResult>
 #include <bb/system/SystemUiButton>
 
+
 #include "boardserializer.h"
 #include "fen.h"
+#include "puzzle.h"
 
 using namespace bb::cascades;
 using namespace bb::system;
@@ -576,4 +580,61 @@ void Chess::ShowNotification(QString title, QString message)
 	notification->clearButtons();
 
 	notification->show();
+}
+
+void Chess::SetupPuzzleSelector(QVariant puzzleSelector)
+{
+	qDebug() << "Chess::GetPuzzlesDataModel BEGIN";
+	//qDebug() << "Current dir: " << QDir::currentPath();
+	qDebug() << puzzleSelector;
+
+	QObject* page = puzzleSelector.value<QObject*>();
+	qDebug() << page;
+
+	ListView* listView = page->findChild<ListView*>("puzzlesView");
+	qDebug() << listView;
+
+//	ArrayDataModel* model = new ArrayDataModel();
+//	QList<Puzzle> puzzles = Puzzle::Parse("app/native/assets/mate-in-two.csv");
+//	foreach(const Puzzle& puzzle, puzzles)
+//	{
+//		QVariantMap itemMap;
+//
+//		itemMap["id"] = puzzle.Id;
+//		itemMap["authors"] = puzzle.Authors;
+//		itemMap["source"] = puzzle.Source;
+//		itemMap["date"] = puzzle.Date;
+//		itemMap["positionFen"] = puzzle.PositionFEN;
+//
+//		model->append(itemMap);
+//	}
+//
+//	qDebug() << "Chess::GetPuzzlesDataModel END" << puzzles.count();
+//	qDebug() << model;
+//	return model;
+}
+
+QVariant Chess::GetPuzzlesDataModel()
+{
+	qDebug() << "Chess::GetPuzzlesDataModel";
+
+	ArrayDataModel* model = new ArrayDataModel();
+	QList<Puzzle> puzzles = Puzzle::Parse("app/native/assets/mate-in-two.csv");
+	foreach(const Puzzle& puzzle, puzzles)
+	{
+		QVariantMap itemMap;
+
+		itemMap["id"] = puzzle.Id;
+		itemMap["authors"] = puzzle.Authors;
+		itemMap["source"] = puzzle.Source;
+		itemMap["date"] = puzzle.Date.toString("MMM, yyyy");
+		itemMap["positionFen"] = puzzle.PositionFEN;
+		itemMap["solved"] = puzzle.Id % 2 == 0;
+
+		model->append(itemMap);
+	}
+
+	qDebug() << model;
+
+	return QVariant::fromValue(model);
 }
