@@ -98,7 +98,6 @@ public:
     Q_INVOKABLE void setIsFlipped(bool value) { m_boardFlipped = value; }
     Q_INVOKABLE bool getAiThinking() { return m_aiThinking; }
 
-    Q_INVOKABLE void SetupPuzzleSelector(QVariant puzzleSelector);
     Q_INVOKABLE QVariant GetPuzzlesDataModel();
 
 signals:

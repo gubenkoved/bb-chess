@@ -9,24 +9,51 @@ Page {
             ActionBar.placement: ActionBarPlacement.OnBar
             onTriggered: {
                 if (app.GetConfirmation(qsTr("All progress will be lost")) == true) {
-                    // todo                    
+                    // todo
                 }
             }
+        },
+        ActionItem {
+            id: sortBySource
+            title: qsTr("Sort by source")
+            //imageSource: "asset:///images/remove-white.png"
+            ActionBar.placement: ActionBarPlacement.InOverflow
+            onTriggered: {
+                puzzlesView.dataModel.sortingKeys = [ 'source' ];
+                puzzlesViewDataModel.grouping = ItemGrouping.ByFullValue;
+                sortBySource.enabled = !sortBySource.enabled;
+            }
+        },
+        ActionItem {
+            id: sortByAuthors
+            enabled: false
+            title: qsTr("Sort by authors")
+            //imageSource: "asset:///images/remove-white.png"
+            ActionBar.placement: ActionBarPlacement.InOverflow
+            onTriggered: {
+                puzzlesView.dataModel.sortingKeys = [ 'authors', 'id' ];                
+                puzzlesViewDataModel.grouping = ItemGrouping.ByFirstChar;
+                sortByAuthors.enabled = !sortByAuthors.enabled;
+            }
+        },
+        ActionItem {
+                    title: qsTr("Change sort order")
+                    //imageSource: "asset:///images/remove-white.png"
+                    ActionBar.placement: ActionBarPlacement.InOverflow
+                    onTriggered: {
+                        puzzlesViewDataModel.sortedAscending = !puzzlesViewDataModel.sortedAscending;
+                    }
         }
     ]
     // these properties setted by caller page
     property variant app; // Chess class instance here
-    property NavigationPane navigationPane; // root naviation pane    
-    
-    function bindToDataModel()
-    {
-        console.log('bindToDataModel');
+    property NavigationPane navigationPane; // root naviation pane
+
+    function bindToDataModel() {        
         var model = app.GetPuzzlesDataModel();
-        console.log(model);
-        puzzlesView.setDataModel(model);
-        console.log(puzzlesView.dataModel);
+        puzzlesViewDataModel.insertList(model)
     }
-    
+
     Container {
         horizontalAlignment: HorizontalAlignment.Fill
         verticalAlignment: VerticalAlignment.Fill
@@ -40,20 +67,46 @@ Page {
         ]
         layout: DockLayout {
         }
-        
+
         Container {
             //background: Color.create(1, 0, 0, 0.1)
             horizontalAlignment: HorizontalAlignment.Fill
-            verticalAlignment: VerticalAlignment.Fill            
+            verticalAlignment: VerticalAlignment.Fill
             ListView {
                 // for ability to find it by QObject::findChild method
                 objectName: "puzzlesView"
                 id: puzzlesView
+                dataModel: GroupDataModel {
+                    id: puzzlesViewDataModel
+                    sortingKeys: ['authors', 'id']
+                }
                 onTriggered: {
-                    console.log('clicked at ' + indexPath);                    
-                }        
+                    console.log('clicked at ' + indexPath);
+                }
                 listItemComponents: [
-                    ListItemComponent {                        
+//                    ListItemComponent {
+//                        type: 'header'
+//                        Container {
+//                            id: headerRoot
+//                            //preferredHeight: 90
+//                            layout: DockLayout {
+//                            }
+//                            Label {
+//                                text: {
+//                                    var key = puzzlesView.dataModel.sortingKeys[0];
+//                                    
+//                                    if (key == 'source')
+//                                        return ListItemData.source;
+//                                    else 
+//                                        return ListItemData.authors;
+//                                    
+//                                    //return ListItemData[key];
+//                                }
+//                            }
+//                        }
+//                    },
+                    ListItemComponent {
+                        type: 'item'
                         Container {
                             id: itemRoot
                             preferredHeight: 90
@@ -65,11 +118,11 @@ Page {
                                 layout: StackLayout {
                                     orientation: LayoutOrientation.LeftToRight
                                 }
-                                
+
                                 Container {
                                     verticalAlignment: VerticalAlignment.Fill
                                     preferredWidth: itemRoot.preferredHeight
-                                    
+
                                     layout: DockLayout {
                                     }
                                     Label {
@@ -80,8 +133,8 @@ Page {
                                         textStyle.textAlign: TextAlign.Center
                                     }
                                 }
-                                
-                                Container {                    
+
+                                Container {
                                     layout: DockLayout {
                                     }
                                     layoutProperties: StackLayoutProperties {
@@ -111,7 +164,7 @@ Page {
                                         textStyle.color: Color.Gray
                                     }
                                 }
-                                
+
                                 Container {
                                     verticalAlignment: VerticalAlignment.Fill
                                     preferredWidth: itemRoot.preferredHeight
@@ -123,23 +176,23 @@ Page {
                                         horizontalAlignment: HorizontalAlignment.Center
                                         preferredWidth: 64
                                         preferredHeight: preferredWidth
-                                        imageSource: ListItemData.solved ? "asset:///images/solved.png" : null
+                                        imageSource: ListItemData.solved ? "asset:///images/solved.png" : ""
                                     }
                                 }
-                            
+
                             }
-                            
+
                             Container {
                                 background: Color.create(0, 0, 0, 0.1)
                                 preferredHeight: 2
                                 horizontalAlignment: HorizontalAlignment.Fill
                             }
                         }
-                    
+
                     }
                 ]
             }
         }
-    
+
     }
 }
