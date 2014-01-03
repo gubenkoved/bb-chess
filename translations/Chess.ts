@@ -174,17 +174,17 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/puzzle-selector.qml" line="17"/>
+        <location filename="../assets/puzzle-selector.qml" line="18"/>
         <source>Sort by source</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/puzzle-selector.qml" line="27"/>
+        <location filename="../assets/puzzle-selector.qml" line="31"/>
         <source>Sort by authors</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/puzzle-selector.qml" line="36"/>
+        <location filename="../assets/puzzle-selector.qml" line="42"/>
         <source>Change sort order</source>
         <translation type="unfinished"></translation>
     </message>

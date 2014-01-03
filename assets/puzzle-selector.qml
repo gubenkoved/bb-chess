@@ -22,6 +22,7 @@ Page {
                 puzzlesView.dataModel.sortingKeys = [ 'source' ];
                 puzzlesViewDataModel.grouping = ItemGrouping.ByFullValue;
                 sortBySource.enabled = !sortBySource.enabled;
+                sortByAuthors.enabled = !sortByAuthors.enabled;
             }
         },
         ActionItem {
@@ -31,25 +32,26 @@ Page {
             //imageSource: "asset:///images/remove-white.png"
             ActionBar.placement: ActionBarPlacement.InOverflow
             onTriggered: {
-                puzzlesView.dataModel.sortingKeys = [ 'authors', 'id' ];                
+                puzzlesView.dataModel.sortingKeys = [ 'authors', 'id' ];
                 puzzlesViewDataModel.grouping = ItemGrouping.ByFirstChar;
+                sortBySource.enabled = !sortBySource.enabled;
                 sortByAuthors.enabled = !sortByAuthors.enabled;
             }
         },
         ActionItem {
-                    title: qsTr("Change sort order")
-                    //imageSource: "asset:///images/remove-white.png"
-                    ActionBar.placement: ActionBarPlacement.InOverflow
-                    onTriggered: {
-                        puzzlesViewDataModel.sortedAscending = !puzzlesViewDataModel.sortedAscending;
-                    }
+            title: qsTr("Change sort order")
+            //imageSource: "asset:///images/remove-white.png"
+            ActionBar.placement: ActionBarPlacement.InOverflow
+            onTriggered: {
+                puzzlesViewDataModel.sortedAscending = ! puzzlesViewDataModel.sortedAscending;
+            }
         }
     ]
     // these properties setted by caller page
     property variant app; // Chess class instance here
     property NavigationPane navigationPane; // root naviation pane
 
-    function bindToDataModel() {        
+    function bindToDataModel() {
         var model = app.GetPuzzlesDataModel();
         puzzlesViewDataModel.insertList(model)
     }
@@ -78,33 +80,13 @@ Page {
                 id: puzzlesView
                 dataModel: GroupDataModel {
                     id: puzzlesViewDataModel
-                    sortingKeys: ['authors', 'id']
+                    sortingKeys: [ 'authors', 'id' ]
                 }
                 onTriggered: {
                     console.log('clicked at ' + indexPath);
+                    console.log('puzzle id:' + puzzlesViewDataModel.data(indexPath).id);
                 }
                 listItemComponents: [
-//                    ListItemComponent {
-//                        type: 'header'
-//                        Container {
-//                            id: headerRoot
-//                            //preferredHeight: 90
-//                            layout: DockLayout {
-//                            }
-//                            Label {
-//                                text: {
-//                                    var key = puzzlesView.dataModel.sortingKeys[0];
-//                                    
-//                                    if (key == 'source')
-//                                        return ListItemData.source;
-//                                    else 
-//                                        return ListItemData.authors;
-//                                    
-//                                    //return ListItemData[key];
-//                                }
-//                            }
-//                        }
-//                    },
                     ListItemComponent {
                         type: 'item'
                         Container {
