@@ -165,15 +165,13 @@ Page {
         ]
         Container {
             verticalAlignment: VerticalAlignment.Top
-            horizontalAlignment: HorizontalAlignment.Center
+            horizontalAlignment: HorizontalAlignment.Fill
             //background: Color.create(0, 0.5, 1, 0.2)
-            translationY: 16.0
-            property real indention: 5
-            leftPadding: indention
-            rightPadding: indention
-            bottomPadding: indention
-            topPadding: indention
+            //translationY: 16.0                
+            bottomPadding: 16
+            topPadding: 20            
             Container {
+                horizontalAlignment: HorizontalAlignment.Center
                 //background: Color.create(1,1,1, 0.4)
                 layout: StackLayout {
                     orientation: LayoutOrientation.LeftToRight
@@ -194,8 +192,9 @@ Page {
                     running: app.aiThinking
                     verticalAlignment: VerticalAlignment.Center
                 }
-            }
+            }        
         }
+        
         Container {
             verticalAlignment: VerticalAlignment.Center
             horizontalAlignment: HorizontalAlignment.Center

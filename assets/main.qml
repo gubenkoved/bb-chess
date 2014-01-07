@@ -50,6 +50,7 @@ NavigationPane {
                     imageSource: "asset:///images/user_group.png"
                 }
                 Button {
+                    visible: false
                     text: qsTr("Puzzles")
                     horizontalAlignment: HorizontalAlignment.Fill
                     onClicked: {
