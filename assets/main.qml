@@ -31,9 +31,9 @@ NavigationPane {
             Container {
                 verticalAlignment: VerticalAlignment.Center
                 horizontalAlignment: HorizontalAlignment.Center
-                preferredWidth: 450
+                preferredWidth: 400
                 Button {
-                    text:  qsTr("Player vs. Blackberry")
+                    text:  qsTr("Single player")
                     horizontalAlignment: HorizontalAlignment.Fill
                     onClicked: {                        
                         var levelSelector = levelSelectorDef.createObject();
@@ -44,7 +44,7 @@ NavigationPane {
                     imageSource: "asset:///images/pvc.png"
                 }
                 Button {
-                    text: qsTr("Player vs. player")
+                    text: qsTr("Two players")
                     horizontalAlignment: HorizontalAlignment.Fill
                     onClicked: app.StartPVP()
                     imageSource: "asset:///images/user_group.png"

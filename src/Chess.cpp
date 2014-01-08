@@ -172,7 +172,7 @@ void Chess::Save()
 
 		m_settings.setValue("save", qVariantFromValue(save));
 
-		ShowToast("Saved");
+		ShowToast(tr("Saved"));
 	}
 }
 

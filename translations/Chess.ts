@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0">
+<TS version="2.0" language="en_US">
 <context>
     <name>Chess</name>
     <message>
@@ -13,6 +13,11 @@
     <message>
         <location filename="../src/Chess.cpp" line="162"/>
         <source>Existing save will be overriden</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/Chess.cpp" line="175"/>
+        <source>Saved</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -137,12 +142,12 @@
     <name>main</name>
     <message>
         <location filename="../assets/main.qml" line="36"/>
-        <source>Player vs. Blackberry</source>
+        <source>Single player</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../assets/main.qml" line="47"/>
-        <source>Player vs. player</source>
+        <source>Two players</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

@@ -16,6 +16,11 @@
         <translation>Существующая игра будет перезаписана</translation>
     </message>
     <message>
+        <location filename="../src/Chess.cpp" line="175"/>
+        <source>Saved</source>
+        <translation>Сохранено</translation>
+    </message>
+    <message>
         <location filename="../src/Chess.cpp" line="212"/>
         <source>White&apos;s turn</source>
         <translation>Ход белых</translation>
@@ -159,14 +164,22 @@
         <translation type="obsolete">Тяжёлый</translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="36"/>
         <source>Player vs. Blackberry</source>
-        <translation>Игрок против Блекберри</translation>
+        <translation type="obsolete">Игрок против Блекберри</translation>
+    </message>
+    <message>
+        <source>Player vs. player</source>
+        <translation type="obsolete">Игрок против игрока</translation>
+    </message>
+    <message>
+        <location filename="../assets/main.qml" line="36"/>
+        <source>Single player</source>
+        <translation>Один игрок</translation>
     </message>
     <message>
         <location filename="../assets/main.qml" line="47"/>
-        <source>Player vs. player</source>
-        <translation>Игрок против игрока</translation>
+        <source>Two players</source>
+        <translation>Два игрока</translation>
     </message>
     <message>
         <location filename="../assets/main.qml" line="54"/>
