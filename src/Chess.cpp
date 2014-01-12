@@ -14,7 +14,6 @@
 #include <bb/system/SystemUiResult>
 #include <bb/system/SystemUiButton>
 
-
 #include "boardserializer.h"
 #include "fen.h"
 #include "puzzle.h"

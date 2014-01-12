@@ -12,10 +12,14 @@
 // This class contains algorithms to find best move
 class AI
 {
-private:    
+public:
     static const int WIN_ESTIMATION     = +1000000;
     static const int LOOSE_ESTIMATION   = -WIN_ESTIMATION;
+private:
+    // returns by search function when illegal parent move found (e.g. king captured)
+    static const int INCORRECT_PARENT_MOVE_FOUND_ESTIMATION = -7777777; // any unique value that can not be reached by normal gameplay
 
+private:
     Board* m_board;
     Rules* m_rules;
 
@@ -58,8 +62,10 @@ private:
     // Call with (-INT_MAX to INT_MAX) alpha beta window to avoid int overflow issues when alpha and beta will be switched.
     // BestMove is only filled by "top level" functions (that was called with isTopLevel = true).
     int AlphaBetaNegamax(FigureSide side, int depth, int alpha, int beta, int& analyzed, Move*& bestMove, bool isTopLevel);
+    int AlphaBetaNegamaxPseudolegal(FigureSide side, int depth, int alpha, int beta, int& analyzed, Move*& bestMove, bool isTopLevel);
 
 public:
+
     AI(Board* board, Rules* rules);
     ~AI();
 
@@ -81,7 +87,10 @@ public:
     // Indicates that AI should use transposition table.
     bool UseTranspositionTable;
 
-    Move BestMoveByAlphaBeta(FigureSide side, int depth, int& bestEstimation, int& analyzed);
+    Move BestMoveByAlphaBeta(FigureSide side, int depth, int& bestEstimation, int& analyzed, bool usePseudolegalMoveGeneration = true);
+
+    // This negamax search don't uses any pruning techniques
+    // It allows us to test moves generation process
     Move NegamaxSearch(FigureSide side, int depth, int& bestEstimation, int& analyzed);
 
     //friend class Tests;

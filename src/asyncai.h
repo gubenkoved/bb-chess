@@ -19,6 +19,8 @@ class AsyncAI : public QThread
 
     void run(); // this function will be called in another thread
 public:
+    bool ExtendSearchDepthOnCaptures;
+
     explicit AsyncAI(Board* board, QObject *parent = 0);
 
     void StartBestMoveSearch(FigureSide side, int depth);

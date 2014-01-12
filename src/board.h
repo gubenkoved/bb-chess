@@ -87,6 +87,7 @@ public:
     bool HasFigureAt(POSITION position) const;
     bool HasFigureAt(POSITION position, FigureSide side) const;
 
+    int GetPlyCount() const; // return half moves counter from start
     int GetAfterLastCaptureOrPawnMoveHalfMoveCount() const; // returns number of halfmoves since the last pawn advance or capture
     int GetFullMoveCount() const; // returns number of the full move. It starts at 1, and is incremented after Black's move
 

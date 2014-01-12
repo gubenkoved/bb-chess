@@ -6,7 +6,9 @@
 #include <QDate>
 #include <QDebug>
 
-enum PuzzleGoal
+#include "enumshelper.h"
+
+enum class PuzzleGoal
 {
     MateInTwo // whites begins and should checkmate in two steps
 };
@@ -35,7 +37,7 @@ inline QDebug operator<<(QDebug debug, const Puzzle& p)
         << p.Id
         << p.Authors
         << p.Source
-        << p.Goal
+        << EnumsHelper::ToString(p.Goal)
         << p.Date.toString("dd.MM.yyyy")
         << p.PositionFEN
         << ")";

@@ -15,6 +15,7 @@ typedef uint UINT32;
 typedef bool BOOL;
 
 typedef unsigned long long BITBOARD;
+//typedef unsigned __int64 BITBOARD;
 
 // Complex types
 

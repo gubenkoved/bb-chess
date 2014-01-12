@@ -4,74 +4,74 @@
 <context>
     <name>Chess</name>
     <message>
-        <location filename="../src/Chess.cpp" line="156"/>
-        <location filename="../src/Chess.cpp" line="513"/>
-        <location filename="../src/Chess.cpp" line="548"/>
+        <location filename="../src/Chess.cpp" line="155"/>
+        <location filename="../src/Chess.cpp" line="512"/>
+        <location filename="../src/Chess.cpp" line="547"/>
         <source>Please, wait while AI is thinking</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/Chess.cpp" line="162"/>
+        <location filename="../src/Chess.cpp" line="161"/>
         <source>Existing save will be overriden</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/Chess.cpp" line="175"/>
+        <location filename="../src/Chess.cpp" line="174"/>
         <source>Saved</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/Chess.cpp" line="212"/>
+        <location filename="../src/Chess.cpp" line="211"/>
         <source>White&apos;s turn</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/Chess.cpp" line="214"/>
+        <location filename="../src/Chess.cpp" line="213"/>
         <source>Black&apos;s turn</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/Chess.cpp" line="218"/>
+        <location filename="../src/Chess.cpp" line="217"/>
         <source>Blackberry&apos;s turn</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/Chess.cpp" line="220"/>
+        <location filename="../src/Chess.cpp" line="219"/>
         <source>Your turn</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/Chess.cpp" line="341"/>
+        <location filename="../src/Chess.cpp" line="340"/>
         <source>You lose</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/Chess.cpp" line="346"/>
+        <location filename="../src/Chess.cpp" line="345"/>
         <source>You win!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/Chess.cpp" line="354"/>
+        <location filename="../src/Chess.cpp" line="353"/>
         <source>Black&apos;s win!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/Chess.cpp" line="359"/>
+        <location filename="../src/Chess.cpp" line="358"/>
         <source>White&apos;s win!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/Chess.cpp" line="367"/>
+        <location filename="../src/Chess.cpp" line="366"/>
         <source>Draw game</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/Chess.cpp" line="380"/>
+        <location filename="../src/Chess.cpp" line="379"/>
         <source>Passive draw game</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/Chess.cpp" line="565"/>
+        <location filename="../src/Chess.cpp" line="564"/>
         <source>Confirmation</source>
         <translation type="unfinished"></translation>
     </message>

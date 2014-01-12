@@ -1,14 +1,16 @@
 #ifndef MOVE_H
 #define MOVE_H
 
-#include "typedefs.h"
 #include "figure.h"
 #include "figureposition.h"
+#include "exception.h"
+#include "enumshelper.h"
+#include "typedefs.h"
 
-enum MoveType
+enum class MoveType
 {
-    Normal, // just move from one to another position
-    Capture, // capture enemy figure
+    Normal, // non-special ruled move with capture or not
+    //Capture, // capture enemy figure
     LongPawn, // first pawn long step
     LongCastling, // long castling
     ShortCastling, // short castling
@@ -19,21 +21,17 @@ enum MoveType
 
 struct Move
 {
-#ifdef QT_DEBUG
-    //QString m_stringRep;
-#endif
-
     POSITION From;
     POSITION To;
     MoveType Type;
     Figure* MovingFigure;
-    Figure* CapturedFigure; // actual only when is capture move, otherwise NULL
+    Figure* CapturedFigure; // for Capture and EnPassant not NULL, and NULL otherwise
+    FigureType PromotedTo; // for PawnPromotion only
 
     Move();
-    Move(MoveType type, POSITION from, POSITION to, Figure* figure, Figure* captured);
+    Move(MoveType type, POSITION from, POSITION to, Figure* figure, Figure* captured);    
     Move(const Move& another);
 
-    QString GetTypeName() const;
     bool IsCastling() const;
 
     Move& operator=(const Move& another);
@@ -41,11 +39,15 @@ struct Move
 
 inline QDebug operator<<(QDebug debug, const Move& m)
 {
-    debug << "Move("
-        << m.MovingFigure->GetName().toStdString().c_str()
-        << m.GetTypeName() << "turn from"
+    debug << "Move( by"
+        << EnumsHelper::ToString(m.MovingFigure->Type)
+        << EnumsHelper::ToString(m.Type)
+        << (m.Type == MoveType::PawnPromotion ? EnumsHelper::ToString(m.PromotedTo) : "")
+        << "from"
         << PositionHelper::ToString(m.From) << "to"
-        << PositionHelper::ToString(m.To) << ")";
+        << PositionHelper::ToString(m.To)
+        << (m.CapturedFigure != NULL ? EnumsHelper::ToString(m.CapturedFigure->Type) + " captured" : "")
+        << ")";
 
     return debug;
 }

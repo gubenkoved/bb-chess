@@ -34,7 +34,7 @@ Page {
                 horizontalAlignment: HorizontalAlignment.Center
                 onClicked: {
                     levelDialog.navigationPane.pop();
-                    app.StartPVC(3);
+                    app.StartPVC(4);
                 }
             }
             Button {
@@ -44,7 +44,7 @@ Page {
                 onClicked: {
                     //levelDialog.close();
                     levelDialog.navigationPane.pop();
-                    app.StartPVC(4);
+                    app.StartPVC(5);
                 }
             }
             Button {
@@ -54,7 +54,7 @@ Page {
                 onClicked: {
                     //levelDialog.close()
                     levelDialog.navigationPane.pop();
-                    app.StartPVC(5);
+                    app.StartPVC(6);
                 }
             }
         }

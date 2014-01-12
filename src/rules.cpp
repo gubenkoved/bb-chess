@@ -11,10 +11,36 @@ Rules::Rules(Board *board)
 {
 }
 
-BITBOARD Rules::GetOnLinePositions2(POSITION position, FigureSide side, int xMult, int yMult, int lenLimit = 7) const
+FigureSide Rules::OpponentSide(FigureSide side) const
+{
+    return side == FigureSide::White ? FigureSide::Black : FigureSide::White;
+}
+
+int Rules::PawnPromotionYFor(FigureSide side) const
+{
+    return side == FigureSide::White ? 8 : 1;
+}
+
+int Rules::PawnHomeYFor(FigureSide side) const
+{
+    return side == FigureSide::White ? 2 : 7;
+}
+
+int Rules::EnPassantPawnYFor(FigureSide side) const
+{
+    return side == FigureSide::White ? 5 : 4;
+}
+
+int Rules::FirstHorizonatalYFor(FigureSide side) const
+{
+    return side == FigureSide::White ? 1 : 8;
+}
+
+BITBOARD Rules::GetOnLinePositions(POSITION position, FigureSide side, int xMult, int yMult, int lenLimit = 7) const
 {
 #ifdef QT_DEBUG
-    if (xMult != -1 && xMult != 0 && xMult != 1 || yMult != -1 && yMult != 0 && yMult != 1)
+    if ((xMult != -1 && xMult != 0 && xMult != 1)
+            || (yMult != -1 && yMult != 0 && yMult != 1))
     {
         throw Exception("Only {-1, 0, 1} values are valid for x and y mult");
     }
@@ -50,7 +76,8 @@ BITBOARD Rules::GetOnLinePositions2(POSITION position, FigureSide side, int xMul
 Figure* Rules::GetObstacleInDirection(POSITION position, FigureSide side, int xMult, int yMult) const
 {
 #ifdef QT_DEBUG
-    if (xMult != -1 && xMult != 0 && xMult != 1 || yMult != -1 && yMult != 0 && yMult != 1)
+    if ((xMult != -1 && xMult != 0 && xMult != 1)
+            || (yMult != -1 && yMult != 0 && yMult != 1))
     {
         throw Exception("Only {-1, 0, 1} values are valid for x and y mult");
     }
@@ -81,7 +108,7 @@ Figure* Rules::GetObstacleInDirection(POSITION position, FigureSide side, int xM
     return NULL; // no obstacles finded in specified direction
 }
 
-BITBOARD Rules::GetPawnGuardedPositions2(Figure *figure) const
+BITBOARD Rules::GetPawnGuardedPositions(Figure *figure) const
 {
     POSITION p = figure->Position;
     FigureSide side = figure->Side;
@@ -94,7 +121,7 @@ BITBOARD Rules::GetPawnGuardedPositions2(Figure *figure) const
     return bitboard;
 }
 
-BITBOARD Rules::GetKinghtGuardedPositions2(Figure *figure) const
+BITBOARD Rules::GetKinghtGuardedPositions(Figure *figure) const
 {
     POSITION p = figure->Position;
 
@@ -113,7 +140,7 @@ BITBOARD Rules::GetKinghtGuardedPositions2(Figure *figure) const
     return bitboard;
 }
 
-BITBOARD Rules::GetBishopGuardedPositions2(Figure *figure) const
+BITBOARD Rules::GetBishopGuardedPositions(Figure *figure) const
 {
     POSITION p = figure->Position;
     FigureSide side = figure->Side;
@@ -121,50 +148,50 @@ BITBOARD Rules::GetBishopGuardedPositions2(Figure *figure) const
     BITBOARD bitboard = BITBOARD_EMPTY;
 
     //bitboard = BitBoardHelper::AddPositionWhenValid(bitboard, )
-    bitboard = BitboardHelper::Union(bitboard, GetOnLinePositions2(p, side, +1, +1, 7));
-    bitboard = BitboardHelper::Union(bitboard, GetOnLinePositions2(p, side, +1, -1, 7));
-    bitboard = BitboardHelper::Union(bitboard, GetOnLinePositions2(p, side, -1, +1, 7));
-    bitboard = BitboardHelper::Union(bitboard, GetOnLinePositions2(p, side, -1, -1, 7));
+    bitboard = BitboardHelper::Union(bitboard, GetOnLinePositions(p, side, +1, +1, 7));
+    bitboard = BitboardHelper::Union(bitboard, GetOnLinePositions(p, side, +1, -1, 7));
+    bitboard = BitboardHelper::Union(bitboard, GetOnLinePositions(p, side, -1, +1, 7));
+    bitboard = BitboardHelper::Union(bitboard, GetOnLinePositions(p, side, -1, -1, 7));
 
     return bitboard;
 }
 
-BITBOARD Rules::GetRockGuardedPositions2(Figure *figure) const
+BITBOARD Rules::GetRockGuardedPositions(Figure *figure) const
 {
     POSITION p = figure->Position;
     FigureSide side = figure->Side;
 
     BITBOARD bitboard = BITBOARD_EMPTY;
 
-    bitboard = BitboardHelper::Union(bitboard, GetOnLinePositions2(p, side, +1, 0, 7));
-    bitboard = BitboardHelper::Union(bitboard, GetOnLinePositions2(p, side, -1, 0, 7));
-    bitboard = BitboardHelper::Union(bitboard, GetOnLinePositions2(p, side, 0, +1, 7));
-    bitboard = BitboardHelper::Union(bitboard, GetOnLinePositions2(p, side, 0, -1, 7));
+    bitboard = BitboardHelper::Union(bitboard, GetOnLinePositions(p, side, +1, 0, 7));
+    bitboard = BitboardHelper::Union(bitboard, GetOnLinePositions(p, side, -1, 0, 7));
+    bitboard = BitboardHelper::Union(bitboard, GetOnLinePositions(p, side, 0, +1, 7));
+    bitboard = BitboardHelper::Union(bitboard, GetOnLinePositions(p, side, 0, -1, 7));
 
     return bitboard;
 }
 
-BITBOARD Rules::GetQueenGuardedPositions2(Figure *figure) const
+BITBOARD Rules::GetQueenGuardedPositions(Figure *figure) const
 {
     POSITION p = figure->Position;
     FigureSide side = figure->Side;
 
     BITBOARD bitboard = BITBOARD_EMPTY;
 
-    bitboard = BitboardHelper::Union(bitboard, GetOnLinePositions2(p, side, +1, 0, 7));
-    bitboard = BitboardHelper::Union(bitboard, GetOnLinePositions2(p, side, -1, 0, 7));
-    bitboard = BitboardHelper::Union(bitboard, GetOnLinePositions2(p, side, 0, +1, 7));
-    bitboard = BitboardHelper::Union(bitboard, GetOnLinePositions2(p, side, 0, -1, 7));
+    bitboard = BitboardHelper::Union(bitboard, GetOnLinePositions(p, side, +1, 0, 7));
+    bitboard = BitboardHelper::Union(bitboard, GetOnLinePositions(p, side, -1, 0, 7));
+    bitboard = BitboardHelper::Union(bitboard, GetOnLinePositions(p, side, 0, +1, 7));
+    bitboard = BitboardHelper::Union(bitboard, GetOnLinePositions(p, side, 0, -1, 7));
 
-    bitboard = BitboardHelper::Union(bitboard, GetOnLinePositions2(p, side, +1, +1, 7));
-    bitboard = BitboardHelper::Union(bitboard, GetOnLinePositions2(p, side, +1, -1, 7));
-    bitboard = BitboardHelper::Union(bitboard, GetOnLinePositions2(p, side, -1, +1, 7));
-    bitboard = BitboardHelper::Union(bitboard, GetOnLinePositions2(p, side, -1, -1, 7));
+    bitboard = BitboardHelper::Union(bitboard, GetOnLinePositions(p, side, +1, +1, 7));
+    bitboard = BitboardHelper::Union(bitboard, GetOnLinePositions(p, side, +1, -1, 7));
+    bitboard = BitboardHelper::Union(bitboard, GetOnLinePositions(p, side, -1, +1, 7));
+    bitboard = BitboardHelper::Union(bitboard, GetOnLinePositions(p, side, -1, -1, 7));
 
     return bitboard;
 }
 
-BITBOARD Rules::GetKingGuardedPositions2(Figure *figure) const
+BITBOARD Rules::GetKingGuardedPositions(Figure *figure) const
 {
     POSITION p = figure->Position;
     BITBOARD bitboard = BITBOARD_EMPTY;
@@ -190,20 +217,33 @@ bool Rules::IsUnderCheck(FigureSide side) const
 
 bool Rules::IsPassiveEndGame() const
 {
-    return m_board->GetCurrentPositionCount() >= 3
-            || m_board->GetAfterLastCaptureOrPawnMoveHalfMoveCount() >= 50;
+    // position repeadted three times
+    if (m_board->GetCurrentPositionCount() >= 3)
+        return true;
+
+    // performance optimization
+    if (m_board->GetPlyCount() >= 50)
+    {
+        // if 50 or more plys after last pawn move or capture passed
+        if (m_board->GetAfterLastCaptureOrPawnMoveHalfMoveCount() >= 50)
+        {
+            return true;
+        }
+    }
+
+    return false;
 }
 
-BITBOARD Rules::GetGuardedPositions2(Figure *figure) const
+BITBOARD Rules::GetGuardedPositions(Figure *figure) const
 {
     switch (figure->Type)
     {
-        case FigureType::Pawn:      return GetPawnGuardedPositions2(figure);
-        case FigureType::Knight:    return GetKinghtGuardedPositions2(figure);
-        case FigureType::Bishop:    return GetBishopGuardedPositions2(figure);
-        case FigureType::Rock:      return GetRockGuardedPositions2(figure);
-        case FigureType::Queen:     return GetQueenGuardedPositions2(figure);
-        case FigureType::King:      return GetKingGuardedPositions2(figure);
+        case FigureType::Pawn:      return GetPawnGuardedPositions(figure);
+        case FigureType::Knight:    return GetKinghtGuardedPositions(figure);
+        case FigureType::Bishop:    return GetBishopGuardedPositions(figure);
+        case FigureType::Rock:      return GetRockGuardedPositions(figure);
+        case FigureType::Queen:     return GetQueenGuardedPositions(figure);
+        case FigureType::King:      return GetKingGuardedPositions(figure);
 
         default: throw Exception("Unknown figure type");
     }
@@ -216,24 +256,9 @@ POSITION Rules::ForwardFor(POSITION position, FigureSide side, int dx, int dy) c
               : PositionHelper::Shift(position, dx, -dy);
 }
 
-int Rules::FirstHorizonatalYFor(FigureSide side) const
-{
-    return side == FigureSide::White ? 1 : 8;
-}
-
-int Rules::PawnPromotionYFor(FigureSide side) const
-{
-    return side == FigureSide::White ? 8 : 1;
-}
-
-int Rules::EnPassantPawnYFor(FigureSide side) const
-{
-    return side == FigureSide::White ? 5 : 4;
-}
-
 bool Rules::IsUnderCheckImpl(FigureSide side) const
 {
-    BITBOARD opponentGuarded = GetGuardedPositions2(OpponentSide(side));
+    BITBOARD opponentGuarded = GetGuardedPositions(OpponentSide(side));
 
     Figure* king = m_board->KingAt(side);
 
@@ -346,13 +371,6 @@ bool Rules::IsUnderCheckFastImpl(FigureSide side) const
     return false;
 }
 
-FigureSide Rules::OpponentSide(FigureSide side) const
-{
-    return side == FigureSide::White ?
-                FigureSide::Black
-              : FigureSide::White;
-}
-
 void Rules::DeleteMovesToCheck(MoveCollection& moves)
 {
     MoveCollection::iterator it = moves.begin();
@@ -389,28 +407,13 @@ BITBOARD Rules::_GetPossibleDestinations(Figure *figure) const
         case FigureType::Bishop:    dests = _GetBishopPossibleDestinations(figure);  break;
         case FigureType::Rock:      dests = _GetRockPossibleDestinations(figure);    break;
         case FigureType::Queen:     dests = _GetQueenPossibleDestinations(figure);   break;
-        case FigureType::King:      dests = _GetKingPossibleDestinations2(figure);   break;
+        case FigureType::King:      dests = _GetKingPossibleDestinations(figure);   break;
 
         default: throw Exception("Unknown figure type");
     }
 
+    // remove self-capture destinations
     return BitboardHelper::Substract(dests, m_board->GetBitboardFor(figure->Side));
-}
-
-void Rules::DeleteSelfCaptureDesination(PositionCollection& destinations, FigureSide selfSide) const
-{
-    PositionCollection::iterator it = destinations.begin();
-    while (it != destinations.end())
-    {
-        if (m_board->HasFigureAt(*it, selfSide)) // if same side figure here
-        {
-            it = destinations.erase(it); // erase it
-        }
-        else
-        {
-            ++it;
-        }
-    }
 }
 
 BITBOARD Rules::_GetPawnPossibleDestinations(Figure *figure) const
@@ -432,13 +435,14 @@ BITBOARD Rules::_GetPawnPossibleDestinations(Figure *figure) const
         destinations = BitboardHelper::AddPosition(destinations, pCaptureRight);
     }
 
-    // shot and long moves
+    // short and long moves
     POSITION pShort = ForwardFor(figure->Position, figure->Side, 0, 1);
     if (!m_board->HasFigureAt(pShort))
     {
         destinations = BitboardHelper::AddPosition(destinations, pShort);
 
-        if (figure->MovesCount == 0) // long first pawn turn handling
+        //if (figure->MovesCount == 0) // long first pawn turn handling
+        if (PositionHelper::Y(figure->Position) == PawnHomeYFor(figure->Side))
         {
             POSITION pLong = ForwardFor(figure->Position, figure->Side, 0, 2);
 
@@ -456,18 +460,23 @@ BITBOARD Rules::_GetPawnPossibleDestinations(Figure *figure) const
     int figureX = PositionHelper::X(figure->Position);
     if (PositionHelper::Y(figure->Position) == enPassantY)
     {
-        Move opponentLastMove = m_board->GetLastMove();
-
-        if (opponentLastMove.Type == MoveType::LongPawn)
+        // this situation is possible when board setted from FEN explicitly
+        // hence we should get last move when history is empty
+        if (!m_board->IsHistoryEmpty())
         {
-            POSITION opponentStartPawnPosition = opponentLastMove.From;
-            int opponentPawnX = PositionHelper::X(opponentStartPawnPosition);
-            FigureSide opponentSide = OpponentSide(figure->Side);
+            Move opponentLastMove = m_board->GetLastMove();
 
-            if (opponentPawnX == figureX + 1 || opponentPawnX == figureX - 1)
+            if (opponentLastMove.Type == MoveType::LongPawn)
             {
-                POSITION enPassantDestination = ForwardFor(opponentStartPawnPosition, opponentSide, 0, 1);
-                destinations = BitboardHelper::AddPosition(destinations, enPassantDestination);
+                POSITION opponentStartPawnPosition = opponentLastMove.From;
+                int opponentPawnX = PositionHelper::X(opponentStartPawnPosition);
+                FigureSide opponentSide = OpponentSide(figure->Side);
+
+                if (opponentPawnX == figureX + 1 || opponentPawnX == figureX - 1)
+                {
+                    POSITION enPassantDestination = ForwardFor(opponentStartPawnPosition, opponentSide, 0, 1);
+                    destinations = BitboardHelper::AddPosition(destinations, enPassantDestination);
+                }
             }
         }
     }
@@ -478,121 +487,147 @@ BITBOARD Rules::_GetPawnPossibleDestinations(Figure *figure) const
 BITBOARD Rules::_GetKnightPossibleDestinations(Figure *figure) const
 {
     // yeah! is matches with knight guarded positions
-    return GetKinghtGuardedPositions2(figure);
+    return GetKinghtGuardedPositions(figure);
 }
 
 BITBOARD Rules::_GetBishopPossibleDestinations(Figure *figure) const
 {
     // also matches bishop guarded positions
-    return GetBishopGuardedPositions2(figure);
+    return GetBishopGuardedPositions(figure);
 }
 
 BITBOARD Rules::_GetRockPossibleDestinations(Figure *figure) const
 {
     // matches rock guarded positions
-    return GetRockGuardedPositions2(figure);
+    return GetRockGuardedPositions(figure);
 }
 
 BITBOARD Rules::_GetQueenPossibleDestinations(Figure *figure) const
 {
     // matches queen guarded positions о_О
-    return GetQueenGuardedPositions2(figure);
+    return GetQueenGuardedPositions(figure);
 }
 
-BITBOARD Rules::_GetKingPossibleDestinations2(Figure *king) const
+BITBOARD Rules::_GetKingPossibleDestinations(Figure *king) const
 {
-    BITBOARD destinations = GetKingGuardedPositions2(king);
+    BITBOARD destinations = GetKingGuardedPositions(king);
 
     POSITION kPosition = king->Position;
     FigureSide kSide = king->Side;
 
-    BITBOARD opponentGuarded = GetGuardedPositions2(OpponentSide(kSide));
-
-    // check for short castling
-    POSITION r1 = PositionHelper::Shift(king->Position, 1, 0);
-    POSITION r2 = PositionHelper::Shift(king->Position, 2, 0);
-    Figure* rRock = m_board->FigureAt(PositionHelper::Create(8, FirstHorizonatalYFor(kSide)));
-
-    if (king->MovesCount == 0
-            && rRock != NULL
-            && rRock->MovesCount == 0
-            && !m_board->HasFigureAt(r1) && !m_board->HasFigureAt(r2)
-            && !BitboardHelper::Contains(opponentGuarded, kPosition) // castling from check is forbidden
-            && !BitboardHelper::Contains(opponentGuarded, r1)   // castling through guarded cells is forbidden
-            && !BitboardHelper::Contains(opponentGuarded, r2))  // also
-
+    // available castling check
+    if (king->MovesCount == 0)
     {
-            destinations = BitboardHelper::AddPosition(destinations, r2);
-    }
+        bool guardedPositionsCalculated = false;
+        BITBOARD opponentGuarded; // it calculation is expensive, so we trying to caluclate it when it really needed
 
-    // long castling checks
-    POSITION l1 = PositionHelper::Shift(king->Position, -1, 0);
-    POSITION l2 = PositionHelper::Shift(king->Position, -2, 0);
-    POSITION l3 = PositionHelper::Shift(king->Position, -3, 0);
-    Figure* lRock = m_board->FigureAt(PositionHelper::Create(1, FirstHorizonatalYFor(king->Side)));
+        // check for short castling
+        POSITION r1 = PositionHelper::Shift(king->Position, 1, 0);
+        POSITION r2 = PositionHelper::Shift(king->Position, 2, 0);
+        Figure* rRock = m_board->FigureAt(PositionHelper::Create(8, FirstHorizonatalYFor(kSide)));
 
-    if (king->MovesCount == 0
-            && lRock != NULL
-            && lRock->MovesCount == 0
-            && !m_board->HasFigureAt(l1) && !m_board->HasFigureAt(l2) && !m_board->HasFigureAt(l3)
-            && !BitboardHelper::Contains(opponentGuarded, kPosition) // castling from check is forbidden
-            && !BitboardHelper::Contains(opponentGuarded, l1)   // castling through guarded cells is forbidden
-            && !BitboardHelper::Contains(opponentGuarded, l2)   // also
-            && !BitboardHelper::Contains(opponentGuarded, l3))  // also
+        if (rRock != NULL && rRock->MovesCount == 0 && !m_board->HasFigureAt(r1) && !m_board->HasFigureAt(r2)) // these checks is cheep
+        {
+            // short castling potentially possible, calcuate opponent's guarded positions
+            opponentGuarded = GetGuardedPositions(OpponentSide(kSide));
+            guardedPositionsCalculated = true;
 
-    {
-            destinations = BitboardHelper::AddPosition(destinations, l2);
+            if (!BitboardHelper::Contains(opponentGuarded, kPosition) // castling from check is forbidden
+                && !BitboardHelper::Contains(opponentGuarded, r1)   // castling through guarded cells is forbidden
+                && !BitboardHelper::Contains(opponentGuarded, r2))  // also
+            {
+                destinations = BitboardHelper::AddPosition(destinations, r2);
+            }
+        }
+
+        // long castling checks
+        POSITION l1 = PositionHelper::Shift(king->Position, -1, 0);
+        POSITION l2 = PositionHelper::Shift(king->Position, -2, 0);
+        POSITION l3 = PositionHelper::Shift(king->Position, -3, 0);
+        Figure* lRock = m_board->FigureAt(PositionHelper::Create(1, FirstHorizonatalYFor(king->Side)));
+
+        if (lRock != NULL && lRock->MovesCount == 0 && !m_board->HasFigureAt(l1) && !m_board->HasFigureAt(l2) && !m_board->HasFigureAt(l3)) // cheap checks
+        {
+            // long castling potentially possible, calcuate opponent's guarded positions if it have not already done
+            if (!guardedPositionsCalculated)
+                opponentGuarded = GetGuardedPositions(OpponentSide(kSide));
+
+            if (!BitboardHelper::Contains(opponentGuarded, kPosition) // castling from check is forbidden
+                && !BitboardHelper::Contains(opponentGuarded, l1)   // castling through guarded cells is forbidden
+                && !BitboardHelper::Contains(opponentGuarded, l2)   // also
+                && !BitboardHelper::Contains(opponentGuarded, l3))  // also
+            {
+                destinations = BitboardHelper::AddPosition(destinations, l2);
+            }
+        }
     }
 
     return destinations;
 }
 
-Move Rules::CreateMove(POSITION from, POSITION to)
+MoveCollection Rules::CreateMoves(POSITION from, POSITION to)
 {
-    MoveType moveType;
+    // collection instead of single instance
+    // is used for only reason: when pawn promoted
+    // there are several moves with same source and destination cells
+    MoveCollection moves;
 
+    MoveType moveType;
     Figure* captured = m_board->FigureAt(to);
     Figure* figure = m_board->FigureAt(from);
     FigureType figureType = figure->Type;
 
-    // long king step -> castling
-    if (figureType == FigureType::King && abs(PositionHelper::X(to) - PositionHelper::X(from)) == 2)
-    {
-        if (PositionHelper::X(to) > PositionHelper::X(from))
-            moveType = MoveType::ShortCastling;
-        else
-            moveType = MoveType::LongCastling;
-    }
-    // long pawn turn handling
-    else if (figureType == FigureType::Pawn && abs(PositionHelper::Y(to) - PositionHelper::Y(from)) == 2)
-    {
-        moveType = MoveType::LongPawn;
-    }
-    // pawn's position x changing and target cell is empty -> en passant
-    else if (figureType == FigureType::Pawn && !m_board->HasFigureAt(to) && PositionHelper::X(to) != PositionHelper::X(from))
-    {
-        moveType = MoveType::EnPassant;
-        captured = m_board->FigureAt(ForwardFor(to, figure->Side, 0, -1));
-    }
-    // pawn promote
-    else if (figureType == FigureType::Pawn && PositionHelper::Y(to) == PawnPromotionYFor(figure->Side))
+    // pawn promotion is special case - here there are several moves possbile
+    if (figureType == FigureType::Pawn && PositionHelper::Y(to) == PawnPromotionYFor(figure->Side))
     {
         moveType = MoveType::PawnPromotion;
-    } else // only Normal and Capture turns
+
+        Move pawnPromotionToQueen(moveType, from, to, figure, captured);
+        pawnPromotionToQueen.PromotedTo = FigureType::Queen;
+
+        Move pawnPromotionToKnight(moveType, from, to, figure, captured);
+        pawnPromotionToKnight.PromotedTo = FigureType::Knight;
+
+        Move pawnPromotionToRock(moveType, from, to, figure, captured);
+        pawnPromotionToRock.PromotedTo = FigureType::Rock;
+
+        Move pawnPromotionToBishop(moveType, from, to, figure, captured);
+        pawnPromotionToBishop.PromotedTo = FigureType::Bishop;
+
+        moves << pawnPromotionToQueen << pawnPromotionToKnight << pawnPromotionToRock << pawnPromotionToBishop;
+    } else // single move generated in this section
     {
-        if (captured != NULL)
+        // long king step -> castling
+        if (figureType == FigureType::King && abs(PositionHelper::X(to) - PositionHelper::X(from)) == 2)
         {
-            moveType = MoveType::Capture;
-        } else
+            if (PositionHelper::X(to) > PositionHelper::X(from))
+                moveType = MoveType::ShortCastling;
+            else
+                moveType = MoveType::LongCastling;
+        }
+        // long pawn turn handling
+        else if (figureType == FigureType::Pawn && abs(PositionHelper::Y(to) - PositionHelper::Y(from)) == 2)
+        {
+            moveType = MoveType::LongPawn;
+        }
+        // pawn's position x changing and target cell is empty -> en passant
+        else if (figureType == FigureType::Pawn && !m_board->HasFigureAt(to) && PositionHelper::X(to) != PositionHelper::X(from))
+        {
+            moveType = MoveType::EnPassant;
+            captured = m_board->FigureAt(ForwardFor(to, figure->Side, 0, -1));
+        }
+        else // other, not special moves
         {
             moveType = MoveType::Normal;
         }
+
+        moves << Move(moveType, from, to, figure, captured);
     }
 
-    return Move(moveType, from, to, figure, captured);
+    return moves;
 }
 
-BITBOARD Rules::GetGuardedPositions2(FigureSide side) const
+BITBOARD Rules::GetGuardedPositions(FigureSide side) const
 {
     FigureList figures = m_board->FiguresAt(side);
 
@@ -600,13 +635,13 @@ BITBOARD Rules::GetGuardedPositions2(FigureSide side) const
 
     foreach(Figure* figure, figures)
     {
-        bitboard = BitboardHelper::Union(bitboard, GetGuardedPositions2(figure));
+        bitboard = BitboardHelper::Union(bitboard, GetGuardedPositions(figure));
     }
 
     return bitboard;
 }
 
-MoveCollection Rules::GetPossibleMoves(FigureSide side)
+MoveCollection Rules::GetPossibleMoves(FigureSide side, bool generateLegalOnly)
 {
     FigureList figures = m_board->FiguresAt(side);
     MoveCollection moves;
@@ -618,54 +653,25 @@ MoveCollection Rules::GetPossibleMoves(FigureSide side)
 
     foreach(Figure* figure, figures)
     {
-        PositionCollection currentFigurePossibleDestinations = BitboardHelper::GetPositions(_GetPossibleDestinations(figure));
-
-        //DeleteSelfCaptureDesination(currentFigurePossibleDestinations, figure->Side);
+        PositionCollection currentFigurePossibleDestinations = BitboardHelper::GetPositions(_GetPossibleDestinations(figure));        
 
         foreach(POSITION curFigurePossiblePosition, currentFigurePossibleDestinations)
-        {
-            Move currentMove = CreateMove(figure->Position, curFigurePossiblePosition);
+        {            
+            MoveCollection currentMoves = CreateMoves(figure->Position, curFigurePossiblePosition);
 
-            moves.append(currentMove);
+            foreach(const Move& currentMove, currentMoves)
+            {
+                moves.append(currentMove);
+            }
         }
     }
 
-    DeleteMovesToCheck(moves);
-
-    return moves;
-}
-
-MoveCollection Rules::GetPossibleMoves(Figure *figure)
-{
-    MoveCollection moves = GetPossibleMoves(figure->Side);
-
-    MoveCollection::iterator it = moves.begin();
-    while (it != moves.end())
+    if (generateLegalOnly)
     {
-        if ((*it).MovingFigure != figure)
-        {
-            it = moves.erase(it);
-        }
-        else
-        {
-            ++it;
-        }
+        DeleteMovesToCheck(moves);
     }
 
     return moves;
-}
-
-PositionList Rules::GetPossibleDestinations(Figure *figure)
-{
-    MoveCollection moves = GetPossibleMoves(figure);
-    PositionList destinations;
-
-    foreach(const Move& move, moves)
-    {
-        destinations.append(move.To);
-    }
-
-    return destinations;
 }
 
 void Rules::MakeMove(Move move)
@@ -708,7 +714,8 @@ void Rules::MakeMove(Move move)
         m_board->MoveFigure(rock, PositionHelper::Create(rockAfterCastringX, y));
     } else if (move.Type == MoveType::PawnPromotion)
     {
-        m_board->PromotePawn(move.MovingFigure, FigureType::Queen);
+        //m_board->PromotePawn(move.MovingFigure, FigureType::Queen);
+        m_board->PromotePawn(move.MovingFigure, move.PromotedTo);
     }
 
     // add to history
@@ -716,36 +723,6 @@ void Rules::MakeMove(Move move)
 
     // position counting to detect draw game situations
     m_board->IncreaseCurrentPositionCount();
-}
-
-void Rules::MakeMove(POSITION from, POSITION to)
-{
-    Figure* f = m_board->FigureAt(from);
-
-    if (f != NULL)
-    {
-        MoveCollection possible = GetPossibleMoves(f);
-        bool isValidMove = false;
-
-        foreach(const Move& move, possible)
-        {
-            if (move.From == from && move.To == to)
-            {
-                MakeMove(move);
-                isValidMove = true;
-                break;
-            }
-        }
-
-        if (!isValidMove)
-        {
-            // if we get were then move not finded
-            throw Exception(QString("Move from %1 to %2 is incorrect.").arg(PositionHelper::ToString(from), PositionHelper::ToString(to)).toStdString());
-        }
-    } else
-    {
-        throw Exception("Invalid source position");
-    }
 }
 
 void Rules::UnMakeMove(Move move)
@@ -796,4 +773,76 @@ void Rules::UnMakeMove(Move move)
     {
         m_board->UnpromotePawn(move.MovingFigure);
     }
+}
+
+MoveCollection Rules::GetPossibleMoves(Figure *figure)
+{
+    MoveCollection moves = GetPossibleMoves(figure->Side);
+
+    MoveCollection::iterator it = moves.begin();
+    while (it != moves.end())
+    {
+        if ((*it).MovingFigure != figure)
+        {
+            it = moves.erase(it);
+        }
+        else
+        {
+            ++it;
+        }
+    }
+
+    return moves;
+}
+
+PositionList Rules::GetPossibleDestinations(Figure *figure)
+{
+    MoveCollection moves = GetPossibleMoves(figure);
+    PositionList destinations;
+
+    foreach(const Move& move, moves)
+    {
+        destinations.append(move.To);
+    }
+
+    return destinations;
+}
+
+void Rules::MakeMove(POSITION from, POSITION to, FigureType promotedTo)
+{
+    foreach(const Move& move, FindMoves(from, to))
+    {
+        if (move.From == from && move.To == to
+                && (move.PromotedTo == promotedTo || move.Type != MoveType::PawnPromotion))
+        {
+            MakeMove(move);
+            return;
+        }
+    }
+
+    // if we get here because move was not found
+    throw Exception(QString("Move from %1 to %2 is incorrect.").arg(PositionHelper::ToString(from), PositionHelper::ToString(to)).toStdString());
+}
+
+QList<Move> Rules::FindMoves(POSITION from, POSITION to)
+{
+    QList<Move> finded;
+
+    Figure* f = m_board->FigureAt(from);
+    if (f != NULL)
+    {
+        MoveCollection possible = GetPossibleMoves(f);
+        foreach(const Move& move, possible)
+        {
+            if (move.From == from && move.To == to)
+            {
+                finded.append(move);
+            }
+        }
+    } else
+    {
+        throw Exception("No figures was found in source position.");
+    }
+
+    return finded;
 }

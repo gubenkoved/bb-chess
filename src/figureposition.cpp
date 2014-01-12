@@ -1,11 +1,12 @@
 #include "figureposition.h"
 
 POSITION PositionHelper::Create(int x, int y)
-{
-    if (IsValidPosition(x, y))
+{    
+    if (x >= 1 && x <= 8 && y >= 1 && y <= 8)
     {
         return (y - 1) | ((x - 1) << 3);
     } else
+
     {
         return POS_INVALID;
     }
@@ -13,7 +14,7 @@ POSITION PositionHelper::Create(int x, int y)
 
 POSITION PositionHelper::Shift(POSITION position, int dx, int dy)
 {
-    return PositionHelper::Create(PositionHelper::X(position) + dx, PositionHelper::Y(position) + dy);
+    return PositionHelper::Create(X(position) + dx, Y(position) + dy);
 }
 
 POSITION PositionHelper::FromString(std::string str)

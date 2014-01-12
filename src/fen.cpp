@@ -1,4 +1,5 @@
 #include "fen.h"
+#include "figure.h"
 #include "exception.h"
 
 QChar FEN::GetFigureChar(const Figure& figure)
@@ -171,44 +172,43 @@ Board FEN::PositionFromFEN(QString fen)
     try
     {
         Board board;
-        int cIdx = -1;
+        int y = 8, x = 1; // initial "cursor" position
 
-        int y = 8;
-        int x = 1;
-
-        while(++cIdx < fen.length())
+        for(int charIndex = 0; charIndex < fen.length(); ++charIndex)
         {
+            QChar chr = fen.at(charIndex);
+
             if (y == 1 && x == 9) // filfilled
             {
                 break;
-            }
+            }            
 
-            QChar c = fen.at(cIdx);
-
-            if (c == '/') // new line separator
+            // new line separator
+            if (chr == '/')
             {
-                --y;
-
                 if (x != 9)
                 {
-                    throw Exception(QString("Fen separator was not expected in position: %1 (%2)").arg(QString::number(cIdx)).arg(fen).toStdString());
+                    throw Exception(QString("Fen separator was not expected in position: %1 (%2)").arg(QString::number(charIndex)).arg(fen).toStdString());
                 }
 
+                --y;
                 x = 1;
                 continue;
             }
-
-            if (c.isDigit())
+            // digit tell us to leave specified amount of cells empty
+            else if (chr.isDigit())
             {
-                x += c.digitValue(); // skip specified number of cells
-            } else
+                x += chr.digitValue(); // skip specified number of cells
+            }
+            // figure's char exprected here
+            else
             {
-                Figure f = FigureFromChar(c);
-                f.Position = PositionHelper::Create(x, y);
+                Figure* figure = new Figure(FigureFromChar(chr));
+                figure->Position = PositionHelper::Create(x, y);
 
                 ++x; // go to next cell
 
-                board.AddAliveFigure(new Figure(f));
+                board.AddAliveFigure(figure);
             }
         }
 
@@ -217,6 +217,11 @@ Board FEN::PositionFromFEN(QString fen)
         {
             throw Exception("Invalid final state. Board in not filled completely or overfilled: " + fen.toStdString());
         }
+
+        // assumtion for it partial implementation:
+        // kings are moved, castlings not possible
+        board.KingAt(FigureSide::White)->MovesCount = 1;
+        board.KingAt(FigureSide::Black)->MovesCount = 1;
 
         return board;
     } catch (Exception e)

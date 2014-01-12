@@ -81,7 +81,7 @@ Puzzle Puzzle::Read(QString line)
 
     if (tokens.count() != 6)
     {
-        throw Exception(QString("Expected 6 tokens in line: '%1', but actual %2").arg(line).arg(tokens.count()).toStdString());
+    	throw Exception("Expected 6 tokens in line: " + line.toStdString() + ", but actual " + QString::number(tokens.count()).toStdString());
     }
 
     puzzle.Id = tokens[0].toInt();

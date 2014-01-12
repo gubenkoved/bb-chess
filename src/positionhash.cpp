@@ -68,7 +68,7 @@ void PositionHash::Update(const Board* board, POSITION position)
     if (figureAtPosition != NULL)
     {
         // fill element when there is figure at specified position
-        UINT32 hashElement = m_hashElements[figureAtPosition->Side][figureAtPosition->Type];
+        UINT32 hashElement = m_hashElements[(int)figureAtPosition->Side][(int)figureAtPosition->Type];
         m_data[groupNum] |= hashElement << offset;
     }
 }

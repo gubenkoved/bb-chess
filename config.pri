@@ -23,6 +23,7 @@ device {
                  $$quote($$BASEDIR/src/bitboardhelper.cpp) \
                  $$quote($$BASEDIR/src/board.cpp) \
                  $$quote($$BASEDIR/src/boardserializer.cpp) \
+                 $$quote($$BASEDIR/src/enumshelper.cpp) \
                  $$quote($$BASEDIR/src/exception.cpp) \
                  $$quote($$BASEDIR/src/fen.cpp) \
                  $$quote($$BASEDIR/src/figure.cpp) \
@@ -41,6 +42,7 @@ device {
                  $$quote($$BASEDIR/src/bitboardhelper.h) \
                  $$quote($$BASEDIR/src/board.h) \
                  $$quote($$BASEDIR/src/boardserializer.h) \
+                 $$quote($$BASEDIR/src/enumshelper.h) \
                  $$quote($$BASEDIR/src/exception.h) \
                  $$quote($$BASEDIR/src/fen.h) \
                  $$quote($$BASEDIR/src/figure.h) \
@@ -75,6 +77,7 @@ device {
                  $$quote($$BASEDIR/src/bitboardhelper.cpp) \
                  $$quote($$BASEDIR/src/board.cpp) \
                  $$quote($$BASEDIR/src/boardserializer.cpp) \
+                 $$quote($$BASEDIR/src/enumshelper.cpp) \
                  $$quote($$BASEDIR/src/exception.cpp) \
                  $$quote($$BASEDIR/src/fen.cpp) \
                  $$quote($$BASEDIR/src/figure.cpp) \
@@ -93,6 +96,7 @@ device {
                  $$quote($$BASEDIR/src/bitboardhelper.h) \
                  $$quote($$BASEDIR/src/board.h) \
                  $$quote($$BASEDIR/src/boardserializer.h) \
+                 $$quote($$BASEDIR/src/enumshelper.h) \
                  $$quote($$BASEDIR/src/exception.h) \
                  $$quote($$BASEDIR/src/fen.h) \
                  $$quote($$BASEDIR/src/figure.h) \
@@ -129,6 +133,7 @@ simulator {
                  $$quote($$BASEDIR/src/bitboardhelper.cpp) \
                  $$quote($$BASEDIR/src/board.cpp) \
                  $$quote($$BASEDIR/src/boardserializer.cpp) \
+                 $$quote($$BASEDIR/src/enumshelper.cpp) \
                  $$quote($$BASEDIR/src/exception.cpp) \
                  $$quote($$BASEDIR/src/fen.cpp) \
                  $$quote($$BASEDIR/src/figure.cpp) \
@@ -147,6 +152,7 @@ simulator {
                  $$quote($$BASEDIR/src/bitboardhelper.h) \
                  $$quote($$BASEDIR/src/board.h) \
                  $$quote($$BASEDIR/src/boardserializer.h) \
+                 $$quote($$BASEDIR/src/enumshelper.h) \
                  $$quote($$BASEDIR/src/exception.h) \
                  $$quote($$BASEDIR/src/fen.h) \
                  $$quote($$BASEDIR/src/figure.h) \

@@ -48,7 +48,7 @@ struct PositionHelper
     static BOOL IsInvalid(POSITION pos);
 
     // returns true when x in [1; 8] and y in [1; 8]
-    static BOOL IsValidPosition(int x, int y);
+    static BOOL IsValid(int x, int y);
 
     static POSITION Create(int x, int y);
 
@@ -64,21 +64,29 @@ struct PositionHelper
 
 inline INT32 PositionHelper::X(POSITION pos)
 {
+    Q_ASSERT(pos == (pos & (POS_X | POS_Y)));
+
     return ((pos & POS_X) >> 3) + 1;
 }
 
 inline INT32 PositionHelper::Y(POSITION pos)
 {
+    Q_ASSERT(pos == (pos & (POS_X | POS_Y)));
+
     return (pos & POS_Y) + 1;
 }
 
 inline INT32 PositionHelper::Serial(POSITION pos)
-{
+{    
+    Q_ASSERT(pos == (pos & (POS_X | POS_Y)));
+
     return pos;
 }
 
 inline POSITION PositionHelper::FromSerial(INT32 serial)
 {
+    Q_ASSERT(serial >= 0 && serial <= 63);
+
     return (POSITION)serial;
 }
 
@@ -87,7 +95,7 @@ inline BOOL PositionHelper::IsInvalid(POSITION pos)
     return pos & POS_INVALID;
 }
 
-inline BOOL PositionHelper::IsValidPosition(int x, int y)
+inline BOOL PositionHelper::IsValid(int x, int y)
 {
     return x >= 1 && x <= 8 && y >= 1 && y <= 8;
 }

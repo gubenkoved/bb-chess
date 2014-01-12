@@ -38,5 +38,5 @@ void AsyncAI::run()
     qDebug() << "AsyncAI::run(): analyzed" << analyzed << "positions, best estimation:" << bestEstimation
              << "[" << timer.elapsed() << "ms]";
 
-    emit BestMoveFinded(PositionHelper::ToString(bestMove.From) + ' ' + PositionHelper::ToString(bestMove.To));
+    emit BestMoveFinded(QString("%1 %2").arg(PositionHelper::ToString(bestMove.From)).arg(PositionHelper::ToString(bestMove.To)));
 }
